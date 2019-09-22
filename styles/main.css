@@ -5,44 +5,25 @@ html {
 }
 
 h1 {
-  @apply text-5xl;
+  @apply text-6xl;
 }
 
 h2 {
+  @apply text-5xl;
+}
+
+h3 {
   @apply text-4xl;
 }
 
 p {
   @apply text-xl;
+  @apply font-normal;
+  @apply mb-2;
 }
 
 a:hover {
   @apply underline;
-}
-
-a[target='_blank']::after {
-  content: '\02934';
-  position: absolute;
-  opacity: 0;
-  z-index: 2;
-  vertical-align: text-top;
-  font-size: 82%;
-  transform: translate(0, 0) rotate(45deg);
-  transform-origin: bottom left;
-  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  text-decoration: none;
-  display: inline-block;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a[target='_blank']:hover::after{
-  text-decoration: none;
-  opacity: 1;
-  transform: translate(-10%, -40%) rotate(0deg);
 }
 
 @tailwind components;

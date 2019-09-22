@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Strike from '../Strike';
+import './styles.css';
 
 const ExternalLink = ({ href, text, strike }) => (
   <>

@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-const anchorClasses = 'text-3xl';
+const anchorClasses = 'text-4xl';
 
 const ProjectList = ({ projects, title }) => (
-  <>
+  <section>
     <h2>{title}</h2>
     <div className="border-b my-4" />
-    <ul className="mb-6">
+    <ul className="mb-16">
       {projects.map(project => (
-        <li>
+        <li className="mb-1">
           {project.link.includes('http' || 'www')
             ? <a className={anchorClasses} href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a>
             : (
@@ -20,7 +20,7 @@ const ProjectList = ({ projects, title }) => (
         </li>
       ))}
     </ul>
-  </>
+  </section>
 );
 
 ProjectList.propTypes = {
