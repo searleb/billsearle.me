@@ -1,0 +1,64 @@
+{
+  "employment": {
+    "current": {
+      "title": "Nightjar",
+      "link": "https://nightjar.co"
+    },
+    "past": [
+      {
+        "title": "Agency",
+        "link": "https://agency.sc"
+      },
+      {
+        "title": "Mentally Friendly",
+        "link": "https://mentallyfriendly.com"
+      },
+      {
+        "title": "Southern Cross Austereo",
+        "link": "https://www.southerncrossaustereo.com.au/"
+      }
+    ]
+  },
+  "projects": {
+    "professional": [
+      {
+        "title": "PodcastOne Au",
+        "link": "https://www.podcastone.com.au/"
+      },
+      {
+        "title": "Hit",
+        "link": "https://www.hit.com.au/"
+      },
+      {
+        "title": "TripleM",
+        "link": "https://www.triplem.com.au/"
+      },
+      {
+        "title": "Schwarzkopf Style Studio",
+        "link": "http://style-studio.com.au/"
+      },
+      {
+        "title": "Schwarzkopf Colour Match",
+        "link": "https://style-studio.com.au/colour-match"
+      },
+      {
+        "title": "CareerHQ",
+        "link": "https://www.careerhq.com.au/"
+      },
+      {
+        "title": "PrimeX Connect Platform",
+        "link": "http://primexconnect.com/"
+      }
+    ],
+    "personal":[
+      {
+        "title": "Bero",
+        "link": "/bero"
+      },
+      {
+        "title": "Hami.sh",
+        "link": "https://github.com/searleb/hamish"
+      }
+    ]
+  }
+}

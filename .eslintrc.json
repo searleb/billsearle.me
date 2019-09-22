@@ -23,6 +23,9 @@
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-one-expression-per-line": 0,
+        "arrow-parens": [1, "as-needed"],
+        "jsx-a11y/anchor-is-valid": 0
     }
 }
