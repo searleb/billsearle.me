@@ -1,5 +1,5 @@
-import Layout from '../../components/Layout';
-import ExternalLink from '../../components/ExternalLink';
+import Layout from '../components/Layout';
+import Link from '../components/Link';
 
 export default () => (
   <Layout>
@@ -16,7 +16,8 @@ export default () => (
       </p>
 
       <p>
-        <ExternalLink
+        <Link
+          external
           href="https://itunes.apple.com/au/app/bero/id1458255218"
           text="You can download it free on iOS, here."
         />

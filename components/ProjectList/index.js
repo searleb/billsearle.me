@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-import Link from '../Link';
-
-const anchorClasses = 'text-4xl';
+import ProjectLink from '../ProjectLink';
 
 const ProjectList = ({ projects, title }) => (
   <section>
@@ -9,10 +7,13 @@ const ProjectList = ({ projects, title }) => (
     <div className="border-b my-4" />
     <ul className="mb-16">
       {projects.map(project => (
-        <li key={project.title} className="mb-1">
-          {project.link.includes('http' || 'www')
-            ? <Link external className={anchorClasses} href={project.link} text={project.title} />
-            : <Link href={project.link} className={anchorClasses} text={project.title} />}
+        <li key={project.title} className="mb-8">
+          <ProjectLink
+            external={project.link.includes('http' || 'www')}
+            href={project.link}
+            text={project.title}
+            tech={project.tech}
+          />
         </li>
       ))}
     </ul>

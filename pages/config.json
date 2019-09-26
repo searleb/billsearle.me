@@ -23,41 +23,55 @@
     "professional": [
       {
         "title": "PodcastOne Au",
-        "link": "https://www.podcastone.com.au/"
+        "link": "https://www.podcastone.com.au/",
+        "tech": "React / Next.js / Styled Components / Node / Jest"
       },
       {
         "title": "Hit",
-        "link": "https://www.hit.com.au/"
+        "link": "https://www.hit.com.au/",
+        "tech": "React / Next.js / Styled Components / Node / Jest"
       },
       {
         "title": "TripleM",
-        "link": "https://www.triplem.com.au/"
+        "link": "https://www.triplem.com.au/",
+        "tech": "React / Next.js / Styled Components / Node / Jest"
       },
       {
         "title": "Schwarzkopf Style Studio",
-        "link": "http://style-studio.com.au/"
+        "link": "http://style-studio.com.au/",
+        "tech": "HTML / SCSS / jQuery / Angular / Laravel"
       },
       {
         "title": "Schwarzkopf Colour Match",
-        "link": "https://style-studio.com.au/colour-match"
+        "link": "https://style-studio.com.au/colour-match",
+        "tech": "HTML / SCSS / jQuery / Laravel"
       },
       {
         "title": "CareerHQ",
-        "link": "https://www.careerhq.com.au/"
+        "link": "https://www.careerhq.com.au/",
+        "tech": "HTML / SCSS / Custom PHP CMS / jQuery"
+      },
+      {
+        "title": "Ground Floor Wentworth Chambers",
+        "link": "http://www.wentworthchambers.com.au/",
+        "tech": "Statamic CMS / Handlebars / SCSS"
       },
       {
         "title": "PrimeX Connect Platform",
-        "link": "http://primexconnect.com/"
+        "link": "http://primexconnect.com/",
+        "tech": "React / Laravel / Pusher.io"
       }
     ],
     "personal":[
       {
         "title": "Bero",
-        "link": "/bero"
+        "link": "/bero",
+        "tech": "React Native / Styled Components"
       },
       {
         "title": "Hami.sh",
-        "link": "https://github.com/searleb/hamish"
+        "link": "https://github.com/searleb/hamish",
+        "tech": "JS / Bash"
       }
     ]
   }

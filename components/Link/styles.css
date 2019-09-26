@@ -1,3 +1,8 @@
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 a[target='_blank']::after {
   content: '\02934';
   position: absolute;

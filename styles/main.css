@@ -23,9 +23,5 @@ p {
   @apply mb-2;
 }
 
-a:hover {
-  @apply underline;
-}
-
 @tailwind components;
 @tailwind utilities;
