@@ -2,6 +2,7 @@
 
 html {
   @apply font-semibold;
+  @apply text-gray-900;
 }
 
 h1 {

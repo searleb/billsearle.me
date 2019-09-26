@@ -15,10 +15,11 @@ a[target='_blank']::after {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  pointer-events: none;
 }
 
 a[target='_blank']:hover::after{
   text-decoration: none;
   opacity: 1;
-  transform: translate(-10%, -40%) rotate(0deg);
+  transform: translate(-20%, -40%) rotate(0deg);
 }

@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import PropTypes from 'prop-types';
+import Link from '../Link';
 
 const anchorClasses = 'text-4xl';
 
@@ -9,14 +9,10 @@ const ProjectList = ({ projects, title }) => (
     <div className="border-b my-4" />
     <ul className="mb-16">
       {projects.map(project => (
-        <li className="mb-1">
+        <li key={project.title} className="mb-1">
           {project.link.includes('http' || 'www')
-            ? <a className={anchorClasses} href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a>
-            : (
-              <Link href={project.link}>
-                <a className={anchorClasses}>{project.title}</a>
-              </Link>
-            )}
+            ? <Link external className={anchorClasses} href={project.link} text={project.title} />
+            : <Link href={project.link} className={anchorClasses} text={project.title} />}
         </li>
       ))}
     </ul>
