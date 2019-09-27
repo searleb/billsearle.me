@@ -72,6 +72,16 @@
         "title": "Hami.sh",
         "link": "https://github.com/searleb/hamish",
         "tech": "JS / Bash"
+      },
+      {
+        "title": "Text Clock",
+        "link": "https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha",
+        "tech": "jQuery / SCSS"
+      },
+      {
+        "title": "Hex Clock",
+        "link": "https://chrome.google.com/webstore/detail/hex-clock/pdonflklnjbgccapfenhjdanehgejbkj",
+        "tech": "jQuery / SCSS"
       }
     ]
   },

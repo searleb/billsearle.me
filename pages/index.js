@@ -11,7 +11,7 @@ const Home = () => {
     <Layout>
       <section className="mb-16">
         <h1>Hello,</h1>
-        <p className="text-2xl sm:text-3xl md:text-4xl leading-snug">
+        <p className="text-3xl sm:text-4xl leading-snug">
           I&apos;m a front end web developer, currently <s>studying</s> <s>employed</s> freelancing in <s>New York</s> <s>Sydney</s> Whistler for{' '}
           {employment.past.map(e => (
             <Link key={e.title} href={e.link} text={e.title} strike />

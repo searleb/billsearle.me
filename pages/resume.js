@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import config from './config.json';
 import Link from '../components/Link';
+import yearDiff from '../scripts/year-diff';
 
 const { resume: { education, work } } = config;
 
@@ -10,10 +11,12 @@ const Resume = () => (
       <h1>Resume / CV</h1>
       <h3>Summary</h3>
       <p>
-        Senior Front-End Web Developer with 5+ years experience
+        {`
+        Senior Front-End Web Developer with ${yearDiff()}+ years experience
         working across a wide range of projects and industries.
-        I&apos;ve worked on everything from marketing sites to
+        I've worked on everything from marketing sites to
         realtime trading platforms to streaming audio apps.
+        `}
       </p>
 
       <p>

@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
 import ProjectLink from '../ProjectLink';
-import './styles.css';
 
 const ProjectList = ({ projects, title }) => (
   <section>
     <h2>{title}</h2>
     <div className="border-b my-4" />
     <ul className="mb-16 animate-project-list">
-      {projects.map((project, i) => (
-        <li key={project.title} className="mb-8" style={{ animationDelay: `0.${i}s` }}>
+      {projects.map(project => (
+        <li key={project.title} className="mb-8">
           <ProjectLink
             href={project.link}
             text={project.title}
