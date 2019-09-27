@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "title": "home",
+      "link": "/"
+    },
+    {
+      "title": "resume / cv",
+      "link": "/resume"
+    },
+    {
+      "title": "bero",
+      "link": "/bero"
+    },
+    {
+      "title": "contact",
+      "link": "/contact"
+    }
+  ]
+}

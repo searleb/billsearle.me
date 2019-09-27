@@ -15,9 +15,9 @@ export default function colourClock(dark) {
   const darkColours = hours + minutes + seconds;
 
   // replace dark # numbers with lighter characters
-  let lightColours = darkColours.replace(/0/g, 'b');
-  lightColours = lightColours.replace(/1/g, 'c');
-  lightColours = lightColours.replace(/2/g, 'd');
+  let lightColours = darkColours.replace(/0/g, 'a');
+  lightColours = lightColours.replace(/1/g, 'b');
+  lightColours = lightColours.replace(/2/g, 'c');
 
   return {
     colour: `#${dark ? darkColours : lightColours}`,

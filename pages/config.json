@@ -1,7 +1,7 @@
 {
   "employment": {
     "current": {
-      "title": "Nightjar",
+      "title": "Nightjar.",
       "link": "https://nightjar.co"
     },
     "past": [
@@ -72,6 +72,74 @@
         "title": "Hami.sh",
         "link": "https://github.com/searleb/hamish",
         "tech": "JS / Bash"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "date": "2014",
+        "school": "General Assembly",
+        "location": "Sydney, Australia",
+        "title": "Web Development Immersive"
+      },
+      {
+        "date": "2013",
+        "school": "General Assembly",
+        "location": "New York, USA",
+        "title": "Front End Web Development"
+      }
+    ],
+    "work": [
+      {
+        "date": "March 2018 - June 2019",
+        "location": "Southern Cross Austereo, Aus",
+        "title": "Senior Front-End Web Developer"
+      },
+      {
+        "date": "June 2017 - March 2018",
+        "location": "Mentally Friendly Sydney, Aus",
+        "title": "Senior Front-End Web Developer"
+      },
+      {
+        "date": "November 2014 - June 2017",
+        "location": "Mentally Friendly Sydney, Aus",
+        "title": "Front-End Web Developer"
+      },
+      {
+        "date": "August 2013 - Present",
+        "location": "👨🏻‍💻",
+        "title": "Freelance Front-End Web Developer",
+        "gigs": [
+          {
+            "title": "Nightjar",
+            "location": "Whistler, Can / Sydney, Aus"
+          },
+          {
+            "title": "Southern Cross Austereo",
+            "location": "Sydney, Aus"
+          },
+          {
+            "title": "The Gift Collective",
+            "location": "Sydney, Aus"
+          },
+          {
+            "title": "Agency | Strategic Creative",
+            "location": "Sydney, Aus"
+          },
+          {
+            "title": "GuihenJones",
+            "location": "Sydney, Aus"
+          },
+          {
+            "title": "ALT//SHFT",
+            "location": "NYC, USA"
+          },
+          {
+            "title": "Untitled Productions",
+            "location": "NYC, USA"
+          }
+        ]
       }
     ]
   }

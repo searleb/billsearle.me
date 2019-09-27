@@ -16,10 +16,11 @@ export default () => (
       </p>
 
       <p>
+        You can download it free on iOS,{' '}
         <Link
-          external
+          underline
           href="https://itunes.apple.com/au/app/bero/id1458255218"
-          text="You can download it free on iOS, here."
+          text="here."
         />
       </p>
 

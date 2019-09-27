@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import ColourContext from '../../context/colour';
+import colourContext from '../../context/colour';
 
 const ColourBar = () => {
-  const { time, colour } = useContext(ColourContext);
+  const { time, colour } = useContext(colourContext);
   return (
     <>
       <div style={{ backgroundColor: colour, transition: 'background-color 0.9s ease' }} className="h-4 w-screen fixed inset-x-0 top-0" />

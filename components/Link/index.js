@@ -10,14 +10,14 @@ const propTypes = {
   text: PropTypes.string.isRequired,
   strike: PropTypes.bool,
   className: PropTypes.string,
-  external: PropTypes.bool,
 };
 
 const A = ({
-  hoverColour, setHoverColour, text, colour, ...rest
+  hoverColour, setHoverColour, text, colour, className, underline, ...rest
 }) => (
   <a
     {...rest}
+    className={`${underline ? 'underline' : ''} ${className}`}
     style={{ color: hoverColour }}
     onMouseEnter={() => {
       setHoverColour(colour);
@@ -35,14 +35,14 @@ A.propTypes = {
 };
 
 const Link = ({
-  href, text, strike, className, external,
+  href, text, strike, className, underline,
 }) => {
   const { colour } = useContext(ColourContext);
   const [hoverColour, setHoverColour] = useState('#black');
   return (
     <>
       <Strike strike={strike}>
-        {external
+        {href.includes('http' || 'www')
           ? (
             <A
               className={className}
@@ -53,6 +53,7 @@ const Link = ({
               setHoverColour={setHoverColour}
               target="_blank"
               text={text}
+              underline={underline}
             />
           )
           : (
@@ -63,6 +64,7 @@ const Link = ({
                 hoverColour={hoverColour}
                 setHoverColour={setHoverColour}
                 text={text}
+                underline={underline}
               />
             </NextLink>
           )}
@@ -79,7 +81,6 @@ Link.propTypes = {
 Link.defaultProps = {
   strike: false,
   className: '',
-  external: false,
 };
 
 export default Link;

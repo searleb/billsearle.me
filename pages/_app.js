@@ -2,6 +2,7 @@ import React from 'react';
 import App from 'next/app';
 import ColourBar from '../components/ColourBar';
 import ColourContext from '../context/colour';
+import Navigation from '../components/Navigation';
 import colourClock from '../scripts/colour-clock';
 
 class MyApp extends App {
@@ -14,7 +15,7 @@ class MyApp extends App {
   }
 
   componentDidMount() {
-    this.startTimer();
+    this.colourClock();
   }
 
   componentWillUnmount() {
@@ -22,7 +23,8 @@ class MyApp extends App {
     clearInterval(interval);
   }
 
-  startTimer() {
+  colourClock() {
+    this.setState({ ...colourClock() });
     const interval = setInterval(() => {
       this.setState({ ...colourClock() });
     }, 1000);
@@ -35,7 +37,8 @@ class MyApp extends App {
 
     return (
       <ColourContext.Provider value={{ colour, time }}>
-        {!pageProps.statusCode && <ColourBar />}
+        <ColourBar />
+        <Navigation />
         <Component {...pageProps} /> {/* eslint-disable-line react/jsx-props-no-spreading */}
       </ColourContext.Provider>
     );

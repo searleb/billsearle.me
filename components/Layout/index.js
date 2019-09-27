@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import config from '../../pages/config.json';
+import Container from '../Container';
 
 const Page = ({ children }) => (
   <>
@@ -11,9 +12,9 @@ const Page = ({ children }) => (
         content={`Bill is a front end developer, currently freelancing for ${config.employment.current.title}`}
       />
     </Head>
-    <div className="container max-w-3xl my-16 md:my-20 lg:my-32 px-6 md:pr-24">
+    <Container>
       {children}
-    </div>
+    </Container>
   </>
 );
 

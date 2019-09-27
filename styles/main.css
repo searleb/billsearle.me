@@ -1,8 +1,15 @@
 @tailwind base;
 
 html {
-  @apply font-semibold;
+  @apply font-medium;
   @apply text-gray-900;
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1em;
+  }
 }
 
 h1 {
