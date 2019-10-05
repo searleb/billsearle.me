@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import Link from '../Link';
 import Container from '../Container';
-import nav from './config';
+import nav from './config.json';
 import colourContext from '../../context/colour';
 
 const Navigation = () => {

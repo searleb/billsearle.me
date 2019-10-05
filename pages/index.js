@@ -1,5 +1,5 @@
 import React from 'react';
-import { projects, employment, meta } from './config';
+import { projects, employment, meta } from '../page-config';
 import ProjectList from '../components/ProjectList';
 import Link from '../components/Link';
 import Layout from '../components/Layout';

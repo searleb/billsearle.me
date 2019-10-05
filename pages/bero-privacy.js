@@ -1,5 +1,5 @@
 import PageHead from '../components/PageHead';
-import { meta } from './config';
+import { meta } from '../page-config';
 import Layout from '../components/Layout';
 
 /* eslint-disable max-len */

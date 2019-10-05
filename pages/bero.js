@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PageHead from '../components/PageHead';
-import { meta } from './config';
+import { meta } from '../page-config';
 
 export default () => (
   <Layout>
