@@ -1,6 +1,11 @@
+import PageHead from '../components/PageHead';
+import { meta } from './config';
+import Layout from '../components/Layout';
+
 /* eslint-disable max-len */
 export default () => (
-  <>
+  <Layout>
+    <PageHead meta={meta.beroPrivacy} />
     <h2>Privacy Policy</h2>
     <p>
       Bill Searle built the Bero app as a Free app. This SERVICE is provided by
@@ -101,5 +106,5 @@ export default () => (
       If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact
       me.
     </p>
-  </>
+  </Layout>
 );

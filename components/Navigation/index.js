@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import Link from '../Link';
 import Container from '../Container';
-import nav from './config.json';
+import nav from './config';
 import colourContext from '../../context/colour';
 
 const Navigation = () => {
@@ -10,9 +10,9 @@ const Navigation = () => {
     <Container>
       <nav className="border-b-2" style={{ borderBottomColor: colour, transition: 'border-color 0.9s ease' }}>
         <ul className="mb-1">
-          {nav.items.map(i => (
-            <li className="inline mr-4">
-              <Link text={i.title} href={i.link} />
+          {nav.items.map(item => (
+            <li className="inline mr-4" key={item.title}>
+              <Link text={item.title} href={item.link} />
             </li>
           ))}
         </ul>

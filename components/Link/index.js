@@ -12,18 +12,21 @@ const propTypes = {
   className: PropTypes.string,
 };
 
+const defaultTextColour = '#1a202c';
+
 const A = ({
-  hoverColour, setHoverColour, text, colour, className, underline, ...rest
+  hoverColour, setHoverColour, text, colour, className, underline, href, ...rest
 }) => (
   <a
     {...rest}
+    href={href}
     className={`${underline ? 'underline' : ''} ${className}`}
     style={{ color: hoverColour }}
     onMouseEnter={() => {
       setHoverColour(colour);
     }}
     onMouseLeave={() => {
-      setHoverColour('#1a202c');
+      setHoverColour(defaultTextColour);
     }}
   >
     {text}
@@ -38,34 +41,23 @@ const Link = ({
   href, text, strike, className, underline,
 }) => {
   const { colour } = useContext(ColourContext);
-  const [hoverColour, setHoverColour] = useState('#black');
+  const [hoverColour, setHoverColour] = useState(defaultTextColour);
+  const sharedProps = {
+    className,
+    colour,
+    hoverColour,
+    setHoverColour,
+    text,
+    underline,
+  };
   return (
     <>
       <Strike strike={strike}>
         {href.includes('http' || 'www')
-          ? (
-            <A
-              className={className}
-              colour={colour}
-              hoverColour={hoverColour}
-              href={href}
-              rel="noopener noreferrer"
-              setHoverColour={setHoverColour}
-              target="_blank"
-              text={text}
-              underline={underline}
-            />
-          )
+          ? <A {...sharedProps} href={href} rel="noopener noreferrer" target="_blank" />
           : (
             <NextLink href={href} passHref>
-              <A
-                className={className}
-                colour={colour}
-                hoverColour={hoverColour}
-                setHoverColour={setHoverColour}
-                text={text}
-                underline={underline}
-              />
+              <A {...sharedProps} />
             </NextLink>
           )}
       </Strike>

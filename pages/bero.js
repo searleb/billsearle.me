@@ -1,8 +1,11 @@
 import Layout from '../components/Layout';
 import Link from '../components/Link';
+import PageHead from '../components/PageHead';
+import { meta } from './config';
 
 export default () => (
   <Layout>
+    <PageHead meta={meta.bero} />
     <article>
       <h1 className="mb-6">
         Bero
