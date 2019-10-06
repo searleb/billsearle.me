@@ -28,13 +28,13 @@ export default () => (
       </p>
 
       <figure className="my-10">
-        <img src="/static/bero-hike-v.jpg" alt="Bero on a hike" />
+        <img src="/static/bero/bero-hike-v.jpg" alt="Bero on a hike" />
         <small><em>Bero keeping us on track in North Vancouver.</em></small>
       </figure>
 
       <div className="flex">
-        <img className="flex-1 w-1 mr-6" src="/static/bero-native-line.png" alt="Bero React Native Screenshot" />
-        <img className="flex-1 w-1" src="/static/bero-native.png" alt="Bero React Native Screenshot" />
+        <img className="flex-1 w-1 mr-6" src="/static/bero/bero-native-line.png" alt="Bero React Native Screenshot" />
+        <img className="flex-1 w-1" src="/static/bero/bero-native.png" alt="Bero React Native Screenshot" />
       </div>
     </article>
   </Layout>

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export",
-    "deploy": "npm run export && now"
+    "deploy": "npm run export && now --prod"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",

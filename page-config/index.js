@@ -37,6 +37,16 @@ export const projects = {
       tech: 'React / Next.js / Styled Components / Node / Jest',
     },
     {
+      title: 'Hubble Talent',
+      link: '/hubble',
+      tech: 'React / Ant Design',
+    },
+    {
+      title: 'PrimeX Connect App',
+      link: 'http://primexconnect.com/',
+      tech: 'React / Laravel / Pusher.io',
+    },
+    {
       title: 'Schwarzkopf Style Studio',
       link: 'http://style-studio.com.au/',
       tech: 'HTML / SCSS / jQuery / Angular / Laravel',
@@ -55,11 +65,6 @@ export const projects = {
       title: 'Ground Floor Wentworth Chambers',
       link: 'http://www.wentworthchambers.com.au/',
       tech: 'Statamic CMS / Handlebars / SCSS',
-    },
-    {
-      title: 'PrimeX Connect Platform',
-      link: 'http://primexconnect.com/',
-      tech: 'React / Laravel / Pusher.io',
     },
   ],
   personal: [
@@ -180,6 +185,10 @@ export const meta = {
   resume: {
     title: `Resume / CV | ${suffix}`,
     desc: 'Take a glance at my employment history.',
+  },
+  hubble: {
+    title: `Hubble Talent | ${suffix}`,
+    desc: 'Internal SCA Project - Hubble Talent Dashboard',
   },
 };
 
