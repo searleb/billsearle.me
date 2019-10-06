@@ -197,7 +197,7 @@ export const meta = {
   },
   checkin: {
     title: `Check In | ${suffix}`,
-    desc: 'Internal Mentall Friendly Project - Client Checkin and Dashboard',
+    desc: 'Internal Mentally Friendly Project - Client Check-in and Dashboard',
   },
 };
 
