@@ -2,11 +2,9 @@ import PropTypes from 'prop-types';
 import Container from '../Container';
 
 const Page = ({ children }) => (
-  <>
-    <Container>
-      {children}
-    </Container>
-  </>
+  <Container>
+    {children}
+  </Container>
 );
 
 Page.propTypes = {

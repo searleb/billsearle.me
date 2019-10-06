@@ -47,6 +47,11 @@ export const projects = {
       tech: 'React / Laravel / Pusher.io',
     },
     {
+      title: 'Check In',
+      link: '/check-in',
+      tech: 'React / Ant Design',
+    },
+    {
       title: 'Schwarzkopf Style Studio',
       link: 'http://style-studio.com.au/',
       tech: 'HTML / SCSS / jQuery / Angular / Laravel',
@@ -189,6 +194,10 @@ export const meta = {
   hubble: {
     title: `Hubble Talent | ${suffix}`,
     desc: 'Internal SCA Project - Hubble Talent Dashboard',
+  },
+  checkin: {
+    title: `Check In | ${suffix}`,
+    desc: 'Internal Mentall Friendly Project - Client Checkin and Dashboard',
   },
 };
 
