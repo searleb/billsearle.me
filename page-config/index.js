@@ -79,6 +79,11 @@ export const projects = {
       tech: 'React Native / Styled Components',
     },
     {
+      title: 'Six Hundred Thousand Colour Schemes',
+      link: '/six-hundred-thousand',
+      tech: 'Node',
+    },
+    {
       title: 'Hami.sh',
       link: 'https://github.com/searleb/hamish',
       tech: 'JS / Bash',
@@ -198,6 +203,10 @@ export const meta = {
   checkin: {
     title: `Check In | ${suffix}`,
     desc: 'Internal Mentally Friendly Project - Client Check-in and Dashboard',
+  },
+  six: {
+    title: `Six Hundred Thousand Colour Schemes | ${suffix}`,
+    desc: 'Six Hundred Thousand Contrast Safe Pantone Colour Schemes.',
   },
 };
 
