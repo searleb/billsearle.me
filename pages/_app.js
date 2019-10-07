@@ -1,11 +1,11 @@
 import React from 'react';
 import App from 'next/app';
+import Head from 'next/head';
 import ColourBar from '../components/ColourBar';
 import ColourContext from '../context/colour';
 import Navigation from '../components/Navigation';
 import colourClock from '../scripts/colour-clock';
 import '../styles/main.css';
-import Head from 'next/head';
 
 class MyApp extends App {
   constructor(props) {

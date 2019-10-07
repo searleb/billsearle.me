@@ -52,11 +52,12 @@ export default (req, res) => {
       index: `${base.name} - ${base.hex} is ${index} of ${colorCombinations.colors.length}, with ${base.combinations.length} combination${base.combinations.length > 1 ? 's' : ''}.`,
       colour: base,
       totalCombinations: colorCombinations.count,
+      theme: {
+        primary: base.hex,
+        secondary: base.combinations[randomNumber(base.combinations.length - 1)].hex,
+        tertiary: base.combinations[randomNumber(base.combinations.length - 1)].hex,
+      },
     };
   }
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  res.setHeader('Content-Type', 'application/json');
-  res.writeHead(200, 'success');
   res.end(JSON.stringify(pantoneTheme()));
 };
