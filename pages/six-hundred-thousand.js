@@ -48,7 +48,7 @@ class Six extends React.PureComponent {
 
           {six && (
           <>
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex flex-wrap items-center justify-between mb-4">
               <button
                 type="button"
                 onClick={this.fetchColorCombo}
@@ -64,11 +64,11 @@ class Six extends React.PureComponent {
               <p>{six.index}</p>
             </div>
 
-            <div className="flex flex-wrap justify-between">
+            <div className="flex flex-wrap justify-around">
               {six.colour.combinations.map(combo => (
                 <div
                   key={combo.name}
-                  className="w-32 h-32 m-1 p-2 text-center flex justify-center items-center border-2 rounded-lg p-4"
+                  className="w-32 h-32 m-1 text-center flex justify-center items-center border-2 rounded-lg p-4"
                   style={{
                     background: combo.hex,
                     color: six.colour.hex,
