@@ -3,6 +3,11 @@ import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PageHead from '../components/PageHead';
 import { meta } from '../page-config';
+import Card from '../components/Card';
+import ColourSplat from '../components/ColourSplat';
+import DemoCard from '../components/SixDemo/Card';
+import ImagePill from '../components/SixDemo/ImagePill';
+import DoubleBorder from '../components/SixDemo/DoubleBorder';
 
 class Six extends React.PureComponent {
   constructor(props) {
@@ -29,8 +34,24 @@ class Six extends React.PureComponent {
     return (
       <Layout>
         <PageHead meta={meta.six} />
+        {six && (
+          <button
+            type="button"
+            onClick={this.fetchColorCombo}
+            className="border-2 border-r-0 rounded-l-lg p-4 fixed right-0 transition-bg transition-border transition-colors"
+            style={{
+              background: six.colour.hex,
+              color: six.colour.combinations[0].hex,
+              borderColor: six.colour.combinations[0].hex,
+            }}
+          >
+            <span role="img" aria-label="colour-emoji">
+            👉 🎨
+            </span>
+          </button>
+        )}
         <article>
-          <h1 className="mb-8">600,000 Colour Schemes</h1>
+          <h1 className="mb-8 leading-none">600,000 Colour Schemes</h1>
           <p>
             After discovering{' '}
             <Link text="colorable," href="https://colorable.jxnblk.com/" underline />
@@ -39,49 +60,50 @@ class Six extends React.PureComponent {
             So I found a list of 2309 Pantone colours and ran them all together
             with a threshold of 4.5, which insures a usable level of contrast.
           </p>
-          <p className="mb-8">
+          <p>
             What I was able generate was a list of 1937 Pantone colours
             with a total of {(six && six.totalCombinations.toLocaleString()) || '600000'} safe to use combinations.
+          </p>
+          <p className="mb-8">
+            The resulting JSON file is too big to deliver and process on
+            the front end so I&apos;ve built a small
+            node endpoint that will return a random colour set on a GET.
           </p>
 
           {!six && 'loading...'}
 
           {six && (
-          <>
-            <div className="flex items-center justify-between mb-4">
-              <button
-                type="button"
-                onClick={this.fetchColorCombo}
-                className="border-2 rounded-lg p-4 m-1"
-                style={{
-                  background: six.colour.hex,
-                  color: six.colour.combinations[0].hex,
-                  borderColor: six.colour.combinations[0].hex,
-                }}
-              >
-              Refresh
-              </button>
-              <p>{six.index}</p>
-            </div>
-
-            <div className="flex flex-wrap justify-between">
-              {six.colour.combinations.map(combo => (
-                <div
-                  key={combo.name}
-                  className="w-32 h-32 m-1 p-2 text-center flex justify-center items-center border-2 rounded-lg p-4"
-                  style={{
-                    background: combo.hex,
-                    color: six.colour.hex,
-                    borderColor: six.colour.hex,
-                  }}
-                >
-                  {combo.name}
-                  <br />
-                  {combo.hex}
+            <>
+              <div className="flex flex-wrap flex-1 justify-between">
+                <DemoCard theme={six.theme} text={six.index} onClick={this.fetchColorCombo} />
+                <div className="w-full sm:w-1/2">
+                  <DoubleBorder theme={six.theme} />
+                  <DoubleBorder theme={six.theme} />
                 </div>
-              ))}
-            </div>
-          </>
+                <div className="flex flex-wrap sm:w-1/2 content-start">
+                  <ImagePill theme={six.theme} img="/static/trainwreck.jpg" text="Macey Boyle" invert />
+                  <ImagePill theme={six.theme} img="/static/skybridge.jpg" text="Gianni Russel" />
+                  <div className="hidden sm:block">
+                    <ImagePill theme={six.theme} img="/static/skybridge.jpg" text="Gianni Russel" />
+                    <ImagePill theme={six.theme} img="/static/trainwreck.jpg" text="Macey Boyle" invert />
+                  </div>
+                </div>
+
+                <Card theme={six.theme}>
+                  <h4>All {six.colour.combinations.length} Combinations</h4>
+                  <div className="border-b my-4" style={{ borderColor: six.theme.tertiary }} />
+                  <div className="flex flex-wrap justify-between">
+                    {six.colour.combinations.map(combo => (
+                      <ColourSplat
+                        key={combo.hex}
+                        primary={six.colour.hex}
+                        secondary={combo.hex}
+                      />
+                    ))}
+                  </div>
+                </Card>
+              </div>
+            </>
           )}
         </article>
       </Layout>

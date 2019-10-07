@@ -24,6 +24,10 @@ h3 {
   @apply text-4xl;
 }
 
+h4 {
+  @apply text-xl;
+}
+
 p {
   @apply text-xl;
   @apply font-normal;
