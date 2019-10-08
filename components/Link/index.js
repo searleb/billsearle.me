@@ -12,7 +12,7 @@ const propTypes = {
   className: PropTypes.string,
 };
 
-const defaultTextColour = '#1a202c';
+const defaultTextColour = 'currentColor';
 
 const A = ({
   hoverColour, setHoverColour, text, colour, className, underline, href, ...rest

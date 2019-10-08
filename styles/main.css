@@ -6,6 +6,13 @@ html {
   font-size: 0.9em;
 }
 
+@screen dark-mode {
+  html {
+    @apply bg-dark-mode;
+    @apply text-gray-400;
+  }
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 1em;
