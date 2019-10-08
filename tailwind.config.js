@@ -1,10 +1,10 @@
 /* eslint-disable global-require */
 module.exports = {
   theme: {
-    screens: {
-      'dark-mode': { raw: '(prefers-color-scheme: dark)' },
-    },
     extend: {
+      screens: {
+        'dark-mode': { raw: '(prefers-color-scheme: dark)' },
+      },
       borderRadius: {
         xl: '1.5rem',
       },
