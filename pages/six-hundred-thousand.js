@@ -38,7 +38,7 @@ class Six extends React.PureComponent {
           <button
             type="button"
             onClick={this.fetchColorCombo}
-            className="border-2 border-r-0 rounded-l-lg p-4 fixed right-0 transition-bg transition-border transition-colors"
+            className="border-2 border-r-0 rounded-l-lg p-4 fixed right-0 z-10 transition-bg transition-border transition-colors"
             style={{
               background: six.colour.hex,
               color: six.colour.combinations[0].hex,
