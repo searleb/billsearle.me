@@ -8,7 +8,7 @@ const Navigation = () => {
   const { colour } = useContext(colourContext);
   return (
     <Container>
-      <nav className="border-b-2" style={{ borderBottomColor: colour, transition: 'border-color 0.9s ease' }}>
+      <nav className="border-b-2 transition-border transition-750" style={{ borderBottomColor: colour }}>
         <ul className="mb-1">
           {nav.items.map(item => (
             <li className="inline mr-4" key={item.title}>

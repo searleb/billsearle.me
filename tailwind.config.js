@@ -9,7 +9,7 @@ module.exports = {
         xl: '1.5rem',
       },
       colors: {
-        'dark-mode': '#151515',
+        'dark-mode': '#282B2F',
       },
     },
   },

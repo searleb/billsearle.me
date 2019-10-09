@@ -46,7 +46,7 @@ const CheckIn = () => (
           MF staff only rendered fields.
         </li>
       </ul>
-      <img src="/static/checkin/checkin-full.png" alt="Checkin App" className="max-w-xs mb-8" />
+      <img src="/static/checkin/checkin-full.png" alt="Checkin App" className="sm:w-1/2 mb-8" />
 
       <h3>Dashboard</h3>
       <ul className="list-disc list-inside mb-8">

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const ImagePill = ({
   theme, img, text, invert,
 }) => (
-  <div className="px-2 py-4 sm:w-1/2">
+  <div className="px-2 py-4 w-1/2">
     <div
       className="shadow-xl rounded-xl overflow-hidden transition-bg transition-colors"
       style={{

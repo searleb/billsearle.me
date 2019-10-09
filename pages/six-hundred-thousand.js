@@ -51,7 +51,7 @@ class Six extends React.PureComponent {
           </button>
         )}
         <article>
-          <h1 className="mb-8 leading-none">600,000 Colour Schemes</h1>
+          <h1 className="mb-8 leading-none">600,000 Pantone Colour Schemes</h1>
           <p>
             After discovering{' '}
             <Link text="colorable," href="https://colorable.jxnblk.com/" underline />
@@ -64,10 +64,13 @@ class Six extends React.PureComponent {
             What I was able generate was a list of 1937 Pantone colours
             with a total of {(six && six.totalCombinations.toLocaleString()) || '600000'} safe to use combinations.
           </p>
-          <p className="mb-8">
+          <p>
             The resulting JSON file is too big to deliver and process on
             the front end so I&apos;ve built a small
             node endpoint that will return a random colour set on a GET.
+          </p>
+          <p className="mb-8">
+            Below are a few components demoing how all these can actaully be used.
           </p>
 
           {!six && 'loading...'}
@@ -78,7 +81,9 @@ class Six extends React.PureComponent {
                 <DemoCard theme={six.theme} text={six.index} onClick={this.fetchColorCombo} />
                 <div className="w-full sm:w-1/2">
                   <DoubleBorder theme={six.theme} />
-                  <DoubleBorder theme={six.theme} />
+                  <div className="hidden sm:block">
+                    <DoubleBorder theme={six.theme} />
+                  </div>
                 </div>
                 <div className="flex flex-wrap sm:w-1/2 content-start">
                   <ImagePill theme={six.theme} img="/static/trainwreck.jpg" text="Macey Boyle" invert />

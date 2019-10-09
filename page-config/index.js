@@ -1,7 +1,7 @@
 export const employment = {
   current: {
-    title: 'Nightjar.',
-    link: 'https://nightjar.co',
+    title: 'Engine Digital.',
+    link: 'https://enginedigital.com',
   },
   past: [
     {
@@ -15,6 +15,10 @@ export const employment = {
     {
       title: 'Southern Cross Austereo',
       link: 'https://www.southerncrossaustereo.com.au/',
+    },
+    {
+      title: 'Nightjar',
+      link: 'https://nightjar.co',
     },
   ],
 };
@@ -79,7 +83,7 @@ export const projects = {
       tech: 'React Native / Styled Components',
     },
     {
-      title: 'Six Hundred Thousand Colour Schemes',
+      title: '600,000 Pantone Colour Schemes',
       link: '/six-hundred-thousand',
       tech: 'Node',
     },
@@ -138,8 +142,12 @@ export const resume = {
       title: 'Freelance Front-End Web Developer',
       gigs: [
         {
+          title: 'Engine Digital',
+          location: 'Vancouver, Can',
+        },
+        {
           title: 'Nightjar',
-          location: 'Whistler, Can / Sydney, Aus',
+          location: 'Sydney, Aus',
         },
         {
           title: 'Southern Cross Austereo',

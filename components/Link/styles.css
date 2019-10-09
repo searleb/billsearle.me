@@ -27,7 +27,7 @@ a[target='_blank']::after {
   pointer-events: none;
 }
 
-a[target='_blank']:hover::after{
+a[target='_blank']:hover::after {
   text-decoration: none;
   opacity: 1;
   transform: translate(-20%, -40%) rotate(0deg);
