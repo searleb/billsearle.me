@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
@@ -44,6 +45,17 @@ class MyApp extends App {
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
           <link rel="manifest" href="/static/site.webmanifest" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1" />
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-44359005-1');
+            `,
+          }}
+          />
         </Head>
         <ColourBar />
         <Navigation />
