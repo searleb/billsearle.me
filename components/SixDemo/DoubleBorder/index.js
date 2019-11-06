@@ -9,12 +9,12 @@ const DoubleBorder = ({ theme }) => (
     <div>
       <Layer style={{
         transform: 'translate(0px, 0px)',
-        background: theme.primary,
+        background: theme.secondary,
       }}
       />
       <Layer style={{
         transform: 'translate(1rem, -2rem)',
-        background: theme.secondary,
+        background: theme.primary,
       }}
       />
       <Layer style={{
