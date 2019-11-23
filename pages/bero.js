@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PageHead from '../components/PageHead';
 import { meta } from '../page-config';
+import Img from '../components/Img';
 
 export default () => (
   <Layout>
@@ -28,13 +29,21 @@ export default () => (
       </p>
 
       <figure className="my-10">
-        <img src="/static/bero/bero-hike-v.jpg" alt="Bero on a hike" />
+        <Img src="/static/bero/bero-hike-v.jpg" alt="Bero on a hike" />
         <small><em>Bero keeping us on track in North Vancouver.</em></small>
       </figure>
 
       <div className="flex">
-        <img className="flex-1 w-1 mr-6" src="/static/bero/bero-native-line.png" alt="Bero React Native Screenshot" />
-        <img className="flex-1 w-1" src="/static/bero/bero-native.png" alt="Bero React Native Screenshot" />
+        <Img
+          className="flex-1 w-1 mr-6"
+          src="/static/bero/bero-native-line.png"
+          alt="Bero React Native Screenshot"
+        />
+        <Img
+          className="flex-1 w-1"
+          src="/static/bero/bero-native.png"
+          alt="Bero React Native Screenshot"
+        />
       </div>
     </article>
   </Layout>

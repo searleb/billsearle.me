@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Img from '../../Img';
 
 const ImagePill = ({
   theme, img, text, invert,
@@ -11,7 +12,7 @@ const ImagePill = ({
         color: invert ? theme.primary : theme.secondary,
       }}
     >
-      <img
+      <Img
         src={img}
         alt="train"
         className="rounded-b-xl shadow-md"
