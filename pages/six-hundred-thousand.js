@@ -13,7 +13,20 @@ class Six extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      six: null,
+      six: {
+        totalCombinations: '-',
+        theme: {
+          primary: '#fff',
+          secondary: '#aaa',
+          tertiary: '#aaa',
+        },
+        colour: {
+          hex: '',
+          combinations: [{
+            hex: '#fff',
+          }],
+        },
+      },
     };
   }
 
@@ -73,43 +86,37 @@ class Six extends React.PureComponent {
             Below are a few components demoing how all these can actaully be used.
           </p>
 
-          {!six && 'loading...'}
-
-          {six && (
-            <>
-              <div className="flex flex-wrap flex-1 justify-between">
-                <DemoCard theme={six.theme} text={six.index} onClick={this.fetchColorCombo} />
-                <div className="w-full sm:w-1/2">
-                  <DoubleBorder theme={six.theme} />
-                  <div className="hidden sm:block">
-                    <DoubleBorder theme={six.theme} />
-                  </div>
-                </div>
-                <div className="flex flex-wrap sm:w-1/2 content-start">
-                  <ImagePill theme={six.theme} img="/static/trainwreck.jpg" text="Macey Boyle" invert />
-                  <ImagePill theme={six.theme} img="/static/skybridge.jpg" text="Gianni Russel" />
-                  <div className="hidden sm:block">
-                    <ImagePill theme={six.theme} img="/static/skybridge.jpg" text="Gianni Russel" />
-                    <ImagePill theme={six.theme} img="/static/trainwreck.jpg" text="Macey Boyle" invert />
-                  </div>
-                </div>
-
-                <Card theme={six.theme}>
-                  <h4>All {six.colour.combinations.length} Combinations</h4>
-                  <div className="border-b my-4" style={{ borderColor: six.theme.tertiary }} />
-                  <div className="flex flex-wrap justify-between">
-                    {six.colour.combinations.map(combo => (
-                      <ColourSplat
-                        key={combo.hex}
-                        primary={six.colour.hex}
-                        secondary={combo.hex}
-                      />
-                    ))}
-                  </div>
-                </Card>
+          <div className="flex flex-wrap flex-1 justify-between">
+            <DemoCard theme={six.theme} text={six.index} onClick={this.fetchColorCombo} />
+            <div className="w-full sm:w-1/2">
+              <DoubleBorder theme={six.theme} />
+              <div className="hidden sm:block">
+                <DoubleBorder theme={six.theme} />
               </div>
-            </>
-          )}
+            </div>
+            <div className="flex flex-wrap sm:w-1/2 content-start">
+              <ImagePill theme={six.theme} img="/static/trainwreck.jpg" text="Macey Boyle" invert />
+              <ImagePill theme={six.theme} img="/static/skybridge.jpg" text="Gianni Russel" />
+              <div className="hidden sm:block">
+                <ImagePill theme={six.theme} img="/static/skybridge.jpg" text="Gianni Russel" />
+                <ImagePill theme={six.theme} img="/static/trainwreck.jpg" text="Macey Boyle" invert />
+              </div>
+            </div>
+
+            <Card theme={six.theme}>
+              <h4>All {six.colour.combinations.length} Combinations</h4>
+              <div className="border-b my-4" style={{ borderColor: six.theme.tertiary }} />
+              <div className="flex flex-wrap justify-between">
+                {six.colour.combinations.map(combo => (
+                  <ColourSplat
+                    key={combo.hex}
+                    primary={six.colour.hex}
+                    secondary={combo.hex}
+                  />
+                ))}
+              </div>
+            </Card>
+          </div>
         </article>
       </Layout>
     );
