@@ -2,6 +2,7 @@
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
+import { AnimatePresence } from 'framer-motion';
 import ColourBar from '../components/ColourBar';
 import ColourContext from '../context/colour';
 import Navigation from '../components/Navigation';
@@ -36,7 +37,7 @@ class MyApp extends App {
 
   render() {
     const { colour, time } = this.state;
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, router } = this.props;
 
     return (
       <ColourContext.Provider value={{ colour, time }}>
@@ -51,7 +52,6 @@ class MyApp extends App {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-
               gtag('config', 'UA-44359005-1');
             `,
           }}
@@ -59,7 +59,9 @@ class MyApp extends App {
         </Head>
         <ColourBar />
         <Navigation />
-        <Component {...pageProps} /> {/* eslint-disable-line react/jsx-props-no-spreading */}
+        <AnimatePresence exitBeforeEnter>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
       </ColourContext.Provider>
     );
   }
