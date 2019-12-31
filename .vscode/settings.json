@@ -1,3 +1,5 @@
 {
-  "eslint.enable": true
+  "eslint.enable": true,
+  "stylelint.enable": true,
+  "css.validate": false,
 }

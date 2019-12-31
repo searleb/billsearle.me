@@ -1,15 +1,21 @@
 @tailwind base;
 
 html {
-  @apply font-medium;
-  @apply text-gray-900;
+  @apply font-medium text-gray-900;
   font-size: 0.9em;
+}
+
+*:focus, button:focus {
+  outline-style: solid;
+  outline-color: #000;
 }
 
 @screen dark-mode {
   html {
-    @apply bg-dark-mode;
-    @apply text-gray-400;
+    @apply bg-dark-mode text-gray-300;
+  }
+  *:focus, button:focus {
+    outline-color: #fff;
   }
 }
 
@@ -36,9 +42,7 @@ h4 {
 }
 
 p {
-  @apply text-xl;
-  @apply font-normal;
-  @apply mb-2;
+  @apply text-xl font-normal mb-2;
 }
 
 @tailwind components;

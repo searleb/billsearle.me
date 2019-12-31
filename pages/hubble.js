@@ -31,30 +31,30 @@ const Hubble = () => (
       <ul className="list-disc list-inside">
         <li>
           Authentication - with auto session expiry logout and user permission levels.
-          <Img src="/static/hubble/home.png" alt="Hubble Home" />
+          <Img src="/hubble/home.png" alt="Hubble Home" />
         </li>
         <li>
           Browse and filter profiles with multiple options.
-          <Img src="/static/hubble/browse.png" alt="Hubble Browse" />
-          <Img src="/static/hubble/filter.png" alt="Hubble Filter" />
+          <Img src="/hubble/browse.png" alt="Hubble Browse" />
+          <Img src="/hubble/filter.png" alt="Hubble Filter" />
         </li>
         <li>
           View Profile - tabbed view for more info.<br />
           Everything is editabled inline depending on user permission,
           including photo/video/audio uploads.
-          <Img src="/static/hubble/profile.png" alt="Hubble Profile" />
+          <Img src="/hubble/profile.png" alt="Hubble Profile" />
         </li>
         <li>
           View past and current profile assessments.
-          <Img src="/static/hubble/assess.png" alt="Hubble Assessment" />
+          <Img src="/hubble/assess.png" alt="Hubble Assessment" />
         </li>
         <li>
           Perform assessments.
-          <Img src="/static/hubble/assess-final.png" alt="Hubble Assessment Finalise" />
+          <Img src="/hubble/assess-final.png" alt="Hubble Assessment Finalise" />
         </li>
         <li>
           Site administration.
-          <Img src="/static/hubble/admin.png" alt="Hubble Admin" />
+          <Img src="/hubble/admin.png" alt="Hubble Admin" />
         </li>
       </ul>
       <small className="opacity-50 text-xs"><em>*All data shown in app is mock data.</em></small>

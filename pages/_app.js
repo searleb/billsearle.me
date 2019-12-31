@@ -19,7 +19,7 @@ class MyApp extends App {
   }
 
   componentDidMount() {
-    this.colourClock();
+    this.startColourClock();
   }
 
   componentWillUnmount() {
@@ -27,7 +27,7 @@ class MyApp extends App {
     clearInterval(interval);
   }
 
-  colourClock() {
+  startColourClock() {
     this.setState({ ...colourClock() });
     const interval = setInterval(() => {
       this.setState({ ...colourClock() });
@@ -42,10 +42,10 @@ class MyApp extends App {
     return (
       <ColourContext.Provider value={{ colour, time }}>
         <Head>
-          <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
-          <link rel="manifest" href="/static/site.webmanifest" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1" />
           <script dangerouslySetInnerHTML={{
             __html: `
