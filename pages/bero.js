@@ -34,16 +34,18 @@ export default () => (
       </figure>
 
       <div className="flex">
-        <Img
-          className="flex-1 w-1 mr-6"
-          src="/bero/bero-native-line.png"
-          alt="Bero React Native Screenshot"
-        />
-        <Img
-          className="flex-1 w-1"
-          src="/bero/bero-native.png"
-          alt="Bero React Native Screenshot"
-        />
+        <div className="flex-1 w-1 mr-6">
+          <Img
+            src="/bero/bero-native-line.png"
+            alt="Bero React Native Screenshot"
+          />
+        </div>
+        <div className="flex-1 w-1">
+          <Img
+            src="/bero/bero-native.png"
+            alt="Bero React Native Screenshot"
+          />
+        </div>
       </div>
     </article>
   </Layout>
