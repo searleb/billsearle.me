@@ -1,4 +1,4 @@
-import { useState, useContext, PureComponent } from 'react';
+import { useState, useContext, forwardRef } from 'react';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 import Strike from '../Strike';
@@ -14,29 +14,25 @@ const propTypes = {
 
 const defaultTextColour = 'currentColor';
 
-class A extends PureComponent {
-  render() {
-    const {
-      hoverColour, setHoverColour, text, colour, className, underline, href, ...rest
-    } = this.props;
-    return (
-      <a
-        {...rest}
-        href={href}
-        className={`${underline ? 'underline' : ''} ${className}`}
-        style={{ color: hoverColour }}
-        onMouseEnter={() => {
-          setHoverColour(colour);
-        }}
-        onMouseLeave={() => {
-          setHoverColour(defaultTextColour);
-        }}
-      >
-        {text}
-      </a>
-    );
-  }
-}
+const A = forwardRef(({
+  hoverColour, setHoverColour, text, colour, className, underline, href, ...rest
+}, ref) => (
+  <a
+    {...rest}
+    ref={ref}
+    href={href}
+    className={`${underline ? 'underline' : ''} ${className}`}
+    style={{ color: hoverColour }}
+    onMouseEnter={() => {
+      setHoverColour(colour);
+    }}
+    onMouseLeave={() => {
+      setHoverColour(defaultTextColour);
+    }}
+  >
+    {text}
+  </a>
+));
 
 A.propTypes = {
   ...propTypes,
