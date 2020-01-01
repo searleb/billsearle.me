@@ -4,7 +4,7 @@ import Head from 'next/head';
 const PageHead = ({ meta }) => (
   <Head>
     <title>{meta.title}</title>
-    <meta type="description" content={meta.desc} />
+    <meta name="description" content={meta.desc} />
   </Head>
 );
 
