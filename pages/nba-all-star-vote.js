@@ -73,7 +73,7 @@ export default () => (
       </div>
 
       <p className="mt-12">
-        The project will be live <Link underline href="https://vote.nba.com/en" text="here" /> during Jan 2020.
+        The project will be live at <Link underline href="https://vote.nba.com/en" text="vote.nba.com" /> during Jan 2020.
       </p>
     </article>
   </Layout>
