@@ -2,4 +2,5 @@
   "eslint.enable": true,
   "stylelint.enable": true,
   "css.validate": false,
+  "cSpell.enabled": false,
 }

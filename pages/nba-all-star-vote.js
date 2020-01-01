@@ -1,0 +1,80 @@
+/* eslint-disable jsx-a11y/media-has-caption */
+import PageHead from '../components/PageHead';
+import { meta } from '../page-config';
+import Layout from '../components/Layout';
+import Link from '../components/Link';
+import Img from '../components/Img';
+
+export default () => (
+  <Layout>
+    <PageHead meta={meta.nba} />
+    <article>
+      <h1>NBA All-Star Vote</h1>
+      <p>
+          For 2020 the NBA voting app was redesigned and rebuilt by{' '}
+        <Link
+          href="https://enginedigital.com"
+          text="Engine Digital."
+          underline
+        />
+      </p>
+      <p>
+        I was fortunate to be taken on as the lead developer,
+        primarily focused on the architecture and functionality of
+        the application with support from two UI developers.
+      </p>
+      <p>
+        I used Next.js as the framework and deployed via
+        pre-rendering all the pages to be staticlly hosted and distibuted over a CND.
+      </p>
+      <figure className="mt-12">
+        <video src="/nba/nba.mp4" controls />
+        <figcaption>A quick walk through of the 2020 NBA All Star Voting app.</figcaption>
+      </figure>
+
+      <h4 className="mt-12">Features include</h4>
+      <ul className="list-inside list-disc">
+        <li className="text-base">Multiple language support, including image assets.</li>
+        <li className="text-base">First visit only onboarding.</li>
+        <li className="text-base">Interactive court view.</li>
+        <li className="text-base">Search, filter and sort all players.</li>
+        <li className="text-base">
+          Add and remove votes, limited by position and conference.
+          I used reselect with redux to persists search results across
+          page navigation without recalculating unless a search parameter changes.
+        </li>
+        <li className="text-base">Pre-fill votes via a query param.</li>
+        <li className="text-base">ESI integration.</li>
+        <li className="text-base">Country dependent dynamic submit form.</li>
+        <li className="text-base">24 hour voting lock out after submitting.</li>
+        <li className="text-base">Client side generated .png of the users votes.</li>
+      </ul>
+
+
+      <h4 className="mt-12">Shareable assets</h4>
+      <p>
+        To generate these images we first created individual player images,
+        I then render the court and the player images into a canvas element
+        and saved it out as a base64 string. The string is then set as the
+        source for an image to be displayed on the page.
+        A blob is created for the download buttons.
+      </p>
+      <p>
+        Any error in loading a player image or if not all positions are filled
+        by a user a randomly selected default &quot;ghost&quot; image is used in place.
+      </p>
+      <div className="flex mt-8">
+        <div className="flex-1 w-1 mr-6">
+          <Img src="/nba/story.png" alt="share story" />
+        </div>
+        <div className="flex-1 w-1">
+          <Img src="/nba/square.png" alt="share square" />
+        </div>
+      </div>
+
+      <p className="mt-12">
+        The project will be live <Link underline href="https://vote.nba.com/en" text="here" /> during Jan 2020.
+      </p>
+    </article>
+  </Layout>
+);

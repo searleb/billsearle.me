@@ -45,5 +45,9 @@ p {
   @apply text-xl font-normal mb-2;
 }
 
+s {
+  opacity: 0.60;
+}
+
 @tailwind components;
 @tailwind utilities;

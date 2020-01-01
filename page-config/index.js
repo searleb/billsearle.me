@@ -1,7 +1,7 @@
 export const employment = {
   current: {
-    title: 'Engine Digital.',
-    link: 'https://enginedigital.com',
+    title: 'and available for work!',
+    link: '/contact',
   },
   past: [
     {
@@ -20,11 +20,20 @@ export const employment = {
       title: 'Nightjar',
       link: 'https://nightjar.co',
     },
+    {
+      title: 'Engine Digital',
+      link: 'https://enginedigital.com',
+    },
   ],
 };
 
 export const projects = {
   professional: [
+    {
+      title: 'NBA All-Star Vote',
+      link: '/nba-all-star-vote',
+      tech: 'React / Next.js / Tailwind.css',
+    },
     {
       title: 'PodcastOne Au',
       link: 'https://www.podcastone.com.au/',
@@ -182,7 +191,7 @@ const suffix = 'Bill Searle';
 export const meta = {
   home: {
     title: 'Bill Searle - Front End Web Developer',
-    desc: `Bill is a front end developer, specialising in React.js development. Currently freelancing for ${employment.current.title}`,
+    desc: `Bill is a front end developer, specialising in React.js development. Currently in Whistler ${employment.current.title}`,
   },
   beroPrivacy: {
     title: `Bero App Privacy Policy | ${suffix}`,
@@ -215,6 +224,10 @@ export const meta = {
   six: {
     title: `Six Hundred Thousand Colour Schemes | ${suffix}`,
     desc: 'Six Hundred Thousand Contrast Safe Pantone Colour Schemes.',
+  },
+  nba: {
+    title: `NBA All-Star Vote | ${suffix}`,
+    desc: 'Send your favorite players to the NBA All-Star Game in Chicago.',
   },
 };
 

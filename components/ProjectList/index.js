@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import ProjectLink from '../ProjectLink';
+import Divider from '../Divider';
 
 const ProjectList = ({ projects, title }) => (
   <section>
     <h2>{title}</h2>
-    <div className="border-b my-4 text" />
+    <Divider />
     <ul className="mb-16">
       {projects.map(project => (
         <li key={project.title} className="mb-8">
