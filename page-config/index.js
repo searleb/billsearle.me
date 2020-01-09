@@ -66,13 +66,8 @@ export const projects = {
     },
     {
       title: 'Schwarzkopf Style Studio',
-      link: 'http://style-studio.com.au/',
+      link: '/schwarzkopf-style-studio',
       tech: 'HTML / SCSS / jQuery / Angular / Laravel',
-    },
-    {
-      title: 'Schwarzkopf Colour Match',
-      link: 'https://style-studio.com.au/colour-match',
-      tech: 'HTML / SCSS / jQuery / Laravel',
     },
     {
       title: 'CareerHQ',
@@ -228,6 +223,10 @@ export const meta = {
   nba: {
     title: `NBA All-Star Vote | ${suffix}`,
     desc: 'Send your favorite players to the NBA All-Star Game in Chicago.',
+  },
+  styleStudio: {
+    title: `Schwarzkoft Style Studio | ${suffix}`,
+    desc: 'Editorial style blog and marketing site for Schwarzkoft.',
   },
 };
 

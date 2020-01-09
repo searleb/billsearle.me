@@ -1,9 +1,9 @@
-/* eslint-disable jsx-a11y/media-has-caption */
 import PageHead from '../components/PageHead';
 import { meta } from '../page-config';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import Img from '../components/Img';
+import Video from '../components/Video';
 
 export default () => (
   <Layout>
@@ -27,10 +27,12 @@ export default () => (
         I used Next.js as the framework and deployed via
         pre-rendering all the pages to be staticlly hosted and distibuted over a CND.
       </p>
-      <figure className="mt-12">
-        <video src="/nba/nba.mp4" controls poster="/nba/poster.png" />
-        <figcaption>A quick walk through of the 2020 NBA All Star Voting app.</figcaption>
-      </figure>
+
+      <Video
+        src="/nba/nba.mp4"
+        poster="/nba/poster.png"
+        caption="A quick walk through of the 2020 NBA All Star Voting app."
+      />
 
       <h4 className="mt-12">Features include</h4>
       <ul className="list-inside list-disc text-lg">
