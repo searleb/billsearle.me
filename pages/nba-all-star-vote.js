@@ -28,26 +28,26 @@ export default () => (
         pre-rendering all the pages to be staticlly hosted and distibuted over a CND.
       </p>
       <figure className="mt-12">
-        <video src="/nba/nba.mp4" controls />
+        <video src="/nba/nba.mp4" controls poster="/nba/poster.png" />
         <figcaption>A quick walk through of the 2020 NBA All Star Voting app.</figcaption>
       </figure>
 
       <h4 className="mt-12">Features include</h4>
-      <ul className="list-inside list-disc">
-        <li className="text-base">Multiple language support, including image assets.</li>
-        <li className="text-base">First visit only onboarding.</li>
-        <li className="text-base">Interactive court view.</li>
-        <li className="text-base">Search, filter and sort all players.</li>
-        <li className="text-base">
+      <ul className="list-inside list-disc text-lg">
+        <li>Multiple language support, including image assets.</li>
+        <li>First visit only onboarding.</li>
+        <li>Interactive court view.</li>
+        <li>Search, filter and sort all players.</li>
+        <li>
           Add and remove votes, limited by position and conference.
           I used reselect with redux to persists search results across
           page navigation without recalculating unless a search parameter changes.
         </li>
-        <li className="text-base">Pre-fill votes via a query param.</li>
-        <li className="text-base">ESI integration.</li>
-        <li className="text-base">Country dependent dynamic submit form.</li>
-        <li className="text-base">24 hour voting lock out after submitting.</li>
-        <li className="text-base">Client side generated .png of the users votes.</li>
+        <li>Pre-fill votes via a query param.</li>
+        <li>ESI integration.</li>
+        <li>Country dependent dynamic submit form.</li>
+        <li>24 hour voting lock out after submitting.</li>
+        <li>Client side generated .png of the users votes.</li>
       </ul>
 
 
@@ -57,6 +57,11 @@ export default () => (
         I then render the court and the player images into a canvas element
         and saved it out as a base64 string. The string is then set as the
         source for an image to be displayed on the page.
+      </p>
+      <p>
+        The string is also saved into localStorage to persist the image during the 24hr lock out period.
+      </p>
+      <p>
         A blob is created for the download buttons.
       </p>
       <p>
