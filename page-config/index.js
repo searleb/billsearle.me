@@ -37,7 +37,7 @@ export const projects = {
     {
       title: 'PodcastOne Au',
       link: 'https://www.podcastone.com.au/',
-      tech: 'React / Next.js / Styled Components / Node / Jest',
+      tech: 'React / Next.js / GraphQL / Styled Components / Node / Jest',
     },
     {
       title: 'Hit',
