@@ -83,7 +83,7 @@ export const projects = {
   personal: [
     {
       title: 'Bero',
-      link: '/bero',
+      link: 'https://getbero.app',
       tech: 'React Native / Styled Components',
     },
     {
