@@ -1,7 +1,7 @@
 export const employment = {
   current: {
-    title: 'and available for work!',
-    link: '/contact',
+    title: 'the NBA.',
+    link: 'https://nba.com',
   },
   past: [
     {
@@ -186,7 +186,7 @@ const suffix = 'Bill Searle';
 export const meta = {
   home: {
     title: 'Bill Searle - Front End Web Developer',
-    desc: `Bill is a front end developer, specialising in React.js development. Currently in Whistler ${employment.current.title}`,
+    desc: `Bill is a front end web developer, specialising in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
   },
   beroPrivacy: {
     title: `Bero App Privacy Policy | ${suffix}`,
