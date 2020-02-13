@@ -25,7 +25,7 @@ export default () => (
       </p>
       <p>
         I used Next.js as the framework and deployed via
-        pre-rendering all the pages to be staticlly hosted and distibuted over a CND.
+        pre-rendering all the pages to be staticlly hosted and distibuted over a CDN.
       </p>
 
       <Video
