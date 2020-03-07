@@ -42,7 +42,7 @@ h4 {
 }
 
 p {
-  @apply text-xl font-normal mb-2;
+  @apply text-xl font-normal mb-4;
 }
 
 s {

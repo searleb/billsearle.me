@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import theme from 'tailwindcss/defaultTheme';
@@ -14,17 +15,31 @@ const NeuBase = ({ circle, color }) => (
   </button>
 );
 
-const Neumorphism = () => (
-    Object.keys(theme.colors).slice(3).map(color => (
+const Neumorphism = () => {
+  const [removeBackground, setRemoveBackground] = useState(false)
+  return (
+    <>
+    <button 
+    className="text-lg p-2 font-semibold border-l-2 border-solid border-gray-500" 
+    onClick={() => setRemoveBackground(!removeBackground)}>
+      Remove Backgrounds
+    </button>
+    {Object.keys(theme.colors).slice(3).map(color => (
       <div 
         key={color} 
-        className={`flex flex-wrap w-full h-full justify-center items-center p-8 shadow-inner my-4 bg-${color}-300`}
+        className={cn(`flex flex-wrap w-full h-full justify-center items-center p-8 shadow-inner my-4 transition-colors duration-200`,{
+          [`bg-${color}-300`]: !removeBackground,
+          'bg-transparent': removeBackground
+        })}
       >
         <NeuBase color={color} />
         <NeuBase color={color} circle />
       </div>
-    ))
-);
+    ))}
+    </>
+  );
+
+}
 
 NeuBase.propTypes = {
   circle: PropTypes.bool,
