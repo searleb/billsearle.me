@@ -15,7 +15,7 @@ module.exports = {
           './styles/**/*.css',
         ],
         whitelist: ['body', 'html'],
-        whitelistPatterns: [/nue/],
+        whitelistPatterns: [/shadow-neu-/, /bg-/],
         // Include any special characters you're using in this regular expression
         defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
       },

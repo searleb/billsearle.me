@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import theme from 'tailwindcss/defaultTheme';
-{/* purgecss-ignore */}
 
 const NeuBase = ({ circle, color }) => (
   <button className={cn(
@@ -28,7 +27,6 @@ const Neumorphism = () => (
 );
 
 NeuBase.propTypes = {
-  children: PropTypes.node.isRequired,
   circle: PropTypes.bool,
   color: PropTypes.string.isRequired,
 };
