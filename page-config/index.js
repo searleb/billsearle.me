@@ -94,7 +94,7 @@ export const projects = {
     {
       title: 'Neumorphism Experiment',
       link: '/neumorphism-experiment',
-      tech: 'Tailwind.css / CSS',
+      tech: 'Tailwind.css / JS',
     },
     {
       title: 'Hami.sh',
