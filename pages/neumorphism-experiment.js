@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import PageHead from '../components/PageHead';
 import Neumorphism from '../components/Neumorphism';
 import { meta } from '../page-config';
+import Link from '../components/Link';
 
 const NeumorphismPage = () => (
   <Layout>
@@ -15,6 +16,14 @@ const NeumorphismPage = () => (
       <p>
         Tailwind lends itself to this quite nicely as it provides
         a good range across each color set.
+      </p>
+      <p>
+        The tailwind plugin I wrote can be found {' '}
+        <Link
+          text="on Github."
+          underline
+          href="https://github.com/searleb/billsearle.me/tree/master/components/Neumorphism"
+        />
       </p>
       <Neumorphism />
     </article>
