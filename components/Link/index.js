@@ -3,7 +3,6 @@ import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 import Strike from '../Strike';
 import ColourContext from '../../context/colour';
-import './styles.css';
 
 const propTypes = {
   href: PropTypes.string.isRequired,

@@ -92,6 +92,11 @@ export const projects = {
       tech: 'Node',
     },
     {
+      title: 'Neumorphism Experiment',
+      link: '/neumorphism-experiment',
+      tech: 'Tailwind.css / CSS',
+    },
+    {
       title: 'Hami.sh',
       link: 'https://github.com/searleb/hamish',
       tech: 'JS / Bash',
@@ -186,7 +191,7 @@ const suffix = 'Bill Searle';
 export const meta = {
   home: {
     title: 'Bill Searle - Front End Web Developer',
-    desc: `Bill is a front end web developer, specialising in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
+    desc: `Bill Searle is a front end web developer, specialising in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
   },
   beroPrivacy: {
     title: `Bero App Privacy Policy | ${suffix}`,
@@ -227,6 +232,10 @@ export const meta = {
   styleStudio: {
     title: `Schwarzkoft Style Studio | ${suffix}`,
     desc: 'Editorial style blog and marketing site for Schwarzkoft.',
+  },
+  neu: {
+    title: `Neumorphism Experiment | ${suffix}`,
+    desc: 'A Neumorphism Experiment with Tailwind.css',
   },
 };
 

@@ -6,7 +6,7 @@ const ImagePill = ({
 }) => (
   <div className="px-2 py-4 w-1/2">
     <div
-      className="shadow-xl rounded-xl overflow-hidden transition-bg transition-colors"
+      className="shadow-xl rounded-xl overflow-hidden transition-colors duration-300"
       style={{
         background: invert ? theme.secondary : theme.primary,
         color: invert ? theme.primary : theme.secondary,

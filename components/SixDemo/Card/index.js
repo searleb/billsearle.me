@@ -11,13 +11,13 @@ const DemoCard = ({ theme, text, onClick }) => (
       onClick={onClick}
       style={{ background: theme.tertiary, color: theme.primary }}
       type="button"
-      className="rounded-lg py-2 px-6 bg-blue-100 transition-bg transition-color"
+      className="rounded-lg py-2 px-6 bg-blue-100 transition-colors duration-300"
     >
       New Theme
     </button>
     <div
       style={{ borderColor: theme.secondary }}
-      className="border-t pt-6 mt-8 transition-border"
+      className="border-t pt-6 mt-8 transition-colors duration-300"
     >
       <ul className="text-base">
         <li>North Mabelle, CL</li>
@@ -27,7 +27,7 @@ const DemoCard = ({ theme, text, onClick }) => (
     </div>
     <div
       style={{ borderColor: theme.secondary }}
-      className="border-t pt-6 mt-8 transition-border"
+      className="border-t pt-6 mt-8 transition-colors duration-300"
     >
       <p className="text-base" style={{ color: theme.tertiary }}>{text}</p>
     </div>

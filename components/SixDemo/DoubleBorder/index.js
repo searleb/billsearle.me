@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Layer = ({ ...rest }) => (
-  <div {...rest} className="p-6 transition-bg" />
+  <div {...rest} className="p-6 transition-colors" />
 );
 
 const DoubleBorder = ({ theme }) => (
