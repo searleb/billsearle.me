@@ -1,9 +1,15 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import colourContext from '../../context/colour';
 
 const ColourBar = () => {
   const { time, colour } = useContext(colourContext);
   const sharedClasses = 'transition-colors duration-700 z-10 fixed';
+
+  useEffect(() => {
+    const favico = document.querySelector('#favico');
+    favico.href = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23${colour.slice(1)}'/%3E%3C/svg%3E`;
+  }, [colour]);
+
   return (
     <>
       <div style={{ backgroundColor: colour }} className={`${sharedClasses} h-4 w-screen inset-x-0 top-0`} />

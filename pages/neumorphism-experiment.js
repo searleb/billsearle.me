@@ -41,5 +41,4 @@ const NeumorphismPage = () => (
   </Layout>
 );
 
-
 export default NeumorphismPage;

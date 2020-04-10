@@ -42,9 +42,8 @@ class MyApp extends App {
     return (
       <ColourContext.Provider value={{ colour, time }}>
         <Head>
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link id="favico" rel="icon" sizes="any" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23aab4cc'/%3E%3C/svg%3E"/>
+
           <link rel="manifest" href="/site.webmanifest" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1" />
           <script dangerouslySetInnerHTML={{
