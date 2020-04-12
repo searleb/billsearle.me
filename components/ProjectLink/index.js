@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types';
 import Link from '../Link';
 
-const anchorClasses = 'text-4xl leading-none';
-
 const ProjectLink = ({
   href, text, tech,
 }) => (
   <>
-    <Link className={anchorClasses} href={href} text={text} />
-    <span className="opacity-50 text-xs italic block">{tech}</span>
+    <Link className="text-4xl leading-none" href={href} text={text} />
+    <span className="opacity-50 text-sm italic block">{tech}</span>
   </>
 );
 

@@ -2,7 +2,7 @@
 
 html {
   @apply font-medium text-gray-900;
-  font-size: 0.9em;
+  font-size: 0.875em;
 }
 
 *:focus, button:focus {
@@ -43,10 +43,6 @@ h4 {
 
 p {
   @apply text-xl font-normal mb-4;
-}
-
-s {
-  opacity: 0.60;
 }
 
 nav a:hover {

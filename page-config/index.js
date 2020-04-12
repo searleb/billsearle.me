@@ -192,50 +192,57 @@ export const meta = {
   home: {
     title: 'Bill Searle - Front End Web Developer',
     desc: `Bill Searle is a front end web developer, specialising in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
-  },
-  beroPrivacy: {
-    title: `Bero App Privacy Policy | ${suffix}`,
-    desc: 'Bero App Privacy Policy',
+    url: '/',
   },
   bero: {
     title: `Bero App | ${suffix}`,
     desc: 'Bero is the easiest, most direct navigator for iOS.',
+    url: '/bero',
   },
   contact: {
     title: `Contact | ${suffix}`,
     desc: 'Contact me if you\'d like to work together.',
+    url: '/contact',
   },
   error: {
     title: `404 | ${suffix}`,
     desc: 'Opps, we\'ve got lost!',
+    url: '/404',
   },
   resume: {
     title: `Resume / CV | ${suffix}`,
     desc: 'Take a glance at my employment history.',
+    url: '/resume',
   },
   hubble: {
     title: `Hubble Talent | ${suffix}`,
     desc: 'Internal SCA Project - Hubble Talent Dashboard',
+    url: '/hubble',
   },
   checkin: {
     title: `Check In | ${suffix}`,
     desc: 'Internal Mentally Friendly Project - Client Check-in and Dashboard',
+    url: '/check-in',
   },
   six: {
     title: `Six Hundred Thousand Colour Schemes | ${suffix}`,
     desc: 'Six Hundred Thousand Contrast Safe Pantone Colour Schemes.',
+    url: '/six-hundred-thousand',
   },
   nba: {
     title: `NBA All-Star Vote | ${suffix}`,
     desc: 'Send your favorite players to the NBA All-Star Game in Chicago.',
+    url: '/nba-all-star-vote',
   },
   styleStudio: {
     title: `Schwarzkoft Style Studio | ${suffix}`,
     desc: 'Editorial style blog and marketing site for Schwarzkoft.',
+    url: '/schwarzkoft-style-studio',
   },
   neu: {
     title: `Neumorphism Experiment | ${suffix}`,
     desc: 'A Neumorphism Experiment with Tailwind.css',
+    url: '/neumorphism-experiment',
   },
 };
 

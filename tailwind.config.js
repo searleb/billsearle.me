@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         'dark-mode': '#282B2F',
       },
+      opacity: {
+        60: '.6',
+      },
     },
   },
   plugins: [neu()],

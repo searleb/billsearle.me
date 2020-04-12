@@ -39,7 +39,6 @@ class MyApp extends App {
   render() {
     const { colour, time } = this.state;
     const { Component, pageProps, router } = this.props;
-    console.log('Favico', Favico);
 
     return (
       <ColourContext.Provider value={{ colour, time }}>
