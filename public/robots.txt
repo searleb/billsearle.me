@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://billsearle.me/sitemap.xml
