@@ -192,7 +192,7 @@ export const meta = {
   home: {
     title: 'Bill Searle - Front End Web Developer',
     desc: `Bill Searle is a front end web developer, specialising in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
-    url: '/',
+    url: '',
   },
   bero: {
     title: `Bero App | ${suffix}`,
@@ -246,9 +246,4 @@ export const meta = {
   },
 };
 
-export default {
-  employment,
-  projects,
-  resume,
-  meta,
-};
+export const domain = 'https://billsearle.me'
