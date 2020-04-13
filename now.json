@@ -1,0 +1,9 @@
+{
+  "build": {
+    "env": {
+      "GOOGLE_SHEETS_KEY": "@google-sheets-key",
+      "FIREBASE_KEY": "@firebase-key",
+      "FIREBASE_APP_ID": "@firebase-app-id"
+    }
+  }
+}
