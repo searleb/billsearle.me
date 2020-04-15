@@ -48,16 +48,20 @@ class MyApp extends App {
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
           <link rel="manifest" href="/site.webmanifest" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1" />
-          <script dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'UA-44359005-1');
-            `,
-          }}
-          />
+          {process.env.NODE_ENV === 'production' &&
+            <>
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1" />
+              <script dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'UA-44359005-1');
+                `,
+              }}
+              />
+            </>
+          }
         </Head>
         <Favico />
         <ColourBar />
