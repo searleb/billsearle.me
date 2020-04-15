@@ -74,13 +74,13 @@ export default () => (
         </li>
         <li>
           <Link
-            href="https:/billsearle.me/trivia/1wqUTTWBsf-kizQFxdnYUZg3ABnp02rjorGLLQMaAoRw?host=1"
+            href="/trivia/1wqUTTWBsf-kizQFxdnYUZg3ABnp02rjorGLLQMaAoRw?host=1"
             text="Host"
           />
         </li>
         <li>
           <Link
-            href="https:/billsearle.me/trivia/1wqUTTWBsf-kizQFxdnYUZg3ABnp02rjorGLLQMaAoRw"
+            href="/trivia/1wqUTTWBsf-kizQFxdnYUZg3ABnp02rjorGLLQMaAoRw"
             text="Player"
           />
         </li>
