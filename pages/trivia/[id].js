@@ -6,6 +6,8 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/analytics';
 import Error from 'next/error';
+import PageHead from '../../components/PageHead';
+import { meta } from '../../page-config';
 
 const Trivia = ({
   trivia, id, host, error,
@@ -85,19 +87,32 @@ const Trivia = ({
 
   return (
     <>
-      {host && (
-        <div className="m-8">
+      <PageHead meta={{ ...meta.trivia, title }} />
+      <div className={cn({ 'mb-40': host })}>
+        <div className="flex flex-wrap justify-between mt-8">
+          <h4 className="text-4xl italic leading-none px-4 w-full md:w-auto">{title}</h4>
+          <h4 className="px-4">
+            {sheet.category}  #{sheet.questionNum}
+          </h4>
+        </div>
+        <div className="max-w-6xl m-auto p-4 text-center w-full mt-16 md:mt-20">
+          <h2 className="leading-none">{sheet.question}</h2>
+          {sheet.img && <img alt={sheet.question} src={sheet.img} className="max-w-lg mx-auto mt-8 w-full" />}
+        </div>
+
+        {host && (
+        <div className="fixed w-full bottom-0 bg-white dark-mode:bg-dark-mode p-4 shadow-md">
           <span>Title: </span>
           <input
             onChange={handleNewTitle}
             type="text"
-            className="bg-transparent border-b border-red-500"
+            className="bg-transparent border-b border-red-500 text-base"
             value={title}
           />
-          <div className="flex justify-around my-12">
+          <div className="flex justify-around">
             <button
               type="button"
-              className={cn('p-4 m-4 rounded w-1/3 uppercase border-4 border-red-600 hover:bg-red-600', {
+              className={cn('p-3 m-3 rounded w-1/3 uppercase border-4 border-red-600 hover:bg-red-600', {
                 'opacity-25 bg-gray-500 cursor-not-allowed': prevDisabled,
               })}
               disabled={prevDisabled}
@@ -107,7 +122,7 @@ const Trivia = ({
             </button>
             <button
               type="button"
-              className={cn('p-4 m-4 rounded w-1/3 uppercase border-4 border-blue-600 hover:bg-blue-600', {
+              className={cn('p-3 m-3 rounded w-1/3 uppercase border-4 border-blue-600 hover:bg-blue-600', {
                 'opacity-25 bg-gray-500 cursor-not-allowed': nextDisabled,
               })}
               disabled={nextDisabled}
@@ -117,16 +132,7 @@ const Trivia = ({
             </button>
           </div>
         </div>
-      )}
-
-      <div className="max-w-6xl mx-auto px-4 my-16 text-center">
-        <h1 className="text-4xl italic leading-none mb-8">{title}</h1>
-        <h4 className="mb-8">
-          {sheet.category}
-          {' '}#{sheet.questionNum}
-        </h4>
-        <h2 className="leading-none">{sheet.question}</h2>
-        {sheet.img && <img alt={sheet.question} src={sheet.img} className="max-w-lg mx-auto mt-8 w-full" />}
+        )}
       </div>
     </>
   );

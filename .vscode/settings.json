@@ -2,5 +2,8 @@
   "eslint.enable": true,
   "stylelint.enable": true,
   "css.validate": false,
-  "cSpell.enabled": false,
+  "cSpell.enabled": true,
+  "cSpell.words": [
+    "bero"
+  ],
 }

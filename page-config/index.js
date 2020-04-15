@@ -97,6 +97,11 @@ export const projects = {
       tech: 'Tailwind.css / JS',
     },
     {
+      title: 'Trivia!',
+      link: '/trivia',
+      tech: 'Tailwind.css / JS / Firestore / Google Sheets',
+    },
+    {
       title: 'Hami.sh',
       link: 'https://github.com/searleb/hamish',
       tech: 'JS / Bash',
@@ -191,7 +196,7 @@ const suffix = 'Bill Searle';
 export const meta = {
   home: {
     title: 'Bill Searle - Front End Web Developer',
-    desc: `Bill Searle is a front end web developer, specialising in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
+    desc: `Bill Searle is a front end web developer, specializing in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
     url: '',
   },
   bero: {
@@ -206,7 +211,7 @@ export const meta = {
   },
   error: {
     title: `404 | ${suffix}`,
-    desc: 'Opps, we\'ve got lost!',
+    desc: 'Oops, we\'ve got lost!',
     url: '/404',
   },
   resume: {
@@ -243,6 +248,11 @@ export const meta = {
     title: `Neumorphism Experiment | ${suffix}`,
     desc: 'A Neumorphism Experiment with Tailwind.css',
     url: '/neumorphism-experiment',
+  },
+  trivia: {
+    title: `A Live Trivia Question Board | ${suffix}`,
+    desc: 'A Live Trivia Question Board Built with Firestore and Google Sheets',
+    url: '/trivia',
   },
 };
 
