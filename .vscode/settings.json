@@ -2,6 +2,10 @@
   "eslint.enable": true,
   "stylelint.enable": true,
   "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
   "cSpell.enabled": true,
   "cSpell.words": [
     "bero"
