@@ -4,7 +4,7 @@ import Divider from '../Divider';
 
 const ProjectList = ({ projects, title }) => (
   <section>
-    <h2>{title}</h2>
+    <h2 className="font-semibold">{title}</h2>
     <Divider />
     <ul className="mb-16">
       {projects.map(project => (

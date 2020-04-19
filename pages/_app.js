@@ -41,8 +41,8 @@ class MyApp extends App {
     const { Component, pageProps, router } = this.props;
 
     return (
-      <ColourContext.Provider value={{ colour, time }}>
-        <Head>
+      <>
+      <Head>
           <link key="favico" rel="icon" sizes="any" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23aab4cc'/%3E%3C/svg%3E"/>
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
           <meta name="msapplication-TileColor" content="#da532c" />
@@ -63,13 +63,13 @@ class MyApp extends App {
             </>
           }
         </Head>
+      <ColourContext.Provider value={{ colour, time }}>
         <Favico />
         <ColourBar />
         <Navigation />
-        <AnimatePresence exitBeforeEnter>
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
+        <Component {...pageProps} key={router.route} />
       </ColourContext.Provider>
+      </>
     );
   }
 }

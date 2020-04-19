@@ -5,7 +5,7 @@ const ProjectLink = ({
   href, text, tech,
 }) => (
   <>
-    <Link className="text-4xl leading-none" href={href} text={text} />
+    <Link className="text-4xl leading-none font-semibold" href={href} text={text} />
     <span className="opacity-50 text-sm italic block">{tech}</span>
   </>
 );

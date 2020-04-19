@@ -156,12 +156,16 @@ export const resume = {
       title: 'Freelance Front-End Web Developer',
       gigs: [
         {
+          title: 'NBA',
+          location: 'Remote',
+        },
+        {
           title: 'Engine Digital',
-          location: 'Vancouver, Can',
+          location: 'Remote / Vancouver, Can',
         },
         {
           title: 'Nightjar',
-          location: 'Sydney, Aus',
+          location: 'Remote',
         },
         {
           title: 'Southern Cross Austereo',
