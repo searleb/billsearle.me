@@ -4,6 +4,9 @@ import colourContext from '../../context/colour';
 
 const Favico = () => {
   const { colour } = useContext(colourContext);
+  const isDefault = colour === '#ffffff';
+
+  if (isDefault) return null;
 
   return (
     <Head>
