@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import fetch from 'isomorphic-unfetch';
 import { useState, useEffect, useRef } from 'react';
 import cn from 'classnames';
 import firebase from 'firebase/app';
@@ -90,23 +89,23 @@ const Trivia = ({
       <PageHead meta={{ ...meta.trivia, title }} />
       <div className={cn({ 'mb-40': host })}>
         <div className="flex flex-wrap justify-between mt-8">
-          <h4 className="text-4xl italic leading-none px-4 w-full md:w-auto">{title}</h4>
+          <h4 className="w-full px-4 text-4xl italic leading-none md:w-auto">{title}</h4>
           <h4 className="px-4">
             {sheet.category}  #{sheet.questionNum}
           </h4>
         </div>
-        <div className="max-w-6xl m-auto p-4 text-center w-full mt-16 md:mt-20">
+        <div className="w-full max-w-6xl p-4 m-auto mt-16 text-center md:mt-20">
           <h2 className="leading-none">{sheet.question}</h2>
-          {sheet.img && <img alt={sheet.question} src={sheet.img} className="max-w-lg mx-auto mt-8 w-full" />}
+          {sheet.img && <img alt={sheet.question} src={sheet.img} className="w-full max-w-lg mx-auto mt-8" />}
         </div>
 
         {host && (
-        <div className="fixed w-full bottom-0 bg-white dark-mode:bg-dark-mode p-4 shadow-md">
+        <div className="fixed bottom-0 w-full p-4 bg-white shadow-md dark-mode:bg-dark-mode">
           <span>Title: </span>
           <input
             onChange={handleNewTitle}
             type="text"
-            className="bg-transparent border-b border-red-500 text-base"
+            className="text-base bg-transparent border-b border-red-500"
             value={title}
           />
           <div className="flex justify-around">

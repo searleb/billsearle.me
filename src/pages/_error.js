@@ -7,7 +7,7 @@ const Error = () => (
   <>
     <PageHead meta={meta.error} />
     <Layout>
-     404 | <Link text="Take me home" href="/" />
+      404 | <Link text="Take me home" href="/" />
     </Layout>
   </>
 );

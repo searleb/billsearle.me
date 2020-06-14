@@ -1,6 +1,20 @@
-const neu = require('./components/Neumorphism/tailwind.neu.plugin');
+const neu = require('./src/components/Neumorphism/tailwind.neu.plugin');
 
 module.exports = {
+  purge: {
+    content: [
+      './src/pages/**/*.js',
+      './src/components/**/*.js',
+    ],
+    options: {
+      css: [
+        './src/components/**/*.css',
+        './src/styles/**/*.css',
+      ],
+      whitelist: ['body', 'html'],
+      whitelistPatterns: [/shadow-neu-/, /bg-/],
+    },
+  },
   theme: {
     extend: {
       screens: {
