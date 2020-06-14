@@ -1,28 +1,29 @@
+// Next uses a string bases config: https://nextjs.org/docs/advanced-features/customizing-postcss-config
+
 module.exports = {
   plugins: [
     'tailwindcss',
     'postcss-nested',
-    'autoprefixer',
-    ...process.env.NODE_ENV === 'production' ? [
-      ['@fullhuman/postcss-purgecss', {
-        // Specify the paths to all of the template files in your project
-        content: [
-          './pages/**/*.js',
-          './components/**/*.js',
-        ],
-        css: [
-          './components/**/*.css',
-          './styles/**/*.css',
-        ],
-        whitelist: ['body', 'html'],
-        whitelistPatterns: [/shadow-neu-/, /bg-/],
-        // Include any special characters you're using in this regular expression
-        defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+    'postcss-flexbugs-fixes',
+    [
+      'postcss-preset-env',
+      {
+        autoprefixer: {
+          flexbox: 'no-2009',
+        },
+        stage: 3,
+        features: {
+          'custom-properties': false,
+        },
       },
+    ],
+    ...(process.env.NODE_ENV === 'production' ? [
+      [
+        'cssnano',
+        {
+          preset: 'default',
+        },
       ],
-      ['cssnano', {
-        preset: 'default',
-      },
-      ]] : [],
+    ] : []),
   ],
 };

@@ -20,11 +20,11 @@ const Neumorphism = () => {
   return (
     <>
     <button 
-    className="text-lg p-2 font-semibold border-l-2 border-solid border-gray-500" 
+    className="p-2 text-lg font-semibold border-l-2 border-gray-500 border-solid" 
     onClick={() => setRemoveBackground(!removeBackground)}>
       Remove Backgrounds
     </button>
-    {Object.keys(theme.colors).slice(3).map(color => (
+    {Object.keys(theme.colors).slice(4).map(color => (
       <div 
         key={color} 
         className={cn(`flex flex-wrap w-full h-full justify-center items-center p-8 shadow-inner my-4 transition-colors duration-200`,{

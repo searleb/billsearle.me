@@ -25,7 +25,7 @@ module.exports = () => ({ theme, addComponents }) => {
   };
   const { colors } = defaultTheme;
   const {
-    transparent, black, white, ...rest
+    transparent, black, white, current, ...rest
   } = colors;
 
   Object.keys(rest).forEach(color => {
