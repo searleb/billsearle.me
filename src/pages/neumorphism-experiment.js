@@ -33,7 +33,7 @@ const NeumorphismPage = () => (
         <Link
           text="on Github."
           underline
-          href="https://github.com/searleb/billsearle.me/tree/master/components/Neumorphism"
+          href="https://github.com/searleb/billsearle.me/tree/master/src/components/Neumorphism"
         />
       </p>
       <Neumorphism />
