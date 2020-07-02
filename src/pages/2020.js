@@ -9,7 +9,7 @@ export default () => {
 
   useEffect(() => {
     let int;
-    if (viruses.length < 500) {
+    if (viruses.length < 1300) {
       int = setInterval(() => {
         setViruses([...viruses, {
           x: Math.floor(Math.random() * parent.current.offsetWidth - 16),
