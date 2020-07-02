@@ -9,12 +9,12 @@ export default () => (
     <article>
       <h1>Schwarzkopf Style Studio</h1>
       <p>
-          Unfortunately this site recently died.
+        Unfortunately this site recently died.
         <br />
-          I assume it&apos;s been discontinued,
-          luckily the web archive allowed me to a
-          grab a few shots of how it looked
-          (not everything looks perfect from the archive).
+        I assume it&apos;s been discontinued,
+        luckily the web archive allowed me to a
+        grab a few shots of how it looked
+        (not everything looks perfect from the archive).
       </p>
       <Video
         src="/style-studio/style-studio.mp4"

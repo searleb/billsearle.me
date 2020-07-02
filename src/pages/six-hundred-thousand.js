@@ -59,7 +59,7 @@ class Six extends React.PureComponent {
             }}
           >
             <span role="img" aria-label="colour-emoji">
-            👉 🎨
+              👉 🎨
             </span>
           </button>
         )}

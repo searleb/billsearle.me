@@ -51,11 +51,11 @@ const Resume = () => {
                 {item.title} <small>- {item.location}</small>
               </p>
               {item.gigs && (
-              <ul className="list-inside list-disc text-xl font-normal">
-                {item.gigs.map(gig => (
-                  <li key={gig.title}>{gig.title} <small>- {gig.location}</small></li>
-                ))}
-              </ul>
+                <ul className="list-inside list-disc text-xl font-normal">
+                  {item.gigs.map(gig => (
+                    <li key={gig.title}>{gig.title} <small>- {gig.location}</small></li>
+                  ))}
+                </ul>
               )}
             </li>
           ))}

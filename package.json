@@ -9,7 +9,8 @@
     "start": "next start",
     "export": "npm run build && next export",
     "deploy": "npm run export && now --prod",
-    "upgrade-app": "npm i next@latest react@latest react-dom@latest"
+    "upgrade-app": "npm i next@latest react@latest react-dom@latest",
+    "lint": "eslint --fix --ignore-path .gitignore ."
   },
   "dependencies": {
     "autoprefixer": "^9.7.4",

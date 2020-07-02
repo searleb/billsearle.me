@@ -25,9 +25,15 @@
     "react"
   ],
   "rules": {
+    "indent": [
+      "error", 2,
+      { "ignoredNodes": ["TemplateLiteral"] }
+    ],
+    "template-curly-spacing": "off",
     "react/jsx-filename-extension": [1, {
       "extensions": [".js", ".jsx"]
     }],
+    "react/no-danger": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/no-unescaped-entities": 0,
     "react/jsx-props-no-spreading": 0,
