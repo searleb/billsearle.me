@@ -20,8 +20,8 @@ module.exports = () => ({ theme, addComponents }) => {
       },
       '&:hover::after, &:focus::after': {
         boxShadow: '0 0 0 0 transparent !important',
-      }
-    }
+      },
+    },
   };
   const { colors } = defaultTheme;
   const {
@@ -43,8 +43,8 @@ module.exports = () => ({ theme, addComponents }) => {
         -9px -9px 16px 0px ${theme(`colors.${color}.100`)},
         -1px -1px 1px ${theme(`colors.${color}.100`)},
         9px 9px 16px ${theme(`colors.${color}.500`)}
-        `
-      }
+        `,
+      },
     };
   });
   addComponents(neu);

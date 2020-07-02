@@ -11,7 +11,7 @@ export default () => (
     <article>
       <h1>NBA All-Star Vote</h1>
       <p>
-          For 2020 the NBA voting app was redesigned and rebuilt by{' '}
+        For 2020 the NBA voting app was redesigned and rebuilt by{' '}
         <Link
           href="https://enginedigital.com"
           text="Engine Digital."
@@ -35,7 +35,7 @@ export default () => (
       />
 
       <h4 className="mt-12">Features include</h4>
-      <ul className="list-inside list-disc text-lg">
+      <ul className="text-lg list-disc list-inside">
         <li>Multiple language support, including image assets.</li>
         <li>First visit only onboarding.</li>
         <li>Interactive court view.</li>
@@ -61,7 +61,8 @@ export default () => (
         source for an image to be displayed on the page.
       </p>
       <p>
-        The string is also saved into localStorage to persist the image during the 24hr lock out period.
+        The string is also saved into localStorage
+        to persist the image during the 24hr lock out period.
       </p>
       <p>
         A blob is created for the download buttons.

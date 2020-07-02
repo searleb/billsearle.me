@@ -82,6 +82,11 @@ export const projects = {
   ],
   personal: [
     {
+      title: '2020',
+      link: '/2020',
+      tech: 'a year in review',
+    },
+    {
       title: 'Bero',
       link: 'https://getbero.app',
       tech: 'React Native / Styled Components',
@@ -258,6 +263,11 @@ export const meta = {
     desc: 'A Live Trivia Question Board Built with Firestore and Google Sheets',
     url: '/trivia',
   },
+  corona: {
+    title: `2020, a year in review | ${suffix}`,
+    desc: 'A summary of how I feel about 2020 and Covid-19',
+    url: '/2020',
+  },
 };
 
-export const domain = 'https://billsearle.me'
+export const domain = 'https://billsearle.me';

@@ -15,6 +15,7 @@ const Trivia = ({
   const [title, setTitle] = useState('Trivia');
   const db = useRef(null);
 
+  // eslint-disable-next-line consistent-return
   useEffect(() => {
     if (error) {
       return null;
@@ -100,37 +101,37 @@ const Trivia = ({
         </div>
 
         {host && (
-        <div className="fixed bottom-0 w-full p-4 bg-white shadow-md dark-mode:bg-dark-mode">
-          <span>Title: </span>
-          <input
-            onChange={handleNewTitle}
-            type="text"
-            className="text-base bg-transparent border-b border-red-500"
-            value={title}
-          />
-          <div className="flex justify-around">
-            <button
-              type="button"
-              className={cn('p-3 m-3 rounded w-1/3 uppercase border-4 border-red-600 hover:bg-red-600', {
-                'opacity-25 bg-gray-500 cursor-not-allowed': prevDisabled,
-              })}
-              disabled={prevDisabled}
-              onClick={() => updateQuestion(index - 1)}
-            >
-              Previous
-            </button>
-            <button
-              type="button"
-              className={cn('p-3 m-3 rounded w-1/3 uppercase border-4 border-blue-600 hover:bg-blue-600', {
-                'opacity-25 bg-gray-500 cursor-not-allowed': nextDisabled,
-              })}
-              disabled={nextDisabled}
-              onClick={() => updateQuestion(index + 1)}
-            >
-              Next
-            </button>
+          <div className="fixed bottom-0 w-full p-4 bg-white shadow-md dark-mode:bg-dark-mode">
+            <span>Title: </span>
+            <input
+              onChange={handleNewTitle}
+              type="text"
+              className="text-base bg-transparent border-b border-red-500"
+              value={title}
+            />
+            <div className="flex justify-around">
+              <button
+                type="button"
+                className={cn('p-3 m-3 rounded w-1/3 uppercase border-4 border-red-600 hover:bg-red-600', {
+                  'opacity-25 bg-gray-500 cursor-not-allowed': prevDisabled,
+                })}
+                disabled={prevDisabled}
+                onClick={() => updateQuestion(index - 1)}
+              >
+                Previous
+              </button>
+              <button
+                type="button"
+                className={cn('p-3 m-3 rounded w-1/3 uppercase border-4 border-blue-600 hover:bg-blue-600', {
+                  'opacity-25 bg-gray-500 cursor-not-allowed': nextDisabled,
+                })}
+                disabled={nextDisabled}
+                onClick={() => updateQuestion(index + 1)}
+              >
+                Next
+              </button>
+            </div>
           </div>
-        </div>
         )}
       </div>
     </>
