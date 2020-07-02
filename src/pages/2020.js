@@ -36,7 +36,7 @@ export default () => {
         <span
           aria-label="person with mask emoji"
           role="img"
-          className="absolute text-5xl transform translate-x-1/2 translate-y-1/2"
+          className="absolute text-5xl"
           style={{ top: '50%', left: 'calc(50% - 1rem)' }}
         >
           😷
