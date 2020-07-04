@@ -9,7 +9,7 @@ export default () => {
 
   useEffect(() => {
     let int;
-    if (viruses.length < 1300) {
+    if (viruses.length < 2000) {
       int = setInterval(() => {
         setViruses([...viruses, {
           x: Math.floor(Math.random() * parent.current.offsetWidth - 16),
@@ -17,7 +17,7 @@ export default () => {
           rot: Math.floor(Math.random() * 360),
         },
         ]);
-      }, 500);
+      }, 250);
     }
     return () => {
       clearInterval(int);
@@ -28,7 +28,6 @@ export default () => {
     <Layout>
       <PageHead meta={meta.corona} />
       <h1>2020</h1>
-      <p>a year in review.</p>
       <section
         ref={parent}
         className="absolute top-0 bottom-0 left-0 right-0 w-screen h-screen overflow-hidden"

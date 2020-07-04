@@ -84,7 +84,7 @@ export const projects = {
     {
       title: '2020',
       link: '/2020',
-      tech: 'a year in review',
+      tech: 'a depiction',
     },
     {
       title: 'Bero',
@@ -264,7 +264,7 @@ export const meta = {
     url: '/trivia',
   },
   corona: {
-    title: `2020, a year in review | ${suffix}`,
+    title: `2020, a depiction | ${suffix}`,
     desc: 'A summary of how I feel about 2020 and Covid-19',
     url: '/2020',
   },
