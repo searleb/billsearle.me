@@ -31,33 +31,33 @@ const Hubble = () => (
       <ul className="list-disc list-inside">
         <li>
           Authentication - with auto session expiry logout and user permission levels.
-          <Img src="/hubble/home.png" alt="Hubble Home" />
+          <Img src="/hubble/home.png" alt="Hubble Home" width={832} height={650} />
         </li>
         <li>
           Browse and filter profiles with multiple options.
-          <Img src="/hubble/browse.png" alt="Hubble Browse" />
-          <Img src="/hubble/filter.png" alt="Hubble Filter" />
+          <Img src="/hubble/browse.png" alt="Hubble Browse" width={832} height={650} />
+          <Img src="/hubble/filter.png" alt="Hubble Filter" width={832} height={650} />
         </li>
         <li>
           View Profile - tabbed view for more info.<br />
           Everything is editabled inline depending on user permission,
           including photo/video/audio uploads.
-          <Img src="/hubble/profile.png" alt="Hubble Profile" />
+          <Img src="/hubble/profile.png" alt="Hubble Profile" width={832} height={650} />
         </li>
         <li>
           View past and current profile assessments.
-          <Img src="/hubble/assess.png" alt="Hubble Assessment" />
+          <Img src="/hubble/assess.png" alt="Hubble Assessment" width={832} height={650} />
         </li>
         <li>
           Perform assessments.
-          <Img src="/hubble/assess-final.png" alt="Hubble Assessment Finalise" />
+          <Img src="/hubble/assess-final.png" alt="Hubble Assessment Finalise" width={832} height={650} />
         </li>
         <li>
           Site administration.
-          <Img src="/hubble/admin.png" alt="Hubble Admin" />
+          <Img src="/hubble/admin.png" alt="Hubble Admin" width={832} height={650} />
         </li>
       </ul>
-      <small className="opacity-50 text-xs"><em>*All data shown in app is mock data.</em></small>
+      <small className="text-xs opacity-50"><em>*All data shown in app is mock data.</em></small>
     </article>
   </Layout>
 );
