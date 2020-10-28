@@ -51,7 +51,7 @@ class Six extends React.PureComponent {
           <button
             type="button"
             onClick={this.fetchColorCombo}
-            className="border-2 border-r-0 rounded-l-lg p-4 fixed right-0 z-10 transition-colors transition-colors transition-colors"
+            className="fixed right-0 z-10 p-4 transition-colors border-2 border-r-0 rounded-l-lg"
             style={{
               background: six.colour.hex,
               color: six.colour.combinations[0].hex,
@@ -71,7 +71,7 @@ class Six extends React.PureComponent {
             I wondered what I could do with it...
             <br />
             So I found a list of 2309 Pantone colours and ran them all together
-            with a threshold of 4.5, which insures a usable level of contrast.
+            with a threshold of 4.5, which insures a usable level of 4.5:1 Aa contrast.
           </p>
           <p>
             What I was able generate was a list of 1937 Pantone colours
@@ -86,7 +86,7 @@ class Six extends React.PureComponent {
             Below are a few components demoing how all these can actaully be used.
           </p>
 
-          <div className="flex flex-wrap flex-1 justify-between">
+          <div className="flex flex-wrap justify-between flex-1">
             <DemoCard theme={six.theme} text={six.index} onClick={this.fetchColorCombo} />
             <div className="w-full sm:w-1/2">
               <DoubleBorder theme={six.theme} />
@@ -94,18 +94,18 @@ class Six extends React.PureComponent {
                 <DoubleBorder theme={six.theme} />
               </div>
             </div>
-            <div className="flex flex-wrap sm:w-1/2 content-start">
-              <ImagePill theme={six.theme} img="/trainwreck.jpg" text="Macey Boyle" invert />
-              <ImagePill theme={six.theme} img="/skybridge.jpg" text="Gianni Russel" />
-              <div className="hidden sm:block">
-                <ImagePill theme={six.theme} img="/skybridge.jpg" text="Gianni Russel" />
+            <div className="flex flex-wrap content-start sm:w-1/2">
+              <div className="grid grid-cols-2">
                 <ImagePill theme={six.theme} img="/trainwreck.jpg" text="Macey Boyle" invert />
+                <ImagePill theme={six.theme} img="/skybridge.jpg" text="Gianni Russel" />
+                <ImagePill theme={six.theme} img="/pemberton-flowers.jpeg" text="Sabryna Luettgen" className="hidden sm:block" />
+                <ImagePill theme={six.theme} img="/iceland.jpeg" text="Lambert Stracke" invert className="hidden sm:block" />
               </div>
             </div>
 
             <Card theme={six.theme}>
               <h4>All {six.colour.combinations.length} Combinations</h4>
-              <div className="border-b my-4" style={{ borderColor: six.theme.tertiary }} />
+              <div className="my-4 border-b" style={{ borderColor: six.theme.tertiary }} />
               <div className="flex flex-wrap justify-between">
                 {six.colour.combinations.map(combo => (
                   <ColourSplat

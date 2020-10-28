@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import cn from 'classnames';
 import Img from '../../Img';
 
 const ImagePill = ({
-  theme, img, text, invert,
+  theme, img, text, invert, className,
 }) => (
-  <div className="px-2 py-4 w-1/2">
+  <div className={cn(className, 'px-2 py-4')}>
     <div
-      className="shadow-xl rounded-xl overflow-hidden transition-colors duration-300"
+      className="overflow-hidden transition-colors duration-300 shadow-xl rounded-xl"
       style={{
         background: invert ? theme.secondary : theme.primary,
         color: invert ? theme.primary : theme.secondary,
@@ -14,8 +15,10 @@ const ImagePill = ({
     >
       <Img
         src={img}
+        width={270}
+        height={202}
         alt="train"
-        className="rounded-b-xl shadow-md"
+        className="shadow-md rounded-b-xl"
       />
       <div className="p-4">
         <p className="text-base">
@@ -35,10 +38,12 @@ ImagePill.propTypes = {
   img: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   invert: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 ImagePill.defaultProps = {
   invert: false,
+  className: undefined,
 };
 
 export default ImagePill;

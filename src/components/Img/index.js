@@ -1,26 +1,25 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { motion } from 'framer-motion';
+import Image from 'next/image';
+import cn from 'classnames';
 
-const Img = ({ src, alt, ...rest }) => {
+const Img = ({
+  src, alt, className, height, width, ...rest
+}) => {
   const [loaded, setLoaded] = useState(false);
-  const imgVariants = {
-    initial: {
-      opacity: 0,
-    },
-    in: {
-      opacity: 1,
-    },
-  };
-
   return (
-    <motion.img
+    <Image
       {...rest}
+      unsized={!height || !width}
+      width={width}
+      height={height}
       src={src}
       alt={alt}
-      initial="initial"
-      animate={loaded ? 'in' : 'initial'}
-      variants={imgVariants}
+      quality={80}
+      className={cn(className, 'transition-opacity duration-300', {
+        'opacity-0': !loaded,
+        'opacity-100': loaded,
+      })}
       onLoad={() => setLoaded(true)}
     />
   );
@@ -29,6 +28,15 @@ const Img = ({ src, alt, ...rest }) => {
 Img.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  height: PropTypes.number,
+  width: PropTypes.number,
+};
+
+Img.defaultProps = {
+  className: undefined,
+  height: undefined,
+  width: undefined,
 };
 
 export default Img;
