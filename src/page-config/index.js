@@ -1,7 +1,7 @@
 export const employment = {
   current: {
-    title: 'the NBA.',
-    link: 'https://nba.com',
+    title: 'Commit',
+    link: 'https://commit.dev',
   },
   past: [
     {
@@ -23,6 +23,10 @@ export const employment = {
     {
       title: 'Engine Digital',
       link: 'https://enginedigital.com',
+    },
+    {
+      title: 'the NBA',
+      link: 'https://nba.com',
     },
   ],
 };

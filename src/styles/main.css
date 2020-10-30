@@ -12,7 +12,7 @@ html {
 
 @screen dark-mode {
   html {
-    @apply bg-dark-mode text-gray-300;
+    @apply text-gray-300 bg-dark-mode;
   }
   *:focus, button:focus {
     outline-color: #fff;
@@ -26,7 +26,10 @@ html {
 }
 
 h1 {
-  @apply text-6xl font-medium;
+  @apply text-5xl font-medium;
+  @screen sm {
+    @apply text-6xl;
+  }
 }
 
 h2 {
@@ -42,11 +45,11 @@ h4 {
 }
 
 p {
-  @apply text-xl font-normal mb-4;
+  @apply mb-4 text-xl font-normal;
 }
 
 li {
-  @apply text-lg my-1;
+  @apply my-1 text-lg;
 }
 
 nav a:hover {
@@ -82,6 +85,21 @@ a[target='_blank']:hover::after {
   text-decoration: none;
   opacity: 1;
   transform: translate(-20%, -40%) rotate(0deg);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fade-greeting {
+  animation: fade-in 0.4s ease-in;
 }
 
 @tailwind components;
