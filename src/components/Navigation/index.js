@@ -12,7 +12,7 @@ const Navigation = () => {
 
   return (
     <Container>
-      <nav className="relative z-50">
+      <nav>
         <ul className="mb-1">
           {nav.items.map(item => (
             <li className="inline mr-4" key={item.title}>

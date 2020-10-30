@@ -14,7 +14,7 @@ const ColourBar = () => {
       {!hide && (
         <>
           <div style={{ backgroundColor: colour }} className={`${sharedClasses} w-4 h-screen inset-y-0 left-0`} />
-          <span className="fixed top-0 right-0 text-xs pr-2 z-20 text-black opacity-50 w-32">
+          <span className="fixed top-0 right-0 z-50 w-32 pr-2 text-xs text-black opacity-50">
             {time} / {colour}
           </span>
         </>
