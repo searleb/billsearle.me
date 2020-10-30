@@ -3,25 +3,22 @@ import PageHead from '../components/PageHead';
 import Layout from '../components/Layout';
 import { meta } from '../page-config';
 
-export default () => {
+const Twenty20 = () => {
   const parent = useRef(null);
   const [viruses, setViruses] = useState([]);
 
   useEffect(() => {
-    let int;
-    if (viruses.length < 2000) {
-      int = setInterval(() => {
-        setViruses([...viruses, {
-          x: Math.floor(Math.random() * parent.current.offsetWidth - 16),
-          y: Math.floor(Math.random() * parent.current.offsetHeight - 16),
-          rot: Math.floor(Math.random() * 360),
-        },
-        ]);
-      }, 250);
-    }
-    return () => {
-      clearInterval(int);
+    const addVirus = () => {
+      setViruses([...viruses, {
+        x: Math.random() * parent.current.offsetWidth - 16,
+        y: Math.random() * parent.current.offsetHeight - 16,
+        rot: Math.floor(Math.random() * 360),
+      },
+      ]);
     };
+    if (viruses.length < 2000) {
+      window.requestAnimationFrame(addVirus);
+    }
   }, [viruses]);
 
   return (
@@ -45,7 +42,7 @@ export default () => {
             key={`${v.x}${v.y}`}
             aria-label="virus emoji"
             role="img"
-            className="absolute text-2xl transition-transform duration-500 delay-75"
+            className="absolute text-xs transition-transform duration-500 delay-75"
             style={{ transform: `translate(${v.x}px,${v.y}px) rotate(${v.rot}deg)` }}
           >
             🦠
@@ -55,3 +52,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Twenty20;
