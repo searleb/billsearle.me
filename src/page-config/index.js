@@ -105,11 +105,11 @@ export const projects = {
       link: '/neumorphism-experiment',
       tech: 'Tailwind.css / JS',
     },
-    {
-      title: 'Trivia!',
-      link: '/trivia',
-      tech: 'Tailwind.css / JS / Firestore / Google Sheets',
-    },
+    // {
+    //   title: 'Trivia!',
+    //   link: '/trivia',
+    //   tech: 'Tailwind.css / JS / Firestore / Google Sheets',
+    // },
     {
       title: 'Hami.sh',
       link: 'https://github.com/searleb/hamish',
