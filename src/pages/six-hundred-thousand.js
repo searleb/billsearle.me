@@ -96,10 +96,10 @@ class Six extends React.PureComponent {
             </div>
             <div className="flex flex-wrap content-start sm:w-1/2">
               <div className="grid grid-cols-2">
-                <ImagePill theme={six.theme} img="/trainwreck.jpg" text="Macey Boyle" invert />
-                <ImagePill theme={six.theme} img="/skybridge.jpg" text="Gianni Russel" />
-                <ImagePill theme={six.theme} img="/pemberton-flowers.jpeg" text="Sabryna Luettgen" className="hidden sm:block" />
-                <ImagePill theme={six.theme} img="/iceland.jpeg" text="Lambert Stracke" invert className="hidden sm:block" />
+                <ImagePill theme={six.theme} img="/six/trainwreck.jpg" text="Macey Boyle" invert />
+                <ImagePill theme={six.theme} img="/six/iceland.jpeg" text="Lambert Stracke" invert className="hidden sm:block" />
+                <ImagePill theme={six.theme} img="/six/pemberton-flowers.jpeg" text="Sabryna Luettgen" className="hidden sm:block" />
+                <ImagePill theme={six.theme} img="/six/skybridge.jpg" text="Gianni Russel" />
               </div>
             </div>
 
