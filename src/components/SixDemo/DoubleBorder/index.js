@@ -5,7 +5,7 @@ const Layer = ({ ...rest }) => (
 );
 
 const DoubleBorder = ({ theme }) => (
-  <div className="px-2 py-4 w-full">
+  <div className="w-full px-2 py-4">
     <div>
       <Layer style={{
         transform: 'translate(0px, 0px)',

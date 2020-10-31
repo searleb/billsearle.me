@@ -12,7 +12,7 @@ const Home = () => {
   const hour = Number(time.slice(0, 2));
   let greeting = '';
   if (hour <= 5) {
-    greeting = 'You\'re up late';
+    greeting = 'Hey, you\'re up late';
   } else if (hour < 12) {
     greeting = 'Good morning';
   } else if (hour <= 17) {
@@ -21,17 +21,34 @@ const Home = () => {
     greeting = 'Good evening';
   }
 
+  const {
+    current, past, situation, location,
+  } = employment;
   return (
     <Layout>
       <PageHead meta={meta.home} />
       <section className="mb-16">
-        <h1 className="mb-6 leading-none fade-greeting">{greeting},</h1>
-        <p className="text-2xl leading-snug sm:text-3xl">
-          I&apos;m a front end web developer, currently <Strike>studying</Strike> employed <Strike>freelancing</Strike> in <Strike>New York</Strike> <Strike>Sydney</Strike> Whistler for{' '}
-          {employment.past.map(e => (
+        <h1 className="mb-6 leading-none fade-greeting">{greeting}.</h1>
+        <p className="text-2xl leading-snug sm:text-4xl">
+          I&apos;m a front end web developer, currently{' '}
+          {situation.map(s => (
+            <>
+              <Strike key={s.status} strike={s.strike}>{s.status}</Strike>
+              {' '}
+            </>
+          )) }
+          {' '}in{' '}
+          {location.map(l => (
+            <>
+              <Strike key={l.name} strike={l.strike}>{l.name}</Strike>
+              {' '}
+            </>
+          ))}
+          with{' '}
+          {past.map(e => (
             <Link key={e.title} href={e.link} text={e.title} strike />
           ))}
-          <Link href={employment.current.link} text={`${employment.current.title}.`} />
+          <Link href={current.link} text={`${current.title}.`} />
         </p>
       </section>
       <ProjectList title="Professional" projects={projects.professional} />

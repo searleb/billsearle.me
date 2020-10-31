@@ -29,7 +29,36 @@ export const employment = {
       link: 'https://nba.com',
     },
   ],
+  situation: [
+    {
+      status: 'studying',
+      strike: true,
+    },
+    {
+      status: 'freelancing',
+      strike: true,
+    },
+    {
+      status: 'employed',
+      strike: false,
+    },
+  ],
+  location: [
+    {
+      name: 'New York',
+      strike: true,
+    },
+    {
+      name: 'Sydney',
+      strike: true,
+    },
+    {
+      name: 'Whistler',
+      strike: false,
+    },
+  ],
 };
+
 
 export const projects = {
   professional: [
