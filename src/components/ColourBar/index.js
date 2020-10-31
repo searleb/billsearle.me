@@ -4,7 +4,7 @@ import colourContext from '../../context/colour';
 
 const ColourBar = () => {
   const { time, colour } = useContext(colourContext);
-  const sharedClasses = 'transition-colors duration-700 z-10 fixed';
+  const sharedClasses = 'transition-colors duration-700 z-50 fixed';
   const router = useRouter();
   const hide = router.pathname === '/trivia/[id]';
 

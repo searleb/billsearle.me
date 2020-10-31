@@ -16,9 +16,13 @@ const Twenty20 = () => {
       },
       ]);
     };
+
+    let reqId;
     if (viruses.length < 2000) {
-      window.requestAnimationFrame(addVirus);
+      reqId = window.requestAnimationFrame(addVirus);
     }
+
+    return () => window.cancelAnimationFrame(reqId);
   }, [viruses]);
 
   return (
