@@ -59,7 +59,6 @@ export const employment = {
   ],
 };
 
-
 export const projects = {
   professional: [
     {
@@ -114,6 +113,11 @@ export const projects = {
     },
   ],
   personal: [
+    {
+      title: 'Learning',
+      link: '/learning',
+      tech: 'Study bites',
+    },
     {
       title: '2020',
       link: '/2020',

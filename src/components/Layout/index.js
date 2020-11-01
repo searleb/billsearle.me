@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import Container from '../Container';
 
-const Page = ({ children }) => (
+const Layout = ({ children }) => (
   <Container>
     {children}
   </Container>
 );
 
-Page.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Page;
+export default Layout;
