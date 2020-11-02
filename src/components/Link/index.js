@@ -1,8 +1,8 @@
 import { useState, useContext, forwardRef } from 'react';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
+import { ColourContext } from 'context/colour';
 import Strike from '../Strike';
-import ColourContext from '../../context/colour';
 
 const propTypes = {
   href: PropTypes.string.isRequired,

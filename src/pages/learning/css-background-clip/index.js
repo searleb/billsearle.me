@@ -27,7 +27,7 @@ const CSSBgClip = () => (
 .pemberton {
   composes: clip;
   background-image: url('/six/pemberton-flowers.jpeg');
-  background-position: center
+  background-position:  
 }
 
 .iceland {

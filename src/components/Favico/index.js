@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import Head from 'next/head';
-import colourContext from '../../context/colour';
+import { ColourContext } from 'context/colour';
 
 const Favico = () => {
-  const { colour } = useContext(colourContext);
+  const { colour } = useContext(ColourContext);
   const isDefault = colour === '#ffffff';
 
   if (isDefault) return null;

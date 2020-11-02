@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { useRouter } from 'next/router';
-import colourContext from '../../context/colour';
+import { ColourContext } from 'context/colour';
 
 const ColourBar = () => {
-  const { time, colour } = useContext(colourContext);
+  const { time, colour } = useContext(ColourContext);
   const sharedClasses = 'transition-colors duration-700 z-50 fixed';
   const router = useRouter();
   const hide = router.pathname === '/trivia/[id]';
