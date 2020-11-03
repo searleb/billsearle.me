@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Link from '../components/Link';
-import PageHead from '../components/PageHead';
+import DoubleBorder from 'components/SixDemo/DoubleBorder';
+import ImagePill from 'components/SixDemo/ImagePill';
+import Layout from 'components/Layout';
+import Link from 'components/Link';
+import PageHead from 'components/PageHead';
+import Card from 'components/Card';
+import ColourSplat from 'components/ColourSplat';
+import DemoCard from 'components/SixDemo/DemoCard';
 import { meta } from '../page-config';
-import Card from '../components/Card';
-import ColourSplat from '../components/ColourSplat';
-import DemoCard from '../components/SixDemo/Card';
-import ImagePill from '../components/SixDemo/ImagePill';
-import DoubleBorder from '../components/SixDemo/DoubleBorder';
 
 class Six extends React.PureComponent {
   constructor(props) {
