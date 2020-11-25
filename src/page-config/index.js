@@ -59,9 +59,13 @@ export const employment = {
   ],
 };
 
-
 export const projects = {
   professional: [
+    {
+      title: 'NBA.com',
+      link: 'https://nba.com',
+      tech: 'React / Next.js / Tailwind.css',
+    },
     {
       title: 'NBA All-Star Vote',
       link: '/nba-all-star-vote',
@@ -114,6 +118,11 @@ export const projects = {
     },
   ],
   personal: [
+    {
+      title: 'QuickHub for GitHub',
+      link: '/quickhub-for-github',
+      tech: 'Chrome Extension / React / Tailwind',
+    },
     {
       title: '2020',
       link: '/2020',
@@ -300,6 +309,11 @@ export const meta = {
     title: `2020, a depiction | ${suffix}`,
     desc: 'A summary of how I feel about 2020 and Covid-19',
     url: '/2020',
+  },
+  quickhub: {
+    title: `QuickHub For GitHub, a Chrome Extension | ${suffix}`,
+    desc: 'QuickHub for GitHub is a Chrome Extension which provides fast access to all your public and private repos, gists and notifications.',
+    url: '/quickhub-for-github',
   },
 };
 
