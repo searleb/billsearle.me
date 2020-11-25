@@ -15,11 +15,11 @@ const Quickhub = () => (
       <h1>QuickHub for GitHub</h1>
       <p>I've just joined <Link text="Commit" href="https://commit.dev" underline className="italic" /> as an Engineering Partner!</p>
       <p>
-        As part of my on boarding, they gave me free reign to "scratch an itch" as it was put.
+        As part of my onboarding, they gave me free rein to "scratch an itch" as it was put.
         The catch? I had to present it back to an open invite Zoom chat, no big deal!
       </p>
       <p>
-        So after toying with some ideas I settled on a Chrome Extension.
+        After toying with some ideas I settled on a Chrome Extension.
         I've built a couple of simple "new tab" pages before but QuickHub
         would require a fully functioning popup
         and integration with the Chrome API's, this was all new to me.
@@ -66,8 +66,8 @@ const Quickhub = () => (
       <p>
         Even still, brimming with misplaced confidence I skimmed the docs, skimmed a few articles
         and then started on the GitHub auth docs where I quickly found that
-        you have to authenticate server side.
-        Well I don't have a anything server side backing this,
+        you have to authenticate server-side.
+        Well, I don't have anything server-side backing this,
         nor did I plan or want to build a server.
         Immediately this small project was escalating.
       </p>
@@ -78,7 +78,7 @@ const Quickhub = () => (
         Firebase to the rescue! (mostly)
       </p>
       <p>
-        At this point I learned that following someone on YouTube
+        At this point, I learned that following someone on YouTube
         who seemingly knows the Chrome platform,
         doesn't mean they actually do.
       </p>
@@ -89,7 +89,7 @@ const Quickhub = () => (
         of state is emptied so the app would require the user to log in
         every time they open it.
         <br />
-        To persist the auth state Mr YouTube was sending a message to
+        To persist the auth state Mr. YouTube was sending a message to
         the extension <InlineCode>background.js </InlineCode>
         through <InlineCode>chrome.runtime </InlineCode>
         which can persist state and setting
@@ -105,14 +105,14 @@ const Quickhub = () => (
         on the extensions <InlineCode>background.js</InlineCode> and built a frontend to communicate
         with the background.
         <br />
-        This way Firebase is able to persist the users state and when a user launches the
+        This way Firebase is able to persist the user state and when a user launches the
         popup I check the real auth state with
         <InlineCode> firebase.auth().currentUser</InlineCode> and
         allow them to continue knowing I have the correct access token or redirect
-        them to login again.
+        them to log in again.
       </p>
       <p>
-        From this endeavour I did at least learn more about <InlineCode>chrome.runtime </InlineCode>
+        From this endeavour, I did at least learn more about <InlineCode>chrome.runtime </InlineCode>
         which is the crux of the chrome extension framework
       </p>
 
@@ -120,12 +120,12 @@ const Quickhub = () => (
       <h2>GitHub</h2>
       <p>The GitHub API is extensive.</p>
       <p>
-        While this app only requires read access, unfortunately to get private repositories
+        While this app only requires read access, unfortunately, to get private repositories
         I have to request full access, which seems unnecessary? While setting the access scope
         is easy I did get tripped up by this API.
       </p>
       <p>
-        When you've logged in the GitHub API returns the user profile with a bunch of api paths
+        When you've logged in the GitHub API returns the user profile with a bunch of API paths
         to follow to obtain more user data.
         <br />
         For example to get all the user repos: <InlineCode>https://api.github.com/users/searleb/repos</InlineCode>
@@ -133,7 +133,7 @@ const Quickhub = () => (
         How good is that?!
       </p>
       <p>
-        Well it turns out not very. This endpoint returns public data, even if you're authenticated
+        Well, it turns out not very. This endpoint returns public data, even if you're authenticated
         with private access. It took a while to figure this out and the solution I came up
         with was to use the search endpoint and construct the URL myself which looks like this:
         <br />
@@ -196,7 +196,7 @@ const Quickhub = () => (
       <br />
       <p>
         This system does exactly what I set out to do but it doesn't scale well.
-        I started to feel even with this small app it become a bit monolithic in a way.
+        I started to feel even with this small app it became a bit monolithic in a way.
         Everything was tied to a single context that contained all app data.
         Fetching data for one component meant making edits to three or four files.
         Storage changes are broadcast even if the front end doesn't need it and if multiple
@@ -239,12 +239,12 @@ const Quickhub = () => (
       <hr className="my-8 opacity-25" />
       <h2>MVP</h2>
       <p>
-        At this point I had a fully functioning app that does everything
+        At this point, I had a fully functioning app that does everything
         I set out to do and so it was demo time.
       </p>
       <p>
-        The demo itself only took a few minutes but when you have room full of
-        engineers there is plenty to talk about even with an single page app that just
+        The demo itself only took a few minutes but when you have a room full of
+        engineers there is plenty to talk about even with a single page app that just
         gives you a bunch of links!
         So another 45 mins went by where we all chatted about the tech, approach, decisions
         and challenges I had putting it all together.
@@ -275,14 +275,14 @@ const Quickhub = () => (
         and some of the GitHub API, I learned more about actually learning.
       </p>
       <p>
-        I've been building websites for since 2013 and
+        I've been building websites since 2013 and
         I think I had become so used to Next.js and the frameworks I'm familiar
-        with that when I jumped into this, building on a platform that is web based
+        with that when I jumped into this, building on a platform that is web-based
         but not exactly how we're used to in the browser, I didn't take the time
         to go back to basics
         and get to know this new environment. I really didn't need to reach
         for any js library to get started.
-        At the start this was a hinderance as it got in the way of learning the new things.
+        At the start, this was a hindrance as it got in the way of learning new things.
       </p>
       <p>
         Trust myself and don't try to cut corners.
