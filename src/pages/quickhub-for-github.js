@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import { meta } from '../page-config';
 
 // eslint-disable-next-line react/prop-types
-const InlineCode = ({ children }) => <code className="text-lg text-orange-700">{children}</code>;
+const InlineCode = ({ children }) => <code className="text-lg text-orange-700 break-words">{children}</code>;
 
 const Quickhub = () => (
   <Layout>
