@@ -16,17 +16,35 @@ const Resume = () => {
           {`
             Senior Front-End Web Developer with ${yearDiff()}+ years experience
             working across a wide range of projects and industries.
-            I've worked on everything from marketing sites to
-            realtime trading platforms to streaming audio apps.
+            Has worked on everything from marketing sites to realtime trading platforms to
+            multi-language international sites to streaming audio apps.
          `}
         </p>
-
+        <p>Comfortable in fast paced agency environments, corporate settings or fully remote.</p>
         <p>
-          I have worked professionally as a developer since 2014
-          after making a career change from tech support by completing
-          over 500 hours of classroom tuition from General Assembly
-          and immersing myself in the industry through freelance, agency and corporate roles.
+          Specializing in React.js development and related technologies,
+          including Next.js, Redux, Webpack and extensive API integration.
         </p>
+
+        <h3>Work Experience</h3>
+        <ul>
+          {work.map(item => (
+            <li className="mb-8" key={`${item.date}${item.title}`}>
+              <p>
+                {item.date}
+                <br />
+                {item.title} <small>- {item.location}</small>
+              </p>
+              {item.gigs && (
+                <ul className="text-xl font-normal list-disc list-inside">
+                  {item.gigs.map(gig => (
+                    <li key={gig.title}>{gig.title} <small>- {gig.location}</small></li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
 
         <h3>Education</h3>
         <ul>
@@ -41,25 +59,6 @@ const Resume = () => {
           ))}
         </ul>
 
-        <h3>Work Experience</h3>
-        <ul>
-          {work.map(item => (
-            <li className="mb-8" key={`${item.date}${item.title}`}>
-              <p>
-                {item.date}
-                <br />
-                {item.title} <small>- {item.location}</small>
-              </p>
-              {item.gigs && (
-                <ul className="list-inside list-disc text-xl font-normal">
-                  {item.gigs.map(gig => (
-                    <li key={gig.title}>{gig.title} <small>- {gig.location}</small></li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
         <Link
           className="text-2xl"
           href="https://docs.google.com/document/d/1ugtZ9-HNzOBHEnM5lrMCVPztLnxqFPr2Ae4fYsAXndI/edit?usp=sharing"
