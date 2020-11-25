@@ -7,7 +7,7 @@
     "source.fixAll.stylelint": true
   },
   "tailwindCSS.emmetCompletions": true,
-  "cSpell.enabled": false,
+  "cSpell.enabled": true,
   "cSpell.words": [
     "bero"
   ],
