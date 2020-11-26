@@ -9,7 +9,7 @@ SyntaxHighlighter.registerLanguage('css', cssLang);
 
 const Code = ({ css, children }) => (
   <section className="my-4 shadow-sm">
-    <h6>{css ? 'CSSModules' : 'JSX'}</h6>
+    {/* <h6>{css ? 'CSSModules' : 'JSX'}</h6> */}
     <SyntaxHighlighter
       language={css ? 'css' : 'jsx'}
       style={atomOneDark}

@@ -3,7 +3,6 @@ import PageHead from '../components/PageHead';
 import { meta } from '../page-config';
 import Img from '../components/Img';
 
-
 const Hubble = () => (
   <Layout>
     <PageHead meta={meta.hubble} />

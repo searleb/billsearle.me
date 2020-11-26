@@ -62,6 +62,11 @@ export const employment = {
 export const projects = {
   professional: [
     {
+      title: 'NBA.com',
+      link: 'https://nba.com',
+      tech: 'React / Next.js / Tailwind.css',
+    },
+    {
       title: 'NBA All-Star Vote',
       link: '/nba-all-star-vote',
       tech: 'React / Next.js / Tailwind.css',
@@ -113,6 +118,11 @@ export const projects = {
     },
   ],
   personal: [
+    {
+      title: 'QuickHub for GitHub',
+      link: '/quickhub-for-github',
+      tech: 'Chrome Extension / React / Tailwind',
+    },
     {
       title: 'Learning',
       link: '/learning',
@@ -178,19 +188,19 @@ export const resume = {
   ],
   work: [
     {
+      date: 'February 2020 - Nov 2020',
+      location: 'The NBA',
+      title: 'Senior Front-End Web Developer',
+    },
+    {
       date: 'March 2018 - June 2019',
-      location: 'Southern Cross Austereo, Aus',
+      location: 'Southern Cross Austereo',
       title: 'Senior Front-End Web Developer',
     },
     {
-      date: 'June 2017 - March 2018',
-      location: 'Mentally Friendly Sydney, Aus',
-      title: 'Senior Front-End Web Developer',
-    },
-    {
-      date: 'November 2014 - June 2017',
-      location: 'Mentally Friendly Sydney, Aus',
-      title: 'Front-End Web Developer',
+      date: 'November 2014 - March 2018',
+      location: 'Mentally Friendly',
+      title: 'Senior / Front-End Web Developer',
     },
     {
       date: 'August 2013 - Present',
@@ -198,11 +208,7 @@ export const resume = {
       title: 'Freelance Front-End Web Developer',
       gigs: [
         {
-          title: 'NBA',
-          location: 'Remote',
-        },
-        {
-          title: 'Engine Digital',
+          title: 'Engine Digital / NBA',
           location: 'Remote / Vancouver, Can',
         },
         {
@@ -304,6 +310,11 @@ export const meta = {
     title: `2020, a depiction | ${suffix}`,
     desc: 'A summary of how I feel about 2020 and Covid-19',
     url: '/2020',
+  },
+  quickhub: {
+    title: `QuickHub For GitHub, a Chrome Extension | ${suffix}`,
+    desc: 'QuickHub for GitHub is a Chrome Extension which provides fast access to all your public and private repos, gists and notifications.',
+    url: '/quickhub-for-github',
   },
 };
 
