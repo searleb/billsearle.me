@@ -311,6 +311,11 @@ export const meta = {
     desc: 'QuickHub for GitHub is a Chrome Extension which provides fast access to all your public and private repos, gists and notifications.',
     url: '/quickhub-for-github',
   },
+  engage: {
+    title: `Color Image Generation | ${suffix}`,
+    desc: 'Color Image Generation Challenge',
+    url: '/engage',
+  },
 };
 
 export const domain = 'https://billsearle.me';
