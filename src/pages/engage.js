@@ -30,7 +30,19 @@ const Engage = () => {
       <PageHead meta={meta.engage} />
       <h1>Engage</h1>
 
-      {colorImg && <img className="my-8" src={colorImg} alt="So many colors!" />}
+      <figure
+        style={{ width: 256, height: 128 }}
+        className="my-8"
+      >
+        {colorImg && (
+          <img
+            width="256px"
+            height="128px"
+            src={colorImg}
+            alt="So many colors!"
+          />
+        )}
+      </figure>
 
       <h2>The challenge</h2>
       <p className="mt-4">
