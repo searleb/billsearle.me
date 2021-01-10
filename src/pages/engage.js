@@ -7,7 +7,7 @@ import PageHead from '../components/PageHead';
 import { meta } from '../page-config';
 
 const Engage = () => {
-  const [colorImg, setColorImage] = useState([]);
+  const [colorImg, setColorImage] = useState();
   const router = useRouter();
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Engage = () => {
 
   return (
     <Layout>
-      <PageHead meta={meta.bero} />
+      <PageHead meta={meta.engage} />
       <h1>Engage</h1>
 
       {colorImg && <img className="my-8" src={colorImg} alt="So many colors!" />}
