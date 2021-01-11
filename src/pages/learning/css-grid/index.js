@@ -16,19 +16,20 @@ const CSSGrid = () => {
         <Img src="/six/trainwreck.jpg" height={h} width={w} />
       </div>
       <Code css>{
-      `.grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      }`
+`.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+}`
       }
       </Code>
       <Code>{
-      `<div className={css.grid}>
-        <Img src="/six/pemberton-flowers.jpeg"/>
-        <Img src="/six/iceland.jpeg"/>
-        <Img src="/six/skybridge.jpg"/>
-        <Img src="/six/trainwreck.jpg"/>
-      </div>`
+`<div className={css.grid}>
+  <Img src="/six/pemberton-flowers.jpeg"/>
+  <Img src="/six/iceland.jpeg"/>
+  <Img src="/six/skybridge.jpg"/>
+  <Img src="/six/trainwreck.jpg"/>
+</div>`
       }
       </Code>
     </Layout>
