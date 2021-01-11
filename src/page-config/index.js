@@ -321,6 +321,11 @@ export const meta = {
     desc: 'Table Top Toy Robot',
     url: '/toy-robot',
   },
+  engage: {
+    title: `Color Image Generation | ${suffix}`,
+    desc: 'Color Image Generation Challenge',
+    url: '/engage',
+  },
 };
 
 export const domain = 'https://billsearle.me';
