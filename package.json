@@ -10,10 +10,12 @@
     "export": "npm run build && next export",
     "deploy": "npm run export && now --prod",
     "upgrade-app": "npm i next@latest react@latest react-dom@latest",
-    "lint": "eslint --fix --ignore-path .gitignore ."
+    "lint": "eslint --fix --ignore-path .gitignore .",
+    "now-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && npm run build"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
+    "canvas": "^2.6.1",
     "classnames": "^2.2.6",
     "firebase": "^7.24.0",
     "framer-motion": "^1.11.1",

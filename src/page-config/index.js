@@ -139,6 +139,11 @@ export const projects = {
       tech: 'React Native / Styled Components',
     },
     {
+      title: 'Toy Robot',
+      link: '/toy-robot',
+      tech: 'React',
+    },
+    {
       title: '600,000 Pantone Colour Schemes',
       link: '/six-hundred-thousand',
       tech: 'Node',
@@ -315,6 +320,16 @@ export const meta = {
     title: `QuickHub For GitHub, a Chrome Extension | ${suffix}`,
     desc: 'QuickHub for GitHub is a Chrome Extension which provides fast access to all your public and private repos, gists and notifications.',
     url: '/quickhub-for-github',
+  },
+  toyRobot: {
+    title: `Table Top Toy Robot | ${suffix}`,
+    desc: 'Table Top Toy Robot',
+    url: '/toy-robot',
+  },
+  engage: {
+    title: `Color Image Generation | ${suffix}`,
+    desc: 'Color Image Generation Challenge',
+    url: '/engage',
   },
 };
 
