@@ -124,11 +124,6 @@ export const projects = {
       tech: 'Chrome Extension / React / Tailwind',
     },
     {
-      title: 'Learning',
-      link: '/learning',
-      tech: 'Study bites',
-    },
-    {
       title: '2020',
       link: '/2020',
       tech: 'a depiction',
@@ -152,6 +147,11 @@ export const projects = {
       title: 'Neumorphism Experiment',
       link: '/neumorphism-experiment',
       tech: 'Tailwind.css / JS',
+    },
+    {
+      title: 'Learning',
+      link: '/learning',
+      tech: 'Study bites, notes and resources',
     },
     // {
     //   title: 'Trivia!',

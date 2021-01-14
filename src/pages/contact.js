@@ -15,6 +15,14 @@ const Contact = () => (
         text="please get in touch."
       />
     </p>
+    <p>
+      You can also find me on {' '}
+      <Link
+        underline
+        href="https://github.com/searleb"
+        text="Github."
+      />
+    </p>
   </Layout>
 );
 

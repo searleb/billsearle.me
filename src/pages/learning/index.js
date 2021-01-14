@@ -6,6 +6,11 @@ import fs from 'fs';
 const Learning = ({ posts }) => (
   <Layout>
     <h1>Learning</h1>
+    <p>
+      Below are notes, quick experiments and resources from research I've done.
+      <br />
+      This page is mostly just for myself to revise from and jot things down.
+    </p>
     <ul className="list-disc list-inside">
       {posts.map(post => (
         <li key={post} className="capitalize">
