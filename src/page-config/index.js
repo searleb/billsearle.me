@@ -148,6 +148,11 @@ export const projects = {
       link: '/neumorphism-experiment',
       tech: 'Tailwind.css / JS',
     },
+    {
+      title: 'Learning',
+      link: '/learning',
+      tech: 'Study bites, notes and resources',
+    },
     // {
     //   title: 'Trivia!',
     //   link: '/trivia',

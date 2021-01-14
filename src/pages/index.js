@@ -1,14 +1,14 @@
 import { useContext } from 'react';
+import { ColourContext } from 'context/colour';
 import { projects, employment, meta } from '../page-config';
 import ProjectList from '../components/ProjectList';
 import Link from '../components/Link';
 import Layout from '../components/Layout';
 import PageHead from '../components/PageHead';
 import Strike from '../components/Strike';
-import colourContext from '../context/colour';
 
 const Home = () => {
-  const { time } = useContext(colourContext);
+  const { time } = useContext(ColourContext);
   const hour = Number(time.slice(0, 2));
   let greeting = '';
   if (hour <= 5) {
