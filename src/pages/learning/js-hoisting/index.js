@@ -1,17 +1,6 @@
-import PropTypes from 'prop-types';
 import Layout from 'components/Layout';
 import Code from 'components/Code';
 import Link from 'components/Link';
-
-const Quote = ({ children }) => (
-  <blockquote className="block pl-2 my-4 italic border-l-2">
-    {children}
-  </blockquote>
-);
-
-Quote.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 const Hoisting = () => (
   <Layout>
