@@ -64,11 +64,24 @@ const Engage = () => {
           alpha=1..255
         </Code>
       </p>
-      <Link
-        underline
-        href="/programmatical-image?sort=1"
-        text="Alt image: ?sort=1"
-      />
+      <ul>
+        <li>
+          <Link
+            underline
+            href="/programmatical-image?sort=1"
+            text="Alt image: ?sort=1"
+            className="text-xl"
+          />
+        </li>
+        <li>
+          <Link
+            underline
+            href="https://github.com/searleb/billsearle.me/blob/master/src/pages/api/engage.js"
+            text="GitHub Code Here"
+            className="text-xl"
+          />
+        </li>
+      </ul>
     </Layout>
   );
 };

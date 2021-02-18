@@ -1,3 +1,4 @@
+import Link from 'components/Link';
 import Code from '../components/Code';
 import TableTopRobot from '../components/TableTopRobot';
 import Layout from '../components/Layout';
@@ -19,6 +20,14 @@ right()
 report()`}
       </Code>
     </main>
+
+    <Link
+      underline
+      href="https://github.com/searleb/billsearle.me/tree/master/src/components/TableTopRobot"
+      text="GitHub Code Here"
+      className="text-xl"
+    />
+
   </Layout>
 );
 
