@@ -11,7 +11,7 @@ const Contact = () => (
       If you&apos;d like to work together,{' '}
       <Link
         underline
-        href="https://www.linkedin.com/in/billsearle/detail/contact-info/"
+        href="https://www.linkedin.com/in/billsearle"
         text="please get in touch."
       />
     </p>
