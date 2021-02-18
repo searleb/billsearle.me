@@ -1,6 +1,7 @@
 /* eslint-disable prefer-destructuring */
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'components/Link';
 import Code from '../components/Code';
 import Layout from '../components/Layout';
 import PageHead from '../components/PageHead';
@@ -28,7 +29,7 @@ const Engage = () => {
   return (
     <Layout>
       <PageHead meta={meta.engage} />
-      <h1>Engage</h1>
+      <h1>Programmatical Image</h1>
 
       <figure
         style={{ width: 256, height: 128 }}
@@ -63,6 +64,11 @@ const Engage = () => {
           alpha=1..255
         </Code>
       </p>
+      <Link
+        underline
+        href="/programmatical-image?sort=1"
+        text="Alt image: ?sort=1"
+      />
     </Layout>
   );
 };
