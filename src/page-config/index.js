@@ -139,6 +139,11 @@ export const projects = {
       tech: 'React',
     },
     {
+      title: 'Programmatical Image',
+      link: '/programmatical-image',
+      tech: 'React / Node',
+    },
+    {
       title: '600,000 Pantone Colour Schemes',
       link: '/six-hundred-thousand',
       tech: 'Node',
