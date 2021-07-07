@@ -1,8 +1,8 @@
 import Layout from '../components/Layout';
-import PageHead from '../components/PageHead';
-import Neumorphism from '../components/Neumorphism';
-import { meta } from '../page-config';
 import Link from '../components/Link';
+import Neumorphism from '../components/Neumorphism';
+import PageHead from '../components/PageHead';
+import { meta } from '../page-config';
 
 const NeumorphismPage = () => (
   <Layout>

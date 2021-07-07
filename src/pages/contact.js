@@ -1,5 +1,5 @@
-import Link from '../components/Link';
 import Layout from '../components/Layout';
+import Link from '../components/Link';
 import PageHead from '../components/PageHead';
 import { meta } from '../page-config';
 

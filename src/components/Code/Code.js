@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import atomOneDark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
-import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
 import cssLang from 'react-syntax-highlighter/dist/cjs/languages/prism/css';
+import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
+import atomOneDark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
 
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 SyntaxHighlighter.registerLanguage('css', cssLang);

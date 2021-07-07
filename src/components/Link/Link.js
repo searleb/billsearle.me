@@ -1,7 +1,8 @@
-import { useState, useContext, forwardRef } from 'react';
+import { ColourContext } from 'context/colour';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
-import { ColourContext } from 'context/colour';
+import { forwardRef, useContext, useState } from 'react';
+
 import Strike from '../Strike';
 
 const propTypes = {
@@ -33,6 +34,8 @@ const A = forwardRef(({
   </a>
 ));
 
+A.displayName = 'Anchor'
+
 A.propTypes = {
   ...propTypes,
 };
@@ -53,7 +56,7 @@ const Link = ({
   return (
     <>
       <Strike strike={strike}>
-        {href.includes('http' || 'www')
+        {href.startsWith('http') || href.startsWith('www')
           ? <A {...sharedProps} href={href} rel="noopener noreferrer" target="_blank" />
           : (
             <NextLink href={href} passHref>

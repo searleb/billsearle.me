@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
 import Layout from 'components/Layout';
 import Link from 'components/Link';
 import fs from 'fs';
+import PropTypes from 'prop-types';
 
 const Learning = ({ posts }) => (
   <Layout>

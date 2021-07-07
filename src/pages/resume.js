@@ -1,8 +1,8 @@
 import Layout from '../components/Layout';
-import { resume, meta } from '../page-config';
 import Link from '../components/Link';
-import yearDiff from '../scripts/year-diff';
 import PageHead from '../components/PageHead';
+import { meta,resume } from '../page-config';
+import yearDiff from '../scripts/year-diff';
 
 const Resume = () => {
   const { education, work } = resume;

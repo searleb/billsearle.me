@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+
 import Robot from './Robot';
 
 test('should not load the robot', async () => {

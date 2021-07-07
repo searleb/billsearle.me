@@ -1,7 +1,7 @@
 export const employment = {
   current: {
-    title: 'Commit',
-    link: 'https://commit.dev',
+    title: 'Immutable',
+    link: 'https://immutable.com',
   },
   past: [
     {
@@ -36,11 +36,11 @@ export const employment = {
     },
     {
       status: 'freelancing',
-      strike: true,
+      strike: false,
     },
     {
       status: 'employed',
-      strike: false,
+      strike: true,
     },
   ],
   location: [
@@ -50,11 +50,11 @@ export const employment = {
     },
     {
       name: 'Sydney',
-      strike: true,
+      strike: false,
     },
     {
       name: 'Whistler',
-      strike: false,
+      strike: true,
     },
   ],
 };
@@ -258,7 +258,7 @@ const suffix = 'Bill Searle';
 export const meta = {
   home: {
     title: 'Bill Searle - Front End Web Developer',
-    desc: `Bill Searle is a front end web developer, specializing in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
+    desc: `Bill Searle is a front end web developer, specializing in React.js development. Currently contracting in Sydney for ${employment.current.title}`,
     url: '',
   },
   bero: {

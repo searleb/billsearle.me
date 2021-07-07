@@ -1,6 +1,7 @@
 import Code from 'components/Code';
 import Img from 'components/Img';
 import Layout from 'components/Layout';
+
 import css from './css-grid.module.css';
 
 const CSSGrid = () => {

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import colourClock from 'scripts/colour-clock';
 
 const ColourContext = createContext();
@@ -29,4 +29,4 @@ ColourProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export { ColourProvider, ColourContext };
+export { ColourContext, ColourProvider };

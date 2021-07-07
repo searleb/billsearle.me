@@ -1,6 +1,6 @@
-import { useContext } from 'react';
-import Head from 'next/head';
 import { ColourContext } from 'context/colour';
+import Head from 'next/head';
+import { useContext } from 'react';
 
 const Favico = () => {
   const { colour } = useContext(ColourContext);

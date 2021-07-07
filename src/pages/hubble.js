@@ -1,7 +1,7 @@
+import Img from '../components/Img';
 import Layout from '../components/Layout';
 import PageHead from '../components/PageHead';
 import { meta } from '../page-config';
-import Img from '../components/Img';
 
 const Hubble = () => (
   <Layout>

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
-import ProjectLink from '../ProjectLink';
+
 import Divider from '../Divider';
+import ProjectLink from '../ProjectLink';
 
 const ProjectList = ({ projects, title }) => (
   <section>

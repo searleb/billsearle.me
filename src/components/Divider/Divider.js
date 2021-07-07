@@ -1,6 +1,6 @@
+import { ColourContext } from 'context/colour';
 import PropTypes from 'prop-types';
 import { useContext } from 'react';
-import { ColourContext } from 'context/colour';
 
 const Divider = ({ className }) => {
   const { colour } = useContext(ColourContext);
