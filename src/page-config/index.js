@@ -258,7 +258,7 @@ const suffix = 'Bill Searle';
 export const meta = {
   home: {
     title: 'Bill Searle - Front End Web Developer',
-    desc: `Bill Searle is a front end web developer, specializing in React.js development. Currently working remotely in Whistler for ${employment.current.title}`,
+    desc: `Bill Searle is a front end web developer, specializing in React.js development. Currently contracting in Sydney for ${employment.current.title}`,
     url: '',
   },
   bero: {
