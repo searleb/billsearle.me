@@ -1,7 +1,7 @@
-import PageHead from '../components/PageHead';
-import { meta } from '../page-config';
 import Layout from '../components/Layout';
+import PageHead from '../components/PageHead';
 import Video from '../components/Video';
+import { meta } from '../page-config';
 
 export default () => (
   <Layout>

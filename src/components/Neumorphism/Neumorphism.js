@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
 import cn from 'classnames';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 import theme from 'tailwindcss/defaultTheme';
 
 const NeuBase = ({ circle, color }) => (

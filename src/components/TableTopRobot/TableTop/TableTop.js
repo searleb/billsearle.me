@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import css from './TableTop.module.css';
 
 export default function TableTop({ children }) {

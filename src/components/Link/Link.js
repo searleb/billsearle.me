@@ -1,7 +1,8 @@
-import { useState, useContext, forwardRef } from 'react';
+import { ColourContext } from 'context/colour';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
-import { ColourContext } from 'context/colour';
+import { forwardRef, useContext, useState } from 'react';
+
 import Strike from '../Strike';
 
 const propTypes = {
@@ -32,6 +33,8 @@ const A = forwardRef(({
     {text}
   </a>
 ));
+
+A.displayName = 'Anchor'
 
 A.propTypes = {
   ...propTypes,

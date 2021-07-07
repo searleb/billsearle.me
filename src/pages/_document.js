@@ -1,5 +1,5 @@
 import Document, {
-  Html, Head, Main, NextScript,
+  Head,   Html, Main, NextScript,
 } from 'next/document';
 
 class MyDocument extends Document {

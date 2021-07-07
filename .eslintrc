@@ -1,39 +1,13 @@
 {
-  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "es6": true,
     "node": true
   },
-  "extends": [
-    "airbnb",
-    "airbnb/hooks"
-  ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly",
-    "React": "writable"
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
+  "extends": "next",
   "plugins": [
-    "react",
     "simple-import-sort"
   ],
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": [
-          "src"
-        ]
-      }
-    }
-  },
   "rules": {
     "indent": [
       "error",
@@ -58,6 +32,7 @@
     "react/jsx-one-expression-per-line": 0,
     "react/no-unescaped-entities": 0,
     "react/jsx-props-no-spreading": 0,
+    "react/display-name": "off",
     "arrow-parens": [
       1,
       "as-needed"

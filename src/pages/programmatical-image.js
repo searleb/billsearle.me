@@ -1,7 +1,8 @@
 /* eslint-disable prefer-destructuring */
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Link from 'components/Link';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+
 import Code from '../components/Code';
 import Layout from '../components/Layout';
 import PageHead from '../components/PageHead';

@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router';
-import Link from '../Link';
+
 import Container from '../Container';
-import nav from './config.json';
 import Divider from '../Divider';
+import Link from '../Link';
+import nav from './config.json';
 
 const Navigation = () => {
   const router = useRouter();

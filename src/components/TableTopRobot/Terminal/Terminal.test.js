@@ -1,4 +1,5 @@
-import { render, fireEvent, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
+
 import Terminal from './Terminal';
 
 test('loads with empty terminal feed', async () => {

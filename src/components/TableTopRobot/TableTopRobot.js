@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import Robot from './Robot';
 import TableTop from './TableTop';
 import Terminal from './Terminal';
@@ -26,7 +27,7 @@ export default function TableTopRobot() {
    */
   const [robot, setRobot] = useState(null);
 
-  const updateBot = (update) => {
+  const updateBot = update => {
     setRobot({
       ...robot,
       ...update,
@@ -64,22 +65,22 @@ export default function TableTopRobot() {
 
   const handleMove = () => {
     switch (robot.facing) {
-      case 0:
-        return moveNorth();
-      case 1:
-        return moveEast();
-      case 2:
-        return moveSouth();
-      case 3:
-        return moveWest();
-      default:
-        console.error('Unknown direction index: ', robot.facing);
-        break;
+    case 0:
+      return moveNorth();
+    case 1:
+      return moveEast();
+    case 2:
+      return moveSouth();
+    case 3:
+      return moveWest();
+    default:
+      console.error('Unknown direction index: ', robot.facing);
+      break;
     }
     return true;
   };
 
-  const handleRotate = (turn) => {
+  const handleRotate = turn => {
     let newHeading;
     let newRotation;
 

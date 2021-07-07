@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import Card from '../../Card';
 
 const DemoCard = ({ theme, text, onClick }) => (

@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
 import Layout from 'components/Layout';
 import Link from 'components/Link';
+import PropTypes from 'prop-types';
 
 const Quote = ({ children }) => (
   <blockquote className="block pl-2 my-4 italic border-l-2">

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import Container from '../Container';
 
 const Layout = ({ children }) => (

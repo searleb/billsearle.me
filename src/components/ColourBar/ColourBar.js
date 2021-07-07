@@ -1,6 +1,6 @@
-import { useContext } from 'react';
-import { useRouter } from 'next/router';
 import { ColourContext } from 'context/colour';
+import { useRouter } from 'next/router';
+import { useContext } from 'react';
 
 const ColourBar = () => {
   const { time, colour } = useContext(ColourContext);

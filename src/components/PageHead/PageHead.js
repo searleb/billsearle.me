@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
 import Head from 'next/head';
+import PropTypes from 'prop-types';
+
 import { domain } from '../../page-config';
 
 const PageHead = ({ meta }) => (

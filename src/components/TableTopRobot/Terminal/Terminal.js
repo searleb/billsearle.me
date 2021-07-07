@@ -4,7 +4,8 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
 import PropTypes from 'prop-types';
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef,useState } from 'react';
+
 import css from './Terminal.module.css';
 
 const DIRECTIONS = ['NORTH', 'EAST', 'SOUTH', 'WEST'];
@@ -24,7 +25,7 @@ export default function Terminal({
   }, [terminalFeed]);
 
   // helper func to update terminal feed
-  const addLineToTerminal = (line, withInput = true) => setTerminalFeed((feed) => [
+  const addLineToTerminal = (line, withInput = true) => setTerminalFeed(feed => [
     ...feed,
     `${line ? `${line}` : ''} ${withInput ? `${inputValue}` : ''}`,
   ]);
@@ -83,7 +84,7 @@ export default function Terminal({
     }
   };
 
-  const handleCommand = (e) => {
+  const handleCommand = e => {
     e.preventDefault();
 
     // empty input field
@@ -98,22 +99,22 @@ export default function Terminal({
       addLineToTerminal('call place() to add a robot', false);
     } else if (robot) {
       switch (input) {
-        case 'move()':
-          handleMoveWithError();
-          break;
-        case 'left()':
-          handleRotate('left');
-          addLineToTerminal();
-          break;
-        case 'right()':
-          handleRotate('right');
-          addLineToTerminal();
-          break;
-        case 'report()':
-          handleReport();
-          break;
-        default:
-          addLineToTerminal('command not found: ');
+      case 'move()':
+        handleMoveWithError();
+        break;
+      case 'left()':
+        handleRotate('left');
+        addLineToTerminal();
+        break;
+      case 'right()':
+        handleRotate('right');
+        addLineToTerminal();
+        break;
+      case 'report()':
+        handleReport();
+        break;
+      default:
+        addLineToTerminal('command not found: ');
       }
     }
   };
