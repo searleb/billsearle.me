@@ -13,6 +13,14 @@ export default () => (
     <PageHead meta={meta.nba} />
     <article>
       <h1>NBA All-Star Vote</h1>
+      <p className="italic">
+        Edit:{' '}
+        <Link
+          underline
+          href="https://www.linkedin.com/feed/update/urn:li:activity:6738182613925818368/"
+          text="We won an award!"
+        />
+      </p>
       <p>
         For 2020 the NBA voting app was redesigned and rebuilt by{' '}
         <Link
@@ -29,6 +37,9 @@ export default () => (
       <p>
         I used Next.js as the framework and deployed via
         pre-rendering all the pages to be statically hosted and distributed over a CDN.
+      </p>
+      <p>
+        In the month it was live, tens of millions of votes were cast through the app.
       </p>
 
       <Video
@@ -87,7 +98,7 @@ export default () => (
       </p>
 
       <p>
-        <Link underline href="https://enginedigital.com/news/2020-01-06-nba-all-star-voting-experience-gets-an-upgrade-and-improves-on-all-performance-metrics/" text="Engines write up" />
+        <Link underline href="https://enginedigital.com/news/2020-01-06-nba-all-star-voting-experience-gets-an-upgrade-and-improves-on-all-performance-metrics/" text="See Engine Digitals write up." />
       </p>
     </article>
   </Layout>
