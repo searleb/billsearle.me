@@ -1,3 +1,5 @@
 import Error from './_error';
 
-export default () => <Error />;
+const Page404 = () => <Error />
+
+export default Page404

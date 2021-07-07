@@ -37,6 +37,7 @@ const Engage = () => {
         className="my-8"
       >
         {colorImg && (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             width="256px"
             height="128px"
