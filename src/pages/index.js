@@ -1,14 +1,15 @@
-import { useContext } from 'react';
 import { ColourContext } from 'context/colour';
-import { projects, employment, meta } from '../page-config';
-import ProjectList from '../components/ProjectList';
-import Link from '../components/Link';
+import { useContext } from 'react';
+
 import Layout from '../components/Layout';
+import Link from '../components/Link';
 import PageHead from '../components/PageHead';
+import ProjectList from '../components/ProjectList';
 import Strike from '../components/Strike';
+import { employment, meta, projects } from '../page-config';
 
 const Home = () => {
-  const { time } = useContext(ColourContext);
+  const { time, colour } = useContext(ColourContext);
   const hour = Number(time.slice(0, 2));
   let greeting = '';
   if (hour <= 5) {
@@ -28,7 +29,7 @@ const Home = () => {
     <Layout>
       <PageHead meta={meta.home} />
       <section className="mb-16">
-        <h1 className="mb-6 leading-none fade-greeting">{greeting}.</h1>
+        <h1 className="mb-6 leading-none fade-greeting">{greeting}<span style={{ color: colour }}>.</span></h1>
         <p className="text-2xl leading-snug sm:text-4xl">
           I&apos;m a front end web developer, currently{' '}
           {situation.map(s => (
@@ -36,7 +37,7 @@ const Home = () => {
               <Strike key={s.status} strike={s.strike}>{s.status}</Strike>
               {' '}
             </>
-          )) }
+          ))}
           {' '}in{' '}
           {location.map(l => (
             <>
@@ -44,7 +45,7 @@ const Home = () => {
               {' '}
             </>
           ))}
-          with{' '}
+          for{' '}
           {past.map(e => (
             <Link key={e.title} href={e.link} text={e.title} strike />
           ))}

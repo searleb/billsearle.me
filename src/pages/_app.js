@@ -1,10 +1,11 @@
-import React from 'react';
-import Head from 'next/head';
-import ColourBar from 'components/ColourBar';
-import Navigation from 'components/Navigation';
-import Favico from 'components/Favico';
-import { ColourProvider } from 'context/colour';
 import 'styles/main.css';
+
+import ColourBar from 'components/ColourBar';
+import Favico from 'components/Favico';
+import Navigation from 'components/Navigation';
+import { ColourProvider } from 'context/colour';
+import Head from 'next/head';
+import Script from 'next/script';
 
 // eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
@@ -16,21 +17,25 @@ export default function App({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="manifest" href="/site.webmanifest" />
-        {process.env.NODE_ENV === 'production'
-            && (
-              <>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1" />
-                <script dangerouslySetInnerHTML={{
-                  __html: `
+        {process.env.NODE_ENV === 'production' && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1"
+            />
+            <Script
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
                   gtag('config', 'UA-44359005-1');
                 `,
-                }}
-                />
-              </>
-            )}
+              }}
+            />
+          </>
+        )}
       </Head>
       <ColourProvider>
         <Favico />

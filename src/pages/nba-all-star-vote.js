@@ -1,9 +1,12 @@
-import PageHead from '../components/PageHead';
-import { meta } from '../page-config';
-import Layout from '../components/Layout';
-import Link from '../components/Link';
-import Img from '../components/Img';
-import Video from '../components/Video';
+import Img from 'components/Img';
+import Layout from 'components/Layout';
+import Link from 'components/Link';
+import PageHead from 'components/PageHead';
+import Video from 'components/Video';
+import { meta } from 'page-config';
+
+import squareImg from '../../public/nba/square.png';
+import storyImg from '../../public/nba/story.png';
 
 export default () => (
   <Layout>
@@ -25,7 +28,7 @@ export default () => (
       </p>
       <p>
         I used Next.js as the framework and deployed via
-        pre-rendering all the pages to be staticlly hosted and distibuted over a CDN.
+        pre-rendering all the pages to be statically hosted and distributed over a CDN.
       </p>
 
       <Video
@@ -52,7 +55,6 @@ export default () => (
         <li>Client side generated .png of the users votes.</li>
       </ul>
 
-
       <h4 className="mt-12">Shareable assets</h4>
       <p>
         To generate these images we first created individual player images,
@@ -73,15 +75,19 @@ export default () => (
       </p>
       <div className="flex mt-8">
         <div className="flex-1 w-1 mr-6">
-          <Img src="/nba/story.png" alt="share story" />
+          <Img src={storyImg} alt="share story" />
         </div>
         <div className="flex-1 w-1">
-          <Img src="/nba/square.png" alt="share square" />
+          <Img src={squareImg} alt="share square" />
         </div>
       </div>
 
       <p className="mt-12">
         The project will be live at <Link underline href="https://vote.nba.com/en" text="vote.nba.com" /> during Jan 2020.
+      </p>
+
+      <p>
+        <Link underline href="https://enginedigital.com/news/2020-01-06-nba-all-star-voting-experience-gets-an-upgrade-and-improves-on-all-performance-metrics/" text="Engines write up" />
       </p>
     </article>
   </Layout>

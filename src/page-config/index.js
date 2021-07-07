@@ -1,7 +1,7 @@
 export const employment = {
   current: {
-    title: 'Commit',
-    link: 'https://commit.dev',
+    title: 'Immutable',
+    link: 'https://immutable.com',
   },
   past: [
     {
@@ -36,11 +36,11 @@ export const employment = {
     },
     {
       status: 'freelancing',
-      strike: true,
+      strike: false,
     },
     {
       status: 'employed',
-      strike: false,
+      strike: true,
     },
   ],
   location: [
@@ -50,11 +50,11 @@ export const employment = {
     },
     {
       name: 'Sydney',
-      strike: true,
+      strike: false,
     },
     {
       name: 'Whistler',
-      strike: false,
+      strike: true,
     },
   ],
 };
