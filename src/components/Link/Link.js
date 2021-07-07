@@ -56,7 +56,7 @@ const Link = ({
   return (
     <>
       <Strike strike={strike}>
-        {href.includes('http' || 'www')
+        {href.startsWith('http') || href.startsWith('www')
           ? <A {...sharedProps} href={href} rel="noopener noreferrer" target="_blank" />
           : (
             <NextLink href={href} passHref>
