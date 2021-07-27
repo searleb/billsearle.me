@@ -30,7 +30,7 @@ const CheckIn = () => (
       </p>
 
       <h3>App</h3>
-      <ul className="list-disc list-inside mb-8">
+      <ul className="mb-8 list-disc list-inside">
         <li>
           Local Storage to autofill name field after first use.
         </li>
@@ -47,19 +47,19 @@ const CheckIn = () => (
           MF staff only rendered fields.
         </li>
       </ul>
-      <Img src="/checkin/checkin-full.png" alt="Checkin App" className="sm:w-1/2 mb-8" />
+      <Img src="/checkin/checkin-full.png" alt="Checkin App" className="mb-8 sm:w-1/2" height='4262' width='720' />
 
       <h3>Dashboard</h3>
-      <ul className="list-disc list-inside mb-8">
+      <ul className="mb-8 list-disc list-inside">
         <li>
           Company email restricted Google login.
         </li>
         <li>
-          Collates all the check in app data into a scrollable set of colunms,
+          Collates all the check in app data into a scrollable set of columns,
           selectable by sprint.
         </li>
         <li>
-          Displays and scores each checkins info.
+          Displays and scores each check in's info.
         </li>
         <li>
           Flags if anyone reported a blocker.
@@ -70,8 +70,8 @@ const CheckIn = () => (
           were negative, neutral or positive.
         </li>
       </ul>
-      <Img src="/checkin/dashboard.png" alt="Checkin Dsshboard" className="mb-8" />
-      <small className="opacity-50 text-xs"><em>*Screenshots are built in code, not just designs.</em></small>
+      <Img src="/checkin/dashboard.png" alt="Checkin Dsshboard" className="mb-8" height='2164' width='2880' />
+      <small className="text-xs opacity-50"><em>*Screenshots are built in code, not just designs.</em></small>
     </article>
   </Layout>
 );

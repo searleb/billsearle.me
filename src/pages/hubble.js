@@ -39,7 +39,7 @@ const Hubble = () => (
         </li>
         <li>
           View Profile - tabbed view for more info.<br />
-          Everything is editabled inline depending on user permission,
+          Everything is editable inline depending on user permission,
           including photo/video/audio uploads.
           <Img src="/hubble/profile.png" alt="Hubble Profile" width={832} height={650} />
         </li>
