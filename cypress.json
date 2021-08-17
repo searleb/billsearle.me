@@ -1,0 +1,6 @@
+{
+  "componentFolder": "src",
+  "testFiles": "**/*.cy.test.{js,ts,jsx,tsx}",
+  "video": false,
+  "nodeVersion": "system"
+}

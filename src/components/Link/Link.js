@@ -34,7 +34,7 @@ const A = forwardRef(({
   </a>
 ));
 
-A.displayName = 'Anchor'
+A.displayName = 'Anchor';
 
 A.propTypes = {
   ...propTypes,
