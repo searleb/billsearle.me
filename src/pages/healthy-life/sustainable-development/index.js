@@ -14,7 +14,7 @@ function SustainableDevelopment({ goalList }) {
           17 Goals to transform our world
         </h1>
 
-        <ul className="grid grid-cols-2 gap-4">
+        <ul className="grid grid-cols-2 gap-4" data-testid="goalList">
           {goalList.map(goal => {
             return (
               <li key={goal.code} className="m-0">
