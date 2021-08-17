@@ -1,16 +1,24 @@
 import Layout from "components/Layout";
+import PageHead from "components/PageHead";
 import Link from "next/link";
 
 function SustainableDevelopment({ goalList }) {
   return (
     <Layout>
+      <PageHead
+        meta={{
+          title: 'Sustainable Development',
+          desc: 'Sustainable Development',
+          url: '/healthy-life/sustainable-development',
+        }}
+      />
       <div
         className="p-12 text-white bg-no-repeat"
         style={{
           backgroundImage: `url('https://source.unsplash.com/cVEOh_JJmEE')`,
           backgroundPosition: '10% -15%'
         }}>
-        <h1 className="max-w-lg mt-12 mb-12 font-thin leading-tight uppercase">
+        <h1 className="max-w-lg mt-12 mb-12 leading-tight uppercase font-extralight">
           17 Goals to transform our world
         </h1>
 
@@ -18,7 +26,7 @@ function SustainableDevelopment({ goalList }) {
           {goalList.map(goal => {
             return (
               <li key={goal.code} className="m-0">
-                <Link href={`sustainable-development/${goal.code}`} >
+                <Link href={`/healthy-life/sustainable-development/${goal.code}`} >
                   <a
                     className="flex items-center h-full p-4 overflow-hidden bg-no-repeat bg-cover"
                     style={{

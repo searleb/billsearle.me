@@ -84,7 +84,7 @@ class Six extends React.PureComponent {
             node endpoint that will return a random colour set on a GET.
           </p>
           <p className="mb-8">
-            Below are a few components demoing how all these can actaully be used.
+            Below are a few components demoing how all these can actually be used.
           </p>
 
           <div className="flex flex-wrap justify-between flex-1">
