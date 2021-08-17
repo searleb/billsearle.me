@@ -17,26 +17,26 @@ export default function App({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="manifest" href="/site.webmanifest" />
-        {process.env.NODE_ENV === 'production' && (
-          <>
-            <Script
-              strategy="afterInteractive"
-              src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1"
-            />
-            <Script
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
+      </Head>
+      {process.env.NODE_ENV === 'production' && (
+        <>
+          <Script
+            strategy="afterInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-44359005-1"
+          />
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
                   gtag('config', 'UA-44359005-1');
                 `,
-              }}
-            />
-          </>
-        )}
-      </Head>
+            }}
+          />
+        </>
+      )}
       <ColourProvider>
         <Favico />
         <ColourBar />

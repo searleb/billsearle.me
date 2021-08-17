@@ -6,7 +6,7 @@
     "dev": "next dev",
     "now-dev": "now dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 4000",
     "export": "npm run build && next export",
     "deploy": "npm run export && now --prod",
     "upgrade-app": "npm i next@latest react@latest react-dom@latest",
