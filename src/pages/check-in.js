@@ -47,7 +47,7 @@ const CheckIn = () => (
           MF staff only rendered fields.
         </li>
       </ul>
-      <Img src="/checkin/checkin-full.png" alt="Checkin App" className="mb-8 sm:w-1/2" height='4262' width='720' />
+      <Img src="/checkin/checkin-full.png" alt="Checkin App" className="mb-8 sm:w-1/2" height="4262" width="720" />
 
       <h3>Dashboard</h3>
       <ul className="mb-8 list-disc list-inside">
@@ -70,7 +70,7 @@ const CheckIn = () => (
           were negative, neutral or positive.
         </li>
       </ul>
-      <Img src="/checkin/dashboard.png" alt="Checkin Dsshboard" className="mb-8" height='2164' width='2880' />
+      <Img src="/checkin/dashboard.png" alt="Checkin Dsshboard" className="mb-8" height="2164" width="2880" />
       <small className="text-xs opacity-50"><em>*Screenshots are built in code, not just designs.</em></small>
     </article>
   </Layout>
