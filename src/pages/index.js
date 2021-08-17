@@ -1,5 +1,5 @@
 import { ColourContext } from 'context/colour';
-import { useContext } from 'react';
+import { Fragment, useContext } from 'react';
 
 import Layout from '../components/Layout';
 import Link from '../components/Link';
@@ -33,17 +33,17 @@ const Home = () => {
         <p className="text-2xl leading-snug sm:text-4xl">
           I&apos;m a front end web developer, currently{' '}
           {situation.map(s => (
-            <>
-              <Strike key={s.status} strike={s.strike}>{s.status}</Strike>
+            <Fragment key={s.status}>
+              <Strike strike={s.strike}>{s.status}</Strike>
               {' '}
-            </>
+            </Fragment>
           ))}
           {' '}in{' '}
           {location.map(l => (
-            <>
-              <Strike key={l.name} strike={l.strike}>{l.name}</Strike>
+            <Fragment key={l.name}>
+              <Strike strike={l.strike}>{l.name}</Strike>
               {' '}
-            </>
+            </Fragment>
           ))}
           for{' '}
           {past.map(e => (
