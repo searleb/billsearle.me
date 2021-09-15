@@ -11,7 +11,7 @@ const HappyBirthday = () => {
   }, []);
 
   return (
-    <>
+    <div className="fixed overflow-hidden">
       <div
         className="absolute w-screen h-screen opacity-0 prick"
         style={{
@@ -24,7 +24,7 @@ const HappyBirthday = () => {
           <h1 className="text-pink-400 animate-ping">Happy Birthday!</h1>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
