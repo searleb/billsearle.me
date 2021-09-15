@@ -7,7 +7,7 @@ import nav from './config.json';
 
 const Navigation = () => {
   const router = useRouter();
-  if (router.pathname === '/trivia/[id]') {
+  if (router.pathname === '/happy-birthday') {
     return null;
   }
 

@@ -5,7 +5,8 @@ html {
   font-size: 0.875em;
 }
 
-*:focus, button:focus {
+*:focus,
+button:focus {
   outline-style: solid;
   outline-color: #000;
 }
@@ -14,7 +15,8 @@ html {
   html {
     @apply text-gray-300 bg-dark-mode;
   }
-  *:focus, button:focus {
+  *:focus,
+  button:focus {
     outline-color: #fff;
   }
 }
@@ -61,8 +63,8 @@ a:hover {
   cursor: pointer;
 }
 
-a[target='_blank']::after {
-  content: '\02934';
+a[target="_blank"]::after {
+  content: "\02934";
   position: absolute;
   opacity: 0;
   z-index: 2;
@@ -81,7 +83,7 @@ a[target='_blank']::after {
   pointer-events: none;
 }
 
-a[target='_blank']:hover::after {
+a[target="_blank"]:hover::after {
   text-decoration: none;
   opacity: 1;
   transform: translate(-20%, -40%) rotate(0deg);
@@ -100,6 +102,13 @@ a[target='_blank']:hover::after {
 
 .fade-greeting {
   animation: fade-in 0.4s ease-in;
+}
+
+.prick {
+  animation: fade-in 1.5s cubic-bezier(0.4, 0, 0.6, 1);
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 @tailwind components;

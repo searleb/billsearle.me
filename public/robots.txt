@@ -2,3 +2,4 @@ User-agent: *
 Sitemap: https://billsearle.me/sitemap.xml
 Disallow: /trivia
 Disallow: /api
+Disallow: /happy-birthday

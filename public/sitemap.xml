@@ -9,48 +9,103 @@
 
 <url>
   <loc>https://billsearle.me/</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://billsearle.me/resume</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://billsearle.me/contact</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://billsearle.me/nba-all-star-vote</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://billsearle.me/hubble</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://billsearle.me/check-in</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://billsearle.me/schwarzkopf-style-studio</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/quickhub-for-github</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/2020</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/toy-robot</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/programmatical-image</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://billsearle.me/six-hundred-thousand</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://billsearle.me/neumorphism-experiment</loc>
-  <lastmod>2020-04-12T05:26:40+00:00</lastmod>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/learning</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/programmatical-image?sort=1</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/learning/css-background-clip</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/learning/css-grid</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/learning/js-event-loop</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/learning/js-hoisting</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://billsearle.me/learning/js-module-systems</loc>
+  <lastmod>2021-09-15T11:20:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
