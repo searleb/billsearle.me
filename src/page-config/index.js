@@ -1,7 +1,7 @@
 export const employment = {
   current: {
-    title: 'Immutable',
-    link: 'https://immutable.com',
+    title: 'Healthy Life',
+    link: 'https://healthylife.com.au',
   },
   past: [
     {
@@ -27,6 +27,10 @@ export const employment = {
     {
       title: 'the NBA',
       link: 'https://nba.com',
+    },
+    {
+      title: 'Immutable',
+      link: 'https://immutable.com',
     },
   ],
   situation: [
@@ -61,6 +65,11 @@ export const employment = {
 
 export const projects = {
   professional: [
+    {
+      title: 'Immutable X NFT Marketplace',
+      link: 'https://market.x.immutable.com/',
+      tech: 'React / Next.js / Immutable SDK',
+    },
     {
       title: 'NBA.com',
       link: 'https://nba.com',
@@ -257,8 +266,8 @@ export const resume = {
 const suffix = 'Bill Searle';
 export const meta = {
   home: {
-    title: 'Bill Searle - Front End Web Developer',
-    desc: `Bill Searle is a front end web developer, specializing in React.js development. Currently contracting in Sydney for ${employment.current.title}`,
+    title: 'Bill Searle - Senior Front End Web Developer',
+    desc: `Bill Searle is a senior front end web developer, specializing in React.js development. Currently contracting in Sydney for ${employment.current.title}`,
     url: '',
   },
   bero: {
