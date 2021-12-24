@@ -54,17 +54,26 @@ export const employment = {
     },
     {
       name: 'Sydney',
-      strike: false,
+      strike: true,
     },
     {
       name: 'Whistler',
       strike: true,
+    },
+    {
+      name: 'England',
+      strike: false,
     },
   ],
 };
 
 export const projects = {
   professional: [
+    {
+      title: 'Healthy Life',
+      link: 'https://www.healthylife.com.au/',
+      tech: 'React / Next.js / Tailwind.css / Algolia / Shopify',
+    },
     {
       title: 'Immutable X NFT Marketplace',
       link: 'https://market.x.immutable.com/',

@@ -28,10 +28,7 @@ button:focus {
 }
 
 h1 {
-  @apply text-5xl font-medium;
-  @screen sm {
-    @apply text-6xl;
-  }
+  @apply text-5xl font-medium sm:text-6xl;
 }
 
 h2 {
