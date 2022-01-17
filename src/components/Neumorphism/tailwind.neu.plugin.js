@@ -1,31 +1,34 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
+const colors = require('tailwindcss/colors');
 
-module.exports = () => ({ theme, addComponents }) => {
-  const neu = {
-    '.neu': {
-      position: 'relative',
-      boxShadow: 'inset 0 0 0 0 transparent',
-      transitionProperty: 'box-shadow',
-      transitionDuration: '100ms',
-      '&::after': {
-        content: "''",
-        display: 'block',
-        height: '100%',
-        width: '100%',
-        position: 'absolute',
-        top: 0,
-        borderRadius: 'inherit',
-        transitionProperty: 'inherit',
-        transitionDuration: 'inherit',
-      },
-      '&:hover::after, &:focus::after': {
-        boxShadow: '0 0 0 0 transparent !important',
-      },
+const neu = {
+  '.neu': {
+    position: 'relative',
+    boxShadow: 'inset 0 0 0 0 transparent',
+    transitionProperty: 'box-shadow',
+    transitionDuration: '100ms',
+    '&::after': {
+      content: "''",
+      display: 'block',
+      height: '100%',
+      width: '100%',
+      position: 'absolute',
+      top: 0,
+      borderRadius: 'inherit',
+      transitionProperty: 'inherit',
+      transitionDuration: 'inherit',
     },
-  };
-  const { colors } = defaultTheme;
+    '&:hover::after, &:focus::after': {
+      boxShadow: '0 0 0 0 transparent !important',
+    },
+  },
+};
+
+const neuPlugin = plugin(function ({ addComponents, theme }) {
   const {
-    transparent, black, white, current, ...rest
+    transparent, black, white, current, inherit,
+    lightBlue, warmGray, trueGray, coolGray, blueGray,
+    ...rest
   } = colors;
 
   Object.keys(rest).forEach(color => {
@@ -48,4 +51,6 @@ module.exports = () => ({ theme, addComponents }) => {
     };
   });
   addComponents(neu);
-};
+});
+
+module.exports = neuPlugin;

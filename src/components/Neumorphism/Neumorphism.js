@@ -1,17 +1,17 @@
 import cn from 'classnames';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import theme from 'tailwindcss/defaultTheme';
+import theme from 'tailwindcss/colors';
 
 const NeuBase = ({ circle, color }) => (
   <button
     type="button"
     className={cn(
       'neu h-40 w-40 text-black flex justify-center items-center m-6', {
-        'rounded-lg': !circle,
-        'rounded-full': circle,
-        [`shadow-neu-${color}`]: color,
-      },
+      'rounded-lg': !circle,
+      'rounded-full': circle,
+      [`shadow-neu-${color}`]: color,
+    },
     )}
   >
     {color}
@@ -20,6 +20,13 @@ const NeuBase = ({ circle, color }) => (
 
 const Neumorphism = () => {
   const [removeBackground, setRemoveBackground] = useState(false);
+
+  const {
+    transparent, black, white, current, inherit,
+    lightBlue, warmGray, trueGray, coolGray, blueGray,
+    ...rest
+  } = theme;
+
   return (
     <>
       <button
@@ -29,7 +36,7 @@ const Neumorphism = () => {
       >
         Remove Backgrounds
       </button>
-      {Object.keys(theme.colors).slice(4).map(color => (
+      {Object.keys(rest).map(color => (
         <div
           key={color}
           className={cn('flex flex-wrap w-full h-full justify-center items-center p-8 shadow-inner my-4 transition-colors duration-200', {
