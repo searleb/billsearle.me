@@ -1,4 +1,5 @@
 module.exports = {
+  reactStrictMode: true,
   env: {
     GOOGLE_SHEETS_KEY: process.env.GOOGLE_SHEETS_KEY,
     FIREBASE_KEY: process.env.FIREBASE_KEY,
