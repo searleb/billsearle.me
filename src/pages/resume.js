@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PageHead from '../components/PageHead';
-import { meta,resume } from '../page-config';
+import { meta, resume } from '../page-config';
 import yearDiff from '../scripts/year-diff';
 
 const Resume = () => {
@@ -17,13 +17,13 @@ const Resume = () => {
             Senior Front-End Web Developer with ${yearDiff()}+ years experience
             working across a wide range of projects and industries.
             Has worked on everything from marketing sites to realtime trading platforms to
-            multi-language international sites to streaming audio apps.
+            multi-language international sites to streaming audio apps and e-commerce shop fronts.
          `}
         </p>
-        <p>Comfortable in fast paced agency environments, corporate settings or fully remote.</p>
+        <p>Experienced in fast paced agency environments, corporate settings or fully remote.</p>
         <p>
           Specializing in React.js development and related technologies,
-          including Next.js, Redux, Webpack and extensive API integration.
+          including Next.js, Redux, Webpack Tailwind.css and extensive API integration.
         </p>
 
         <h3>Work Experience</h3>

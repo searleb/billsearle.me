@@ -148,7 +148,7 @@ export const projects = {
     },
     {
       title: 'Bero',
-      link: 'https://getbero.app',
+      link: '/bero',
       tech: 'React Native / Styled Components',
     },
     {
@@ -216,9 +216,19 @@ export const resume = {
   ],
   work: [
     {
-      date: 'February 2020 - Nov 2020',
-      location: 'The NBA',
+      date: 'September 2021 - present',
+      location: 'HealthyLife',
       title: 'Senior Front-End Web Developer',
+    },
+    {
+      date: 'February 2021 - September 2021',
+      location: 'Immutable',
+      title: 'Senior Front-End Web Developer',
+    },
+    {
+      date: 'September 2019 - November 2020',
+      location: 'The NBA',
+      title: 'Lead Front-End Web Developer',
     },
     {
       date: 'March 2018 - June 2019',
@@ -242,10 +252,6 @@ export const resume = {
         {
           title: 'Nightjar',
           location: 'Remote',
-        },
-        {
-          title: 'Southern Cross Austereo',
-          location: 'Sydney, Aus',
         },
         {
           title: 'The Gift Collective',
