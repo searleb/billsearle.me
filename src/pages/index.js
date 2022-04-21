@@ -45,7 +45,7 @@ const Home = () => {
               {' '}
             </Fragment>
           ))}
-          for{' '}
+          with{' '}
           {past.map(e => (
             <Link key={e.title} href={e.link} text={e.title} strike />
           ))}

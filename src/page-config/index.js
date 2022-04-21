@@ -1,7 +1,7 @@
 export const employment = {
   current: {
-    title: 'Healthy Life',
-    link: 'https://healthylife.com.au',
+    title: 'Oyster HR',
+    link: 'https://www.oysterhr.com',
   },
   past: [
     {
@@ -14,7 +14,7 @@ export const employment = {
     },
     {
       title: 'Southern Cross Austereo',
-      link: 'https://www.southerncrossaustereo.com.au/',
+      link: 'https://www.southerncrossaustereo.com.au',
     },
     {
       title: 'Nightjar',
@@ -32,6 +32,10 @@ export const employment = {
       title: 'Immutable',
       link: 'https://immutable.com',
     },
+    {
+      title: 'Healthy Life',
+      link: 'https://healthylife.com.au',
+    }
   ],
   situation: [
     {
@@ -40,11 +44,11 @@ export const employment = {
     },
     {
       status: 'freelancing',
-      strike: false,
+      strike: true,
     },
     {
       status: 'employed',
-      strike: true,
+      strike: false,
     },
   ],
   location: [
@@ -282,7 +286,7 @@ const suffix = 'Bill Searle';
 export const meta = {
   home: {
     title: 'Bill Searle - Senior Front End Web Developer',
-    desc: `Bill Searle is a senior front end web developer, specializing in React.js development. Currently contracting in Sydney for ${employment.current.title}`,
+    desc: `Bill Searle is a senior front end web developer, specializing in React.js development. Currently employed in England for ${employment.current.title}`,
     url: '',
   },
   bero: {
