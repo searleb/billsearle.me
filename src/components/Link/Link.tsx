@@ -1,9 +1,8 @@
 import classNames from "classnames";
+import { Strike } from "components/Strike";
 import { ColorContext } from "context/color";
 import NextLink from "next/link";
 import { useContext, useState } from "react";
-
-import Strike from "../Strike";
 
 const defaultTextColor = "currentColor";
 
@@ -52,5 +51,3 @@ export const Link = ({
     </>
   );
 };
-
-export default Link;

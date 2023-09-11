@@ -1,8 +1,8 @@
 import Card from "components/Card";
 import ColourSplat from "components/ColourSplat";
-import Layout from "components/Layout";
+import { Layout } from "components/Layout";
 import { Link } from "components/Link";
-import PageHead from "components/PageHead";
+import { PageHead } from "components/PageHead";
 import DemoCard from "components/SixDemo/DemoCard";
 import DoubleBorder from "components/SixDemo/DoubleBorder";
 import ImagePill from "components/SixDemo/ImagePill";

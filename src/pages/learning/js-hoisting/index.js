@@ -1,5 +1,5 @@
 import Code from "components/Code";
-import Layout from "components/Layout";
+import { Layout } from "components/Layout";
 import { Link } from "components/Link";
 
 const Hoisting = () => (

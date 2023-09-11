@@ -1,7 +1,7 @@
 import Code from "components/Code";
-import Layout from "components/Layout";
+import { Layout } from "components/Layout";
 import { Link } from "components/Link";
-import PageHead from "components/PageHead";
+import { PageHead } from "components/PageHead";
 import { useRouter } from "next/router";
 import { meta } from "page-config";
 import { useEffect, useState } from "react";

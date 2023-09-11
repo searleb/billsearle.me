@@ -10,6 +10,6 @@
     "bero"
   ],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.updateImportsOnFileMove.enabled": "prompt",
-  "javascript.updateImportsOnFileMove.enabled": "prompt"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

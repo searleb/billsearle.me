@@ -1,11 +1,11 @@
+import { Container } from "components/Container";
+import { Divider } from "components/Divider";
+import { Link } from "components/Link";
 import { useRouter } from "next/router";
 
-import Container from "../Container";
-import Divider from "../Divider";
-import { Link } from "../Link";
 import nav from "./config.json";
 
-const Navigation = () => {
+export const Navigation = () => {
   const router = useRouter();
   if (router.pathname === "/happy-birthday") {
     return null;
@@ -26,5 +26,3 @@ const Navigation = () => {
     </Container>
   );
 };
-
-export default Navigation;

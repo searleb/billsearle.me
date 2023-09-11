@@ -1,6 +1,6 @@
-import Layout from "components/Layout";
+import { Layout } from "components/Layout";
 import { Link } from "components/Link";
-import PageHead from "components/PageHead";
+import { PageHead } from "components/PageHead";
 import { meta, resume } from "page-config";
 import yearDiff from "scripts/year-diff";
 

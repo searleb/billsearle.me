@@ -2,7 +2,7 @@ import { ColorContext } from "context/color";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 
-const ColorBar = () => {
+export const ColorBar = () => {
   const { time, color } = useContext(ColorContext);
   const sharedClasses = "transition-colors duration-700 z-50 fixed";
   const router = useRouter();
@@ -24,5 +24,3 @@ const ColorBar = () => {
     </>
   );
 };
-
-export default ColorBar;

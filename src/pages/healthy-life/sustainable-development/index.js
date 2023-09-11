@@ -1,5 +1,5 @@
-import Layout from "components/Layout";
-import PageHead from "components/PageHead";
+import { Layout } from "components/Layout";
+import { PageHead } from "components/PageHead";
 import { Link } from "next/link";
 
 function SustainableDevelopment({ goalList }) {

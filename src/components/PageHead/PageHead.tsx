@@ -1,9 +1,15 @@
-import Head from 'next/head';
-import PropTypes from 'prop-types';
+import Head from "next/head";
+import { domain } from "page-config";
 
-import { domain } from '../../page-config';
+interface PageHeadProps {
+  meta: {
+    title: string;
+    desc: string;
+    url: string;
+  };
+}
 
-const PageHead = ({ meta }) => (
+export const PageHead = ({ meta }: PageHeadProps) => (
   <Head>
     <title>{meta.title}</title>
     <link rel="canonical" href={`${domain}${meta.url}`} />
@@ -16,13 +22,3 @@ const PageHead = ({ meta }) => (
     <meta property="og:url" content={`${domain}${meta.url}`} />
   </Head>
 );
-
-PageHead.propTypes = {
-  meta: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-export default PageHead;

@@ -1,7 +1,7 @@
-import Code from 'components/Code';
-import Layout from 'components/Layout';
+import Code from "components/Code";
+import { Layout } from "components/Layout";
 
-import css from './css-background-clip.module.css';
+import css from "./css-background-clip.module.css";
 
 const CSSBgClip = () => (
   <Layout>
@@ -11,8 +11,8 @@ const CSSBgClip = () => (
     <h2 className={css.skybridge}>Whistler Skybridge</h2>
     <h2 className={css.train}>Trainwreck Trail</h2>
 
-    <Code css>{
-`.clip {
+    <Code css>
+      {`.clip {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-repeat: no-repeat;
@@ -46,16 +46,14 @@ const CSSBgClip = () => (
 .train {
   composes: clip;
   background-image: url('/six/trainwreck.jpg');
-}`
-    }
+}`}
     </Code>
 
-    <Code>{
-`<h2 className={css.pemberton}>Pemberton Sunflowers</h2>
+    <Code>
+      {`<h2 className={css.pemberton}>Pemberton Sunflowers</h2>
 <h2 className={css.iceland}>Iceland Roadtrip</h2>
 <h2 className={css.skybridge}>Whistler Skybridge</h2>
-<h2 className={css.train}>Trainwreck Trail</h2>`
-    }
+<h2 className={css.train}>Trainwreck Trail</h2>`}
     </Code>
   </Layout>
 );

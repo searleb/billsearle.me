@@ -1,7 +1,7 @@
 import { Img } from "components/Img";
-import Layout from "components/Layout";
+import { Layout } from "components/Layout";
 import { Link } from "components/Link";
-import PageHead from "components/PageHead";
+import { PageHead } from "components/PageHead";
 import { meta } from "page-config";
 
 // eslint-disable-next-line react/prop-types

@@ -1,5 +1,5 @@
-import Layout from "components/Layout";
-import PageHead from "components/PageHead";
+import { Layout } from "components/Layout";
+import { PageHead } from "components/PageHead";
 import Video from "components/Video";
 import { meta } from "page-config";
 

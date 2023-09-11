@@ -1,8 +1,8 @@
 import "styles/main.css";
 
-import ColourBar from "components/ColorBar";
+import { ColorBar } from "components/ColorBar";
 import { Favico } from "components/Favico";
-import Navigation from "components/Navigation";
+import { Navigation } from "components/Navigation";
 import { ColorProvider } from "context/color";
 import Head from "next/head";
 import Script from "next/script";
@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
       )}
       <ColorProvider>
         <Favico />
-        <ColourBar />
+        <ColorBar />
         <Navigation />
         <Component {...pageProps} />
       </ColorProvider>
