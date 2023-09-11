@@ -165,11 +165,11 @@ export const projects = {
       link: "/toy-robot",
       tech: "React",
     },
-    {
-      title: "Programmatical Image",
-      link: "/programmatical-image",
-      tech: "React / Node",
-    },
+    // {
+    //   title: "Programmatical Image",
+    //   link: "/programmatical-image",
+    //   tech: "React / Node",
+    // },
     {
       title: "600,000 Pantone Colour Schemes",
       link: "/six-hundred-thousand",

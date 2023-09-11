@@ -1,5 +1,5 @@
-import Card from "components/Card";
-import ColourSplat from "components/ColourSplat";
+import { Card } from "components/Card";
+import { ColourSplat } from "components/ColourSplat";
 import { Layout } from "components/Layout";
 import { Link } from "components/Link";
 import { PageHead } from "components/PageHead";
@@ -12,25 +12,27 @@ import { PureComponent } from "react";
 class Six extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      six: {
-        totalCombinations: "-",
-        theme: {
-          primary: "#fff",
-          secondary: "#aaa",
-          tertiary: "#aaa",
-        },
-        colour: {
-          hex: "",
-          combinations: [
-            {
-              hex: "#fff",
-            },
-          ],
-        },
-      },
-    };
   }
+
+  state = {
+    six: {
+      index: "",
+      totalCombinations: "-",
+      theme: {
+        primary: "#fff",
+        secondary: "#aaa",
+        tertiary: "#aaa",
+      },
+      colour: {
+        hex: "",
+        combinations: [
+          {
+            hex: "#fff",
+          },
+        ],
+      },
+    },
+  };
 
   componentDidMount() {
     this.fetchColorCombo();
@@ -145,11 +147,7 @@ class Six extends PureComponent {
               />
               <div className="flex flex-wrap justify-between">
                 {six.colour.combinations.map((combo) => (
-                  <ColourSplat
-                    key={combo.hex}
-                    primary={six.colour.hex}
-                    secondary={combo.hex}
-                  />
+                  <ColourSplat key={combo.hex} secondary={combo.hex} />
                 ))}
               </div>
             </Card>

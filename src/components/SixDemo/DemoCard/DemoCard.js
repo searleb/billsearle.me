@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types';
-
-import Card from '../../Card';
+import { Card } from "components/Card";
+import PropTypes from "prop-types";
 
 const DemoCard = ({ theme, text, onClick }) => (
   <Card theme={theme}>
@@ -17,7 +16,10 @@ const DemoCard = ({ theme, text, onClick }) => (
       New Theme
     </button>
 
-    <hr style={{ borderColor: theme.secondary }} className="my-8 transition-colors duration-300" />
+    <hr
+      style={{ borderColor: theme.secondary }}
+      className="my-8 transition-colors duration-300"
+    />
 
     <ul className="text-base">
       <li>North Mabelle, CL</li>
@@ -25,9 +27,14 @@ const DemoCard = ({ theme, text, onClick }) => (
       <li>dee.littel@concrooks.com</li>
     </ul>
 
-    <hr style={{ borderColor: theme.secondary }} className="my-8 transition-colors duration-300" />
+    <hr
+      style={{ borderColor: theme.secondary }}
+      className="my-8 transition-colors duration-300"
+    />
 
-    <p className="h-12 text-base" style={{ color: theme.tertiary }}>{text}</p>
+    <p className="h-12 text-base" style={{ color: theme.tertiary }}>
+      {text}
+    </p>
   </Card>
 );
 

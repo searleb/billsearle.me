@@ -1,4 +1,4 @@
-import Code from "components/Code";
+import { Code } from "components/Code";
 import { Layout } from "components/Layout";
 import { Link } from "components/Link";
 import { PageHead } from "components/PageHead";
@@ -12,7 +12,10 @@ const Engage = () => {
 
   useEffect(() => {
     const fetchColorImage = async () => {
-      const search = new URLSearchParams(router.query).toString();
+      const search = new URLSearchParams(
+        // TODO: fix this
+        router.query as unknown as string
+      ).toString();
       const res = await fetch(`/api/engage?${search}`);
       if (res.ok) {
         const json = await res.json();

@@ -1,9 +1,9 @@
 import cn from "classnames";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 
 interface ImgProps {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   className?: string;
   height?: number;

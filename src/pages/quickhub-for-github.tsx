@@ -4,7 +4,6 @@ import { Link } from "components/Link";
 import { PageHead } from "components/PageHead";
 import { meta } from "page-config";
 
-// eslint-disable-next-line react/prop-types
 const InlineCode = ({ children }) => (
   <code className="text-lg text-orange-700 break-words">{children}</code>
 );
@@ -43,7 +42,12 @@ const Quickhub = () => (
         apps they get buried in an overloaded tab bar.
       </p>
       <figure className="my-8">
-        <Img width={832} height={74} src="/quickhub/so-many-tabs.png" />
+        <Img
+          width={832}
+          height={74}
+          src="/quickhub/so-many-tabs.png"
+          alt="chrome tabs"
+        />
         <figcaption className="mt-2 text-xs">Seen worse.</figcaption>
       </figure>
 

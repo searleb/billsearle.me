@@ -1,4 +1,4 @@
-import Code from "components/Code";
+import { Code } from "components/Code";
 import { Layout } from "components/Layout";
 import { Link } from "components/Link";
 import { PageHead } from "components/PageHead";
