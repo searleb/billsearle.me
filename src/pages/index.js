@@ -1,4 +1,4 @@
-import { ColourContext } from "context/colour";
+import { ColorContext } from "context/color";
 import { Fragment, useContext } from "react";
 
 import Layout from "../components/Layout";
@@ -9,7 +9,7 @@ import Strike from "../components/Strike";
 import { employment, meta, projects } from "../page-config";
 
 const Home = () => {
-  const { time, colour } = useContext(ColourContext);
+  const { time, color } = useContext(ColorContext);
   const hour = Number(time.slice(0, 2));
   let greeting = "";
   if (hour <= 5) {
@@ -29,7 +29,7 @@ const Home = () => {
       <section className="mb-16">
         <h1 className="mb-6 leading-none fade-greeting">
           {greeting}
-          <span style={{ color: colour }}>.</span>
+          <span style={{ color: color }}>.</span>
         </h1>
         <p className="text-2xl leading-snug sm:text-4xl">
           I&apos;m a front end web developer, currently{" "}

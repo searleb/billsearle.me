@@ -1,11 +1,11 @@
 import classNames from "classnames";
-import { ColourContext } from "context/colour";
+import { ColorContext } from "context/color";
 import NextLink from "next/link";
 import { useContext, useState } from "react";
 
 import Strike from "../Strike";
 
-const defaultTextColour = "currentColor";
+const defaultTextColor = "currentColor";
 
 interface LinkProps {
   href: string;
@@ -22,20 +22,20 @@ export const Link = ({
   className,
   underline,
 }: LinkProps) => {
-  const { colour } = useContext(ColourContext);
-  const [hoverColour, setHoverColour] = useState(defaultTextColour);
+  const { color } = useContext(ColorContext);
+  const [hoverColor, setHoverColor] = useState(defaultTextColor);
   const sharedProps = {
     className: classNames(className, { underline: underline }),
     href,
     text,
     underline,
     onMouseEnter: () => {
-      setHoverColour(colour);
+      setHoverColor(color);
     },
     onMouseLeave: () => {
-      setHoverColour(defaultTextColour);
+      setHoverColor(defaultTextColor);
     },
-    style: { color: hoverColour },
+    style: { color: hoverColor },
   };
 
   return (

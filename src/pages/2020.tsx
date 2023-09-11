@@ -1,20 +1,22 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
-import Layout from '../components/Layout';
-import PageHead from '../components/PageHead';
-import { meta } from '../page-config';
+import Layout from "../components/Layout";
+import PageHead from "../components/PageHead";
+import { meta } from "../page-config";
 
 const Twenty20 = () => {
-  const parent = useRef(null);
+  const parent = useRef<HTMLElement>(null);
   const [viruses, setViruses] = useState([]);
 
   useEffect(() => {
     const addVirus = () => {
-      setViruses([...viruses, {
-        x: Math.random() * parent.current.offsetWidth - 16,
-        y: Math.random() * parent.current.offsetHeight - 16,
-        rot: Math.floor(Math.random() * 360),
-      },
+      setViruses([
+        ...viruses,
+        {
+          x: Math.random() * parent.current.offsetWidth - 16,
+          y: Math.random() * parent.current.offsetHeight - 16,
+          rot: Math.floor(Math.random() * 360),
+        },
       ]);
     };
 
@@ -38,17 +40,19 @@ const Twenty20 = () => {
           aria-label="person with mask emoji"
           role="img"
           className="absolute text-5xl"
-          style={{ top: '50%', left: 'calc(50% - 1rem)' }}
+          style={{ top: "50%", left: "calc(50% - 1rem)" }}
         >
           😷
         </span>
-        {viruses.map(v => (
+        {viruses.map((v) => (
           <span
             key={`${v.x}${v.y}`}
             aria-label="virus emoji"
             role="img"
             className="absolute text-xs transition-transform duration-500 delay-75"
-            style={{ transform: `translate(${v.x}px,${v.y}px) rotate(${v.rot}deg)` }}
+            style={{
+              transform: `translate(${v.x}px,${v.y}px) rotate(${v.rot}deg)`,
+            }}
           >
             🦠
           </span>
