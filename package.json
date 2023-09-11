@@ -11,8 +11,7 @@
     "deploy": "npm run export && now --prod",
     "upgrade-app": "npm i next@latest react@latest react-dom@latest",
     "lint": "next lint --fix",
-    "cypress:open": "cypress open",
-    "now-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && npm run build"
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "classnames": "^2.2.6",
