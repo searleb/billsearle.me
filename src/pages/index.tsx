@@ -1,12 +1,11 @@
+import Layout from "components/Layout";
+import { Link } from "components/Link";
+import PageHead from "components/PageHead";
+import ProjectList from "components/ProjectList";
+import Strike from "components/Strike";
 import { ColorContext } from "context/color";
+import { employment, meta, projects } from "page-config";
 import { Fragment, useContext } from "react";
-
-import Layout from "../components/Layout";
-import { Link } from "../components/Link";
-import PageHead from "../components/PageHead";
-import ProjectList from "../components/ProjectList";
-import Strike from "../components/Strike";
-import { employment, meta, projects } from "../page-config";
 
 const Home = () => {
   const { time, color } = useContext(ColorContext);

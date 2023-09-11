@@ -1,12 +1,11 @@
-import Img from "components/Img";
+import { Img } from "components/Img";
 import Layout from "components/Layout";
 import { Link } from "components/Link";
 import PageHead from "components/PageHead";
 import Video from "components/Video";
 import { meta } from "page-config";
-
-import squareImg from "../../public/nba/square.png";
-import storyImg from "../../public/nba/story.png";
+import squareImg from "public/nba/square.png";
+import storyImg from "public/nba/story.png";
 
 const NbaAllStarVote = () => (
   <Layout>

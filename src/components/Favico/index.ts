@@ -1,0 +1,1 @@
+export { Favico } from "./Favico";

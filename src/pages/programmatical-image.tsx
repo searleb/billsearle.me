@@ -1,12 +1,10 @@
-/* eslint-disable prefer-destructuring */
+import Code from "components/Code";
+import Layout from "components/Layout";
 import { Link } from "components/Link";
+import PageHead from "components/PageHead";
 import { useRouter } from "next/router";
+import { meta } from "page-config";
 import { useEffect, useState } from "react";
-
-import Code from "../components/Code";
-import Layout from "../components/Layout";
-import PageHead from "../components/PageHead";
-import { meta } from "../page-config";
 
 const Engage = () => {
   const [colorImg, setColorImage] = useState();
@@ -57,7 +55,7 @@ const Engage = () => {
       </p>
       <p>
         Possible query params:
-        <Code jsx>sort=1 alpha=1..255</Code>
+        <Code>sort=1 alpha=1..255</Code>
       </p>
       <ul>
         <li>

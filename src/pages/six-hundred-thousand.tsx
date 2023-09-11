@@ -6,11 +6,10 @@ import PageHead from "components/PageHead";
 import DemoCard from "components/SixDemo/DemoCard";
 import DoubleBorder from "components/SixDemo/DoubleBorder";
 import ImagePill from "components/SixDemo/ImagePill";
-import React from "react";
+import { meta } from "page-config";
+import { PureComponent } from "react";
 
-import { meta } from "../page-config";
-
-class Six extends React.PureComponent {
+class Six extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

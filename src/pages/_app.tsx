@@ -1,7 +1,7 @@
 import "styles/main.css";
 
 import ColourBar from "components/ColorBar";
-import Favico from "components/Favico";
+import { Favico } from "components/Favico";
 import Navigation from "components/Navigation";
 import { ColorProvider } from "context/color";
 import Head from "next/head";

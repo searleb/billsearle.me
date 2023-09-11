@@ -2,7 +2,7 @@ import { ColorContext } from "context/color";
 import Head from "next/head";
 import { useContext } from "react";
 
-const Favico = () => {
+export const Favico = () => {
   const { color } = useContext(ColorContext);
   const isDefault = color === "#ffffff";
 
@@ -21,5 +21,3 @@ const Favico = () => {
     </Head>
   );
 };
-
-export default Favico;

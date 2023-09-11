@@ -1,10 +1,9 @@
+import Code from "components/Code";
+import Layout from "components/Layout";
 import { Link } from "components/Link";
-
-import Code from "../components/Code";
-import Layout from "../components/Layout";
-import PageHead from "../components/PageHead";
-import TableTopRobot from "../components/TableTopRobot";
-import { meta } from "../page-config";
+import PageHead from "components/PageHead";
+import TableTopRobot from "components/TableTopRobot";
+import { meta } from "page-config";
 
 const ToyRobot = () => (
   <Layout>
