@@ -1,13 +1,13 @@
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
-import Container from '../Container';
-import Divider from '../Divider';
-import Link from '../Link';
-import nav from './config.json';
+import Container from "../Container";
+import Divider from "../Divider";
+import { Link } from "../Link";
+import nav from "./config.json";
 
 const Navigation = () => {
   const router = useRouter();
-  if (router.pathname === '/happy-birthday') {
+  if (router.pathname === "/happy-birthday") {
     return null;
   }
 
@@ -15,7 +15,7 @@ const Navigation = () => {
     <Container>
       <nav className="relative z-40">
         <ul className="mb-1">
-          {nav.items.map(item => (
+          {nav.items.map((item) => (
             <li className="inline mr-4" key={item.title}>
               <Link text={item.title} href={item.link} />
             </li>

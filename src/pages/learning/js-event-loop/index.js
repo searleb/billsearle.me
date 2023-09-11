@@ -1,6 +1,6 @@
-import Layout from 'components/Layout';
-import Link from 'components/Link';
-import PropTypes from 'prop-types';
+import Layout from "components/Layout";
+import { Link } from "components/Link";
+import PropTypes from "prop-types";
 
 const Quote = ({ children }) => (
   <blockquote className="block pl-2 my-4 italic border-l-2">
@@ -49,34 +49,30 @@ const EventLoop = () => (
     <section>
       <h2>Quotes</h2>
       <Quote>
-        The Event Loop has one simple job —
-        to monitor the Call Stack and the Callback Queue.
-        If the Call Stack is empty, it will take the first
-        event from the queue and will push it to the Call Stack, which effectively runs it.
+        The Event Loop has one simple job — to monitor the Call Stack and the
+        Callback Queue. If the Call Stack is empty, it will take the first event
+        from the queue and will push it to the Call Stack, which effectively
+        runs it.
       </Quote>
       <Quote>
-        JavaScript is a single-threaded programming language,
-        which means it has a single Call Stack.
-        Therefore it can do one thing at a time.
-        The Call Stack is a data structure which records basically where in the program we are.
+        JavaScript is a single-threaded programming language, which means it has
+        a single Call Stack. Therefore it can do one thing at a time. The Call
+        Stack is a data structure which records basically where in the program
+        we are.
       </Quote>
     </section>
     <section>
       <h2>Notes</h2>
       <ul className="list-disc list-inside">
+        <li>Function calls form a stack of frames within the Call Stack.</li>
         <li>
-          Function calls form a stack of frames within the Call Stack.
+          The Event Loop watches the Callback Queue and adds the frame to the
+          Call Stack to be executed.
         </li>
+        <li>Returning from a function pops is off the Call Stack.</li>
         <li>
-          The Event Loop watches the Callback Queue and adds
-          the frame to the Call Stack to be executed.
-        </li>
-        <li>
-          Returning from a function pops is off the Call Stack.
-        </li>
-        <li>
-          An Embedded iFrame has it's own call stack,
-          postMessage is the only way to communicate between the two.
+          An Embedded iFrame has it's own call stack, postMessage is the only
+          way to communicate between the two.
         </li>
       </ul>
     </section>

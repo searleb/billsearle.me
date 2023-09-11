@@ -1,47 +1,50 @@
 import Layout from "components/Layout";
 import PageHead from "components/PageHead";
-import Link from "next/link";
+import { Link } from "next/link";
 
 function SustainableDevelopment({ goalList }) {
   return (
     <Layout>
       <PageHead
         meta={{
-          title: 'Sustainable Development',
-          desc: 'Sustainable Development',
-          url: '/healthy-life/sustainable-development',
+          title: "Sustainable Development",
+          desc: "Sustainable Development",
+          url: "/healthy-life/sustainable-development",
         }}
       />
       <div
         className="p-12 text-white bg-no-repeat"
         style={{
           backgroundImage: `url('https://source.unsplash.com/cVEOh_JJmEE')`,
-          backgroundPosition: '10% -15%'
-        }}>
+          backgroundPosition: "10% -15%",
+        }}
+      >
         <h1 className="max-w-lg mt-12 mb-12 leading-tight uppercase font-extralight">
           17 Goals to transform our world
         </h1>
 
         <ul className="grid grid-cols-2 gap-4" data-testid="goalList">
-          {goalList.map(goal => {
+          {goalList.map((goal) => {
             return (
               <li key={goal.code} className="m-0">
-                <Link href={`/healthy-life/sustainable-development/${goal.code}`} >
+                <Link
+                  href={`/healthy-life/sustainable-development/${goal.code}`}
+                >
                   <a
                     className="flex items-center h-full p-4 overflow-hidden bg-no-repeat bg-cover"
                     style={{
-                      minHeight: '350px',
-                      backgroundColor: 'rgba(0,0,0,0.45)',
-                      backgroundBlendMode: 'overlay',
-                      backgroundImage: `url('https://source.unsplash.com/random/400x400?${goal.title.split(' ').join(',')}')`
+                      minHeight: "350px",
+                      backgroundColor: "rgba(0,0,0,0.45)",
+                      backgroundBlendMode: "overlay",
+                      backgroundImage: `url('https://source.unsplash.com/random/400x400?${goal.title
+                        .split(" ")
+                        .join(",")}')`,
                     }}
                   >
                     <span className="pr-4 font-mono text-3xl font-bold">
                       {goal.code}
                     </span>
-                    <h2 className="text-xl uppercase">
-                      {goal.title}
-                    </h2>
+                    <h2 className="text-xl uppercase">{goal.title}</h2>
                   </a>
                 </Link>
               </li>
@@ -56,7 +59,9 @@ function SustainableDevelopment({ goalList }) {
 export const getServerSideProps = async () => {
   // I think the URL in the challenge description is wrong,
   // this returns 169 results: https://unstats.un.org/sdgapi/swagger/#!/Target/V1SdgTargetListGet
-  const res = await fetch('https://unstats.un.org/SDGAPI/v1/sdg/Goal/List?includechildren=false');
+  const res = await fetch(
+    "https://unstats.un.org/SDGAPI/v1/sdg/Goal/List?includechildren=false"
+  );
 
   if (!res.ok) {
     throw new Error(res.statusText);
@@ -66,8 +71,8 @@ export const getServerSideProps = async () => {
 
   return {
     props: {
-      goalList: json
-    }
+      goalList: json,
+    },
   };
 };
 

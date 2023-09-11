@@ -1,10 +1,10 @@
-import Link from 'components/Link';
+import { Link } from "components/Link";
 
-import Code from '../components/Code';
-import Layout from '../components/Layout';
-import PageHead from '../components/PageHead';
-import TableTopRobot from '../components/TableTopRobot';
-import { meta } from '../page-config';
+import Code from "../components/Code";
+import Layout from "../components/Layout";
+import PageHead from "../components/PageHead";
+import TableTopRobot from "../components/TableTopRobot";
+import { meta } from "../page-config";
 
 const ToyRobot = () => (
   <Layout>
@@ -28,7 +28,6 @@ report()`}
       text="GitHub Code Here"
       className="text-xl"
     />
-
   </Layout>
 );
 

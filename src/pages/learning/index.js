@@ -1,7 +1,7 @@
-import Layout from 'components/Layout';
-import Link from 'components/Link';
-import fs from 'fs';
-import PropTypes from 'prop-types';
+import Layout from "components/Layout";
+import { Link } from "components/Link";
+import fs from "fs";
+import PropTypes from "prop-types";
 
 const Learning = ({ posts }) => (
   <Layout>
@@ -12,9 +12,9 @@ const Learning = ({ posts }) => (
       This page is mostly just for myself to revise from and jot things down.
     </p>
     <ul className="list-disc list-inside">
-      {posts.map(post => (
+      {posts.map((post) => (
         <li key={post} className="capitalize">
-          <Link href={`/learning/${post}`} text={post.replace(/-/g, ' ')} />
+          <Link href={`/learning/${post}`} text={post.replace(/-/g, " ")} />
         </li>
       ))}
     </ul>
@@ -27,9 +27,9 @@ Learning.propTypes = {
 
 export const getStaticProps = async () => {
   const posts = fs
-    .readdirSync('./src/pages/learning', { withFileTypes: true })
-    .filter(dir => dir.isDirectory())
-    .map(dir => dir.name);
+    .readdirSync("./src/pages/learning", { withFileTypes: true })
+    .filter((dir) => dir.isDirectory())
+    .map((dir) => dir.name);
 
   return {
     props: {

@@ -1,28 +1,25 @@
-import Code from 'components/Code';
-import Layout from 'components/Layout';
-import Link from 'components/Link';
+import Code from "components/Code";
+import Layout from "components/Layout";
+import { Link } from "components/Link";
 
 const ModulesSystems = () => (
   <Layout>
     <h1>JS Module Systems</h1>
     <p>
       Systems to be aware of include CommonJS (CJS), ES2015 Modules (ESM),
-      Asynchronous Module Definition (AMD)
-      and Universal Module Definition (UMD).
+      Asynchronous Module Definition (AMD) and Universal Module Definition
+      (UMD).
     </p>
     <p>
-      CommonJS is what started off Node.js and does not lend
-      itself well to the browser as it is a synchronous system
+      CommonJS is what started off Node.js and does not lend itself well to the
+      browser as it is a synchronous system
     </p>
     <p>It uses the require/exports syntax.</p>
+    <Code>const someModule = require('someModule');</Code>
     <Code>
-      const someModule = require('someModule');
-    </Code>
-    <Code>{
-`function myFunc() { ... };
+      {`function myFunc() { ... };
 
-exports.myFunc = myFunc;`
-    }
+exports.myFunc = myFunc;`}
     </Code>
 
     <p>
@@ -32,19 +29,18 @@ exports.myFunc = myFunc;`
     </p>
     <br />
     <p>
-      ESM is a system designed to support synchronous and asynchronous operation.
+      ESM is a system designed to support synchronous and asynchronous
+      operation.
     </p>
-    <p>It uses the import/export syntax and is widely used for client side code.</p>
+    <p>
+      It uses the import/export syntax and is widely used for client side code.
+    </p>
+    <Code>import someModule from 'someModule';</Code>
     <Code>
-      import someModule from 'someModule';
-    </Code>
-    <Code>{
-      `function myFunc() { ... }
+      {`function myFunc() { ... }
 
-export default myFunc`
-    }
+export default myFunc`}
     </Code>
-
 
     <h2>Resources</h2>
     <ul className="list-disc list-inside">

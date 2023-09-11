@@ -1,8 +1,8 @@
-import Layout from '../components/Layout';
-import Link from '../components/Link';
-import PageHead from '../components/PageHead';
-import { meta, resume } from '../page-config';
-import yearDiff from '../scripts/year-diff';
+import Layout from "../components/Layout";
+import { Link } from "../components/Link";
+import PageHead from "../components/PageHead";
+import { meta, resume } from "../page-config";
+import yearDiff from "../scripts/year-diff";
 
 const Resume = () => {
   const { education, work } = resume;
@@ -20,15 +20,19 @@ const Resume = () => {
             multi-language international sites to streaming audio apps and e-commerce shop fronts.
          `}
         </p>
-        <p>Experienced in fast paced agency environments, corporate settings or fully remote.</p>
+        <p>
+          Experienced in fast paced agency environments, corporate settings or
+          fully remote.
+        </p>
         <p>
           Specializing in React.js development and related technologies,
-          including Next.js, Redux, Webpack Tailwind.css and extensive API integration.
+          including Next.js, Redux, Webpack Tailwind.css and extensive API
+          integration.
         </p>
 
         <h3>Work Experience</h3>
         <ul>
-          {work.map(item => (
+          {work.map((item) => (
             <li className="mb-8" key={`${item.date}${item.title}`}>
               <p>
                 {item.date}
@@ -37,8 +41,10 @@ const Resume = () => {
               </p>
               {item.gigs && (
                 <ul className="text-xl font-normal list-disc list-inside">
-                  {item.gigs.map(gig => (
-                    <li key={gig.title}>{gig.title} <small>- {gig.location}</small></li>
+                  {item.gigs.map((gig) => (
+                    <li key={gig.title}>
+                      {gig.title} <small>- {gig.location}</small>
+                    </li>
                   ))}
                 </ul>
               )}
@@ -48,7 +54,7 @@ const Resume = () => {
 
         <h3>Education</h3>
         <ul>
-          {education.map(item => (
+          {education.map((item) => (
             <li className="mb-8" key={`${item.date}${item.title}`}>
               <p>
                 {item.date} {item.school} <small>- {item.location}</small>
