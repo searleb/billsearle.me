@@ -76,7 +76,7 @@ export const projects = {
     {
       title: "Oyster HR App",
       link: "https://www.oysterhr.com/",
-      tech: "React / Typescript / GraphQL / Tailwind.css",
+      tech: "React / Typescript / GraphQL / Tailwind.css / Storybook",
     },
     {
       title: "Healthy Life",
@@ -91,7 +91,7 @@ export const projects = {
     {
       title: "NBA.com",
       link: "https://nba.com",
-      tech: "React / Next.js / Tailwind.css",
+      tech: "React / Next.js / Tailwind.css / Storybook",
     },
     {
       title: "NBA All-Star Vote",
@@ -165,11 +165,11 @@ export const projects = {
       link: "/toy-robot",
       tech: "React",
     },
-    {
-      title: "Programmatical Image",
-      link: "/programmatical-image",
-      tech: "React / Node",
-    },
+    // {
+    //   title: "Programmatical Image",
+    //   link: "/programmatical-image",
+    //   tech: "React / Node",
+    // },
     {
       title: "600,000 Pantone Colour Schemes",
       link: "/six-hundred-thousand",
@@ -211,6 +211,12 @@ export const projects = {
 export const resume = {
   education: [
     {
+      date: "2016",
+      school: "Agency Agile",
+      location: "Sydney, Australia",
+      title: "Agile Training",
+    },
+    {
       date: "2014",
       school: "General Assembly",
       location: "Sydney, Australia",
@@ -225,7 +231,12 @@ export const resume = {
   ],
   work: [
     {
-      date: "September 2021 - present",
+      date: "April 2022 - present",
+      location: "Oyster HR",
+      title: "Senior Engineer II - Front-End ",
+    },
+    {
+      date: "September 2021 - March 2022",
       location: "HealthyLife",
       title: "Senior Front-End Web Developer",
     },
@@ -250,9 +261,9 @@ export const resume = {
       title: "Senior / Front-End Web Developer",
     },
     {
-      date: "August 2013 - Present",
-      location: "👨🏻‍💻",
-      title: "Freelance Front-End Web Developer",
+      date: "",
+      location: "🗺️",
+      title: "Freelance",
       gigs: [
         {
           title: "Engine Digital / NBA",

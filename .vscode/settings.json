@@ -7,6 +7,10 @@
   "tailwindCSS.emmetCompletions": true,
   "cSpell.enabled": true,
   "cSpell.words": [
-    "bero"
+    "bero",
+    "Searle"
   ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

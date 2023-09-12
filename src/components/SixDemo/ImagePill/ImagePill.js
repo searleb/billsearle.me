@@ -1,12 +1,10 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
+import cn from "classnames";
+import PropTypes from "prop-types";
 
-import Img from '../../Img';
+import { Img } from "../../Img";
 
-const ImagePill = ({
-  theme, img, text, invert, className,
-}) => (
-  <div className={cn(className, 'px-2 py-4')}>
+const ImagePill = ({ theme, img, text, invert, className }) => (
+  <div className={cn(className, "px-2 py-4")}>
     <div
       className="overflow-hidden transition-colors duration-300 shadow-xl rounded-xl"
       style={{
@@ -22,9 +20,7 @@ const ImagePill = ({
         className="shadow-md rounded-b-xl"
       />
       <div className="p-4">
-        <p className="text-base">
-          {text}
-        </p>
+        <p className="text-base">{text}</p>
       </div>
     </div>
   </div>
