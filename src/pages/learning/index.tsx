@@ -3,7 +3,11 @@ import { Link } from "components/Link";
 import fs from "fs";
 import PropTypes from "prop-types";
 
-const Learning = ({ posts }) => (
+interface LearningProps {
+  posts: string[];
+}
+
+const Learning = ({ posts }: LearningProps) => (
   <Layout>
     <h1>Learning</h1>
     <p>
@@ -20,10 +24,6 @@ const Learning = ({ posts }) => (
     </ul>
   </Layout>
 );
-
-Learning.propTypes = {
-  posts: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
 
 export const getStaticProps = async () => {
   const posts = fs

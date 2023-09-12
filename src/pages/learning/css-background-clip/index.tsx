@@ -1,4 +1,4 @@
-import Code from "components/Code";
+import { Code } from "components/Code";
 import { Layout } from "components/Layout";
 
 import css from "./css-background-clip.module.css";

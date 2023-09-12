@@ -1,16 +1,16 @@
 import { Layout } from "components/Layout";
 import { Link } from "components/Link";
-import PropTypes from "prop-types";
+import { ReactNode } from "react";
 
-const Quote = ({ children }) => (
+interface QuoteProps {
+  children: ReactNode;
+}
+
+const Quote = ({ children }: QuoteProps) => (
   <blockquote className="block pl-2 my-4 italic border-l-2">
     {children}
   </blockquote>
 );
-
-Quote.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 const EventLoop = () => (
   <Layout>

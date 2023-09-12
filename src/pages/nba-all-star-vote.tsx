@@ -7,7 +7,6 @@ import { meta } from "page-config";
 
 import squareImg from "../../public/nba/square.png";
 import storyImg from "../../public/nba/story.png";
-console.log("🚀 ~ file: nba-all-star-vote.tsx:10 ~ storyImg:", storyImg);
 
 const NbaAllStarVote = () => (
   <Layout>

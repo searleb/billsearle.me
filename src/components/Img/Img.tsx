@@ -1,14 +1,6 @@
 import cn from "classnames";
-import Image, { StaticImageData } from "next/image";
+import Image, { ImageProps } from "next/image";
 import { useState } from "react";
-
-interface ImgProps {
-  src: string | StaticImageData;
-  alt: string;
-  className?: string;
-  height?: number;
-  width?: number;
-}
 
 export const Img = ({
   src,
@@ -17,7 +9,7 @@ export const Img = ({
   height,
   width,
   ...rest
-}: ImgProps) => {
+}: ImageProps) => {
   const [loaded, setLoaded] = useState(false);
   return (
     <Image
