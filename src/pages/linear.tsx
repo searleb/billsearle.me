@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { Layout } from "components/Layout";
 
-// Hope you don't mined, I stole some of your SVGs
+// Hope you don't mind, I stole some of your SVGs
 const Avatar = () => (
   <svg
     width="18"
